@@ -1,0 +1,49 @@
+Message-ID: <e2312b33b8d9e946b37ee6dca234325f@basic>
+Date: Fri, 16 Jun 2017 15:26:27 +0000
+Subject: Password reset for BASIC
+From: BASIC robot <support@example.com>
+To: carrerasssebastian@gmail.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_v4_1497626787_4091d6645e295167aeb90174b7ec5a9e_=_"
+
+
+--_=_swift_v4_1497626787_4091d6645e295167aeb90174b7ec5a9e_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Hello chatoxz,
+
+Follow this link to reset your password:
+
+Please, c=
+lick here to reset your password.
+
+--_=_swift_v4_1497626787_4091d6645e295167aeb90174b7ec5a9e_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns=3D"http://www.w3.org/1999/=
+xhtml">
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/ht=
+ml; charset=3DUTF-8" />
+    <title></title>
+    </head>
+<body>
+    =
+   =20
+Hello chatoxz,
+
+Follow this link to reset your password:
+
+<a=
+ href=3D"http://basic/site/reset-password?token=3Ds6GaDMbqmPhbjEV5GHZOx1_5f=
+gMB0ONc_1497626669">Please, click here to reset your password.</a>    </bod=
+y>
+</html>
+
+
+--_=_swift_v4_1497626787_4091d6645e295167aeb90174b7ec5a9e_=_--
