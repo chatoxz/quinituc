@@ -55,10 +55,10 @@ $this->params['breadcrumbs'][] = $this->title;
             'template' => '{view} {update} {delete}',
                 'buttons' => [
                     'view' => function ($url, $model, $key) {
-                        return Html::a('', $url, ['title'=>'View user', 'class'=>'glyphicon glyphicon-eye-open']);
+                        return Html::a('<span style="padding-right: 10px; font-size: 26px" class=""></span>', $url, ['title'=>'View user', 'class'=>'glyphicon glyphicon-eye-open']);
                     },
                     'update' => function ($url, $model, $key) {
-                        return Html::a('', $url, ['title'=>'Manage user', 'class'=>'glyphicon glyphicon-user']);
+                        return Html::a('<span style="padding-right: 10px; font-size: 26px" class="glyphicon glyphicon-pencil"></span>', $url, ['title'=>'Manage user']);
                     },
                     'delete' => function ($url, $model, $key) {
                         return Html::a('', $url, 

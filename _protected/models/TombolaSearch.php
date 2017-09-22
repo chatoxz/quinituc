@@ -58,12 +58,12 @@ class TombolaSearch extends Tombola
         $query->andFilterWhere([
             'id' => $this->id,
             'id_momento' => $this->id_momento,
-            'fecha' => $this->fecha,
             'created_at' => $this->created_at,
             'created_by' => $this->created_by,
             'updated_at' => $this->updated_at,
             'updated_by' => $this->updated_by,
         ]);
+        $query->andFilterWhere(['like', 'fecha', $this->fecha]);
 
         return $dataProvider;
     }

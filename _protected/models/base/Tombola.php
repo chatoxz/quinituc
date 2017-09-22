@@ -19,6 +19,7 @@ use mootensai\behaviors\UUIDBehavior;
  * @property integer $updated_by
  *
  * @property \app\models\TombolaMomento $momento
+ * @property \app\models\TombolaNumero $tombolaNumero
  */
 class Tombola extends \yii\db\ActiveRecord
 {
@@ -62,6 +63,14 @@ class Tombola extends \yii\db\ActiveRecord
     public function getMomento()
     {
         return $this->hasOne(\app\models\TombolaMomento::className(), ['id' => 'id_momento']);
+    }
+        
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getTombolaNumero()
+    {
+        return $this->hasOne(\app\models\TombolaNumero::className(), ['id_tombola' => 'id']);
     }
     
 /**

@@ -1,65 +1,87 @@
 <?php
-use yii\helpers\Url;
-use yii\helpers\Html;
-use yii\bootstrap\Modal;
-use kartik\grid\GridView;
-use johnitvn\ajaxcrud\CrudAsset; 
-use johnitvn\ajaxcrud\BulkButtonWidget;
 
 /* @var $this yii\web\View */
-/* @var $searchModel app\models\TombolaSearch */
+/* @var $searchModel TombolaSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Tombolas';
+use yii\helpers\Html;
+use kartik\export\ExportMenu;
+use kartik\grid\GridView;
+
+$this->title = 'Tombola';
 $this->params['breadcrumbs'][] = $this->title;
-
-CrudAsset::register($this);
-
+$search = "$('.search-button').click(function(){
+	$('.search-form').toggle(1000);
+	return false;
+});";
+$this->registerJs($search);
 ?>
 <div class="tombola-index">
-    <div id="ajaxCrudDatatable">
-        <?=GridView::widget([
-            'id'=>'crud-datatable',
-            'dataProvider' => $dataProvider,
-            'filterModel' => $searchModel,
-            'pjax'=>true,
-            'columns' => require(__DIR__.'/_columns.php'),
-            'toolbar'=> [
-                ['content'=>
-                    Html::a('<i class="glyphicon glyphicon-plus"></i>', ['create'],
-                    ['role'=>'modal-remote','title'=> 'Create new Tombolas','class'=>'btn btn-default']).
-                    Html::a('<i class="glyphicon glyphicon-repeat"></i>', [''],
-                    ['data-pjax'=>1, 'class'=>'btn btn-default', 'title'=>'Reset Grid']).
-                    '{toggleData}'.
-                    '{export}'
-                ],
-            ],          
-            'striped' => true,
-            'condensed' => true,
-            'responsive' => true,          
-            'panel' => [
-                'type' => 'primary', 
-                'heading' => '<i class="glyphicon glyphicon-list"></i> Tombolas listing',
-                'before'=>'<em>* Resize table columns just like a spreadsheet by dragging the column edges.</em>',
-                'after'=>BulkButtonWidget::widget([
-                            'buttons'=>Html::a('<i class="glyphicon glyphicon-trash"></i>&nbsp; Delete All',
-                                ["bulk-delete"] ,
-                                [
-                                    "class"=>"btn btn-danger btn-xs",
-                                    'role'=>'modal-remote-bulk',
-                                    'data-confirm'=>false, 'data-method'=>false,// for overide yii data api
-                                    'data-request-method'=>'post',
-                                    'data-confirm-title'=>'Are you sure?',
-                                    'data-confirm-message'=>'Are you sure want to delete this item'
-                                ]),
-                        ]).                        
-                        '<div class="clearfix"></div>',
-            ]
-        ])?>
+
+    <h1><?= Html::encode($this->title) ?></h1>
+    <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
+
+    <p>
+        <?= Html::a('Crear Tombola', ['create'], ['class' => 'btn btn-success']) ?>
+        <?php // echo Html::a('Advance Search', '#', ['class' => 'btn btn-info search-button']) ?>
+    </p>
+    <div class="search-form" style="display:none">
+        <?=  $this->render('_search', ['model' => $searchModel]); ?>
     </div>
+    <?php 
+    $gridColumn = [
+        ['class' => 'yii\grid\SerialColumn'],
+        ['attribute' => 'id', 'visible' => false],
+        [
+                'attribute' => 'id_momento',
+                'label' => 'Momento',
+                'value' => function($model){                   
+                    return $model->momento->nombre;
+                },
+                'filterType' => GridView::FILTER_SELECT2,
+                'filter' => \yii\helpers\ArrayHelper::map(\app\models\TombolaMomento::find()->asArray()->all(), 'id', 'nombre'),
+                'filterWidgetOptions' => [
+                    'pluginOptions' => ['allowClear' => true],
+                ],
+                'filterInputOptions' => ['placeholder' => 'Tombola momento', 'id' => 'grid-tombola-search-id_momento']
+            ],
+        'fecha',
+        [
+            'class' => 'yii\grid\ActionColumn',
+        ],
+    ]; 
+    ?>
+    <?= GridView::widget([
+        'dataProvider' => $dataProvider,
+        'filterModel' => $searchModel,
+        'columns' => $gridColumn,
+        'pjax' => true,
+        'pjaxSettings' => ['options' => ['id' => 'kv-pjax-container-tombola']],
+        'panel' => [
+            'type' => GridView::TYPE_PRIMARY,
+            'heading' => '<span class="glyphicon glyphicon-book"></span>  ' . Html::encode($this->title),
+        ],
+        'export' => false,
+        // your toolbar can include the additional full export menu
+        'toolbar' => [
+            '{export}',
+            ExportMenu::widget([
+                'dataProvider' => $dataProvider,
+                'columns' => $gridColumn,
+                'target' => ExportMenu::TARGET_BLANK,
+                'fontAwesome' => true,
+                'dropdownOptions' => [
+                    'label' => 'Full',
+                    'class' => 'btn btn-default',
+                    'itemsBefore' => [
+                        '<li class="dropdown-header">Export All Data</li>',
+                    ],
+                ],
+                'exportConfig' => [
+                    ExportMenu::FORMAT_PDF => false
+                ]
+            ]) ,
+        ],
+    ]); ?>
+
 </div>
-<?php Modal::begin([
-    "id"=>"ajaxCrudModal",
-    "footer"=>"",// always need it for jquery plugin
-])?>
-<?php Modal::end(); ?>

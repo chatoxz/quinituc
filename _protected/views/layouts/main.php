@@ -26,53 +26,56 @@ AppAsset::register($this);
 <?php $this->beginBody() ?>
 <div class="wrap">
     <?php
-    NavBar::begin([
-        'brandLabel' => Yii::t('app', Yii::$app->name),
-        'brandUrl' => Yii::$app->homeUrl,
-        'options' => [
-            'class' => 'navbar-default navbar-fixed-top',
-        ],
-    ]);
+    if(!Yii::$app->user->isGuest){
+        NavBar::begin([
+            'brandLabel' => Yii::t('app', "Administracion Quinituc"),
+            'brandUrl' => Yii::$app->homeUrl,
+            'options' => [
+                'class' => 'navbar-default navbar-fixed-top',
+            ],
+        ]);
 
-    // everyone can see Home page
-    $menuItems[] = ['label' => Yii::t('app', 'Home'), 'url' => ['/site/index']];
+        // everyone can see Home page
+        $menuItems[] = ['label' => Yii::t('app', 'Home'), 'url' => ['/site/index']];
 
-    // we do not need to display About and Contact pages to employee+ roles
-    if (!Yii::$app->user->can('employee')) {
-        $menuItems[] = ['label' => Yii::t('app', 'About'), 'url' => ['/site/about']];
-        $menuItems[] = ['label' => Yii::t('app', 'Contact'), 'url' => ['/site/contact']];
+        // we do not need to display About and Contact pages to employee+ roles
+        if (!Yii::$app->user->can('employee')) {
+            $menuItems[] = ['label' => Yii::t('app', 'About'), 'url' => ['/site/about']];
+            $menuItems[] = ['label' => Yii::t('app', 'Contact'), 'url' => ['/site/contact']];
+        }
+
+        // display Users to admin+ roles
+        if (Yii::$app->user->can('admin')){
+            $menuItems[] = ['label' => Yii::t('app', 'Users'), 'url' => ['/user/index']];
+            $menuItems[] = ['label' => Yii::t('app', 'Quiniela'), 'url' => ['/tombola/index']];
+            $menuItems[] = ['label' => Yii::t('app', 'Banners'), 'url' => ['/banner/index']];
+        }
+
+        // display Logout to logged in users
+        if (!Yii::$app->user->isGuest) {
+            $menuItems[] = [
+                'label' => Yii::t('app', 'Logout'). ' (' . Yii::$app->user->identity->username . ')',
+                'url' => ['/site/logout'],
+                'linkOptions' => ['data-method' => 'post']
+            ];
+        }
+
+        // display Signup and Login pages to guests of the site
+        if (Yii::$app->user->isGuest) {
+            $menuItems[] = ['label' => Yii::t('app', 'Signup'), 'url' => ['/site/signup']];
+            $menuItems[] = ['label' => Yii::t('app', 'Login'), 'url' => ['/site/login']];
+        }
+
+        echo Nav::widget([
+            'options' => ['class' => 'navbar-nav navbar-right'],
+            'items' => $menuItems,
+        ]);
+
+        NavBar::end();
     }
-
-    // display Users to admin+ roles
-    if (Yii::$app->user->can('admin')){
-        $menuItems[] = ['label' => Yii::t('app', 'Users'), 'url' => ['/user/index']];
-        $menuItems[] = ['label' => Yii::t('app', 'Quiniela'), 'url' => ['/tombola/index']];
-    }
-    
-    // display Logout to logged in users
-    if (!Yii::$app->user->isGuest) {
-        $menuItems[] = [
-            'label' => Yii::t('app', 'Logout'). ' (' . Yii::$app->user->identity->username . ')',
-            'url' => ['/site/logout'],
-            'linkOptions' => ['data-method' => 'post']
-        ];
-    }
-
-    // display Signup and Login pages to guests of the site
-    if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => Yii::t('app', 'Signup'), 'url' => ['/site/signup']];
-        $menuItems[] = ['label' => Yii::t('app', 'Login'), 'url' => ['/site/login']];
-    }
-
-    echo Nav::widget([
-        'options' => ['class' => 'navbar-nav navbar-right'],
-        'items' => $menuItems,
-    ]);
-
-    NavBar::end();
     ?>
 
-    <div class="container">
+    <div class="container" style="padding-top: 0px">
         <?= Breadcrumbs::widget([
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
@@ -80,13 +83,11 @@ AppAsset::register($this);
         <?= $content ?>
     </div>
 </div>
+<div class="container footer_quinituc" >
+    <p class="pull-left" style="padding-left: 15px">Todos los Derechos Reservados / QUINITUC 2017</p>
+    <!-- <p class="pull-right"><?= Yii::powered() ?></p> -->
+</div>
 
-<footer class="footer">
-    <div class="container">
-        <p class="pull-left">&copy; <?= Yii::t('app', Yii::$app->name) ?> <?= date('Y') ?></p>
-        <p class="pull-right"><?= Yii::powered() ?></p>
-    </div>
-</footer>
 
 <?php $this->endBody() ?>
 </body>

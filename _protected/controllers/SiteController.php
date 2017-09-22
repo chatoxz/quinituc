@@ -1,6 +1,9 @@
 <?php
 namespace app\controllers;
 
+use app\models\Banner;
+use app\models\Tombola;
+use app\models\TombolaNumero;
 use app\models\User;
 use app\models\LoginForm;
 use app\models\AccountActivation;
@@ -86,7 +89,17 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        $banners = Banner::find()->orderBy('orden')->all();
+        if($tombola = Tombola::find()->orderBy(['id' => SORT_DESC])->one()) {
+            $numerosUltimaTomb = TombolaNumero::find()->where(['id_tombola' => $tombola->id])->one();
+        } else{
+            $numerosUltimaTomb = "";
+        }
+        //var_dump($numerosUltimaTomb);
+        return $this->render('index',[
+            'banners' => $banners,
+            'numerosUltimaTomb' => $numerosUltimaTomb,
+        ]);
     }
 
     /**
@@ -117,9 +130,9 @@ class SiteController extends Controller
             return $this->refresh();
         }
 
-        Yii::$app->session->setFlash('success', Yii::t('app', 
+        Yii::$app->session->setFlash('success', Yii::t('app',
             'Thank you for contacting us. We will respond to you as soon as possible.'));
-        
+
         return $this->refresh();
     }
 
@@ -156,10 +169,10 @@ class SiteController extends Controller
 
         // if user's account is not activated, he will have to activate it first
         if ($model->status === User::STATUS_INACTIVE && $successfulLogin === false) {
-            Yii::$app->session->setFlash('error', Yii::t('app', 
+            Yii::$app->session->setFlash('error', Yii::t('app',
                 'You have to activate your account first. Please check your email.'));
             return $this->refresh();
-        } 
+        }
 
         // if user is not denied because he is not active, then his credentials are not good
         if ($successfulLogin === false) {
@@ -182,9 +195,9 @@ class SiteController extends Controller
         return $this->goHome();
     }
 
-/*----------------*
- * PASSWORD RESET *
- *----------------*/
+    /*----------------*
+     * PASSWORD RESET *
+     *----------------*/
 
     /**
      * Sends email that contains link for password reset action.
@@ -200,7 +213,7 @@ class SiteController extends Controller
         }
 
         if (!$model->sendEmail()) {
-            Yii::$app->session->setFlash('error', Yii::t('app', 
+            Yii::$app->session->setFlash('error', Yii::t('app',
                 'Sorry, we are unable to reset password for email provided.'));
             return $this->refresh();
         }
@@ -232,8 +245,8 @@ class SiteController extends Controller
 
         Yii::$app->session->setFlash('success', Yii::t('app', 'New password was saved.'));
 
-        return $this->goHome();      
-    }    
+        return $this->goHome();
+    }
 
 //------------------------------------------------------------------------------------------------//
 // SIGN UP / ACCOUNT ACTIVATION
@@ -242,14 +255,14 @@ class SiteController extends Controller
     /**
      * Signs up the user.
      * If user need to activate his account via email, we will display him
-     * message with instructions and send him account activation email with link containing account activation token. 
+     * message with instructions and send him account activation email with link containing account activation token.
      * If activation is not necessary, we will log him in right after sign up process is complete.
      * NOTE: You can decide whether or not activation is necessary, @see config/params.php
      *
      * @return string|\yii\web\Response
      */
     public function actionSignup()
-    {  
+    {
         // get setting value for 'Registration Needs Activation'
         $rna = Yii::$app->params['rna'];
 
@@ -258,7 +271,7 @@ class SiteController extends Controller
 
         // if validation didn't pass, reload the form to show errors
         if (!$model->load(Yii::$app->request->post()) || !$model->validate()) {
-            return $this->render('signup', ['model' => $model]);  
+            return $this->render('signup', ['model' => $model]);
         }
 
         // try to save user data in database, if successful, the user object will be returned
@@ -278,7 +291,7 @@ class SiteController extends Controller
 
         // now we will try to log user in
         // if login fails we will display error message, else just redirect to home page
-    
+
         if (!Yii::$app->user->login($user)) {
             // display error message to user
             Yii::$app->session->setFlash('warning', Yii::t('app', 'Please try to log in.'));
@@ -286,7 +299,7 @@ class SiteController extends Controller
             // log this error, so we can debug possible problem easier.
             Yii::error('Login after sign up failed! User '.Html::encode($user->username).' could not log in.');
         }
-                      
+
         return $this->goHome();
     }
 
@@ -301,7 +314,7 @@ class SiteController extends Controller
         // sending email has failed
         if (!$model->sendAccountActivationEmail($user)) {
             // display error message to user
-            Yii::$app->session->setFlash('error', Yii::t('app', 
+            Yii::$app->session->setFlash('error', Yii::t('app',
                 'We couldn\'t send you account activation email, please contact us.'));
 
             // log this error, so we can debug possible problem easier.
@@ -315,9 +328,9 @@ class SiteController extends Controller
                 Please check your email, we have sent you a message.'));
     }
 
-/*--------------------*
- * ACCOUNT ACTIVATION *
- *--------------------*/
+    /*--------------------*
+     * ACCOUNT ACTIVATION *
+     *--------------------*/
 
     /**
      * Activates the user account so he can log in into system.
@@ -336,8 +349,8 @@ class SiteController extends Controller
         }
 
         if (!$user->activateAccount()) {
-            Yii::$app->session->setFlash('error', Html::encode($user->username). Yii::t('app', 
-                ' your account could not be activated, please contact us!'));
+            Yii::$app->session->setFlash('error', Html::encode($user->username). Yii::t('app',
+                    ' your account could not be activated, please contact us!'));
             return $this->goHome();
         }
 
