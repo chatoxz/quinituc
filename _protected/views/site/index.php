@@ -88,7 +88,7 @@ $this->title = Yii::t('app', Yii::$app->name);
     <!-- COLUMNA DERECHA  BANNERS LATERALES-->
     <div class="col-md-4">
         <div class="contenedor_banners_laterales">
-            <h4 class="numero_suerte"><span style="color: red">NUMERO DE LA SUERTE</span><span style="font-size: 24px">6587</span></h4>
+            <h4 class="numero_suerte"><span style="color: red;font-weight: bold">TU NUMERO DE LA SUERTE</span><span style="font-size: 24px">6587</span></h4>
             <a class="banners_laterales"  href="<?= $banners[1]->link; ?>"><img src="../img/banners/<?= $banners[1]->foto; ?>" width="300" height="105"></a>
             <a class="banners_laterales"  href="<?= $banners[2]->link; ?>"><img src="../img/banners/<?= $banners[2]->foto; ?>" width="300" height="105"></a>
             <a class="banners_laterales"  href="<?= $banners[3]->link; ?>"><img src="../img/banners/<?= $banners[3]->foto; ?>" width="300" height="105"></a>
