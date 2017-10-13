@@ -22,7 +22,9 @@ class AppAsset extends AssetBundle
     public $baseUrl = '@themes';
 
     public $css = [
-        'css/bootstrap.min.css',
+        //'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css',
+        //'css/bootstrap.min.css',
+        //'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css',
         'css/style.css',
     ];
 
@@ -30,6 +32,9 @@ class AppAsset extends AssetBundle
     ];
 
     public $depends = [
+        //..\vendor\yiisoft\yii2\web\YiiAsset.php
         'yii\web\YiiAsset',
+        //..\vendor\yiisoft\yii2-bootstrap\BootstrapAsset.php
+        'yii\bootstrap\BootstrapAsset',
     ];
 }

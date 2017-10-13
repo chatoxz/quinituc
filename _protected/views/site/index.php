@@ -9,7 +9,7 @@ $this->title = Yii::t('app', Yii::$app->name);
 ?>
 <div class="row bottom_margin_20">
     <div class="contenedor_cabecera_roja_telefono col-md-12">
-        <h4><span class="glyphicon glyphicon-earphone" ></span>0381 4282724</h4>
+        <h4><span class="glyphicon glyphicon-earphone" style="padding-right: 10px"></span>0381 4282724</h4>
     </div>
 </div>
 <br>
@@ -17,21 +17,21 @@ $this->title = Yii::t('app', Yii::$app->name);
     <div class="contenedor_logo_quinituc_titulo col-md-12   ">
         <a href="<?= 'http://127.0.13.1/' ?>"><img src="../img/logo.quinituc.jpg" width="164" height="auto"></a>
         <h3>"EL JUEGO LEGAL AYUDA A LA COMUNIDAD"</h3>
-        <img src="../img/bolsa.fw.png" width="168" height="121">
+        <!--<img src="../img/bolsa.fw.png" width="168" height="121">-->
     </div>
 </div>
 <div class="row bottom_margin_20">
-    <div class="col-md-12">
-        <a href="<?= $banners[0]->link; ?>"><img src="../img/banners/<?= $banners[0]->foto; ?>" width="100%" height="auto"></a>
+    <div class="col-md-12 contenedor_banner_ancho">
+        <a class="banner_ancho" href="<?= $banners[0]->link; ?>"><img src="../img/banners/<?= $banners[0]->foto; ?>" width="100%" height="auto"></a>
     </div>
 </div>
 <div class="row ">
     <!-- COLUMNA IZQ -->
     <div class="col-md-8">
-        <div style="border: black solid 1px" class="bottom_margin_40">
+        <div class="contenedor_ultimos_resultados bottom_margin_40">
             <h3 class="titulo_ultimos_resultados"> ÚLTIMOS RESULTADOS DE LA QUINIELA</h3>
             <div class="contenedor_numeros_tombola bottom_margin_20">
-                <div class="numero_tombola" style="color: red">1º <?php echo " ".$numerosUltimaTomb->numero_1 ; ?> </div>
+                <div class="numero_tombola">1º <?php echo " ".$numerosUltimaTomb->numero_1 ; ?> </div>
                 <div class="numero_tombola">2º <?php echo " ".$numerosUltimaTomb->numero_2 ; ?> </div>
                 <div class="numero_tombola">3º <?php echo " ".$numerosUltimaTomb->numero_3 ; ?> </div>
                 <div class="numero_tombola">4º <?php echo " ".$numerosUltimaTomb->numero_4 ; ?> </div>
@@ -65,7 +65,7 @@ $this->title = Yii::t('app', Yii::$app->name);
         <!-- BANNER -->
         <br>        <br>        <br>
         <a href="<?= $banners[9]->link; ?>">
-            <img class="banner_desp_sorteos" src="../img/banners/<?= $banners[9]->foto; ?>" height="98">
+            <img class="banner_desp_sorteos" src="../img/banners/<?= $banners[9]->foto; ?>">
         </a>
         <br>        <br>        <br>
 

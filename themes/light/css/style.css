@@ -151,10 +151,12 @@ div.required label:after {
 .kv-meter-container {
     width: 105px;
 }
-/* CSS AGREGADOS POR MI*/
-/* CSS AGREGADOS POR MI*/
-/* CSS AGREGADOS POR MI*/
-/* CSS AGREGADOS POR MI*/
+
+/******************************************** CSS AGREGADOS POR MI ****************************************************/
+/******************************************** CSS AGREGADOS POR MI ****************************************************/
+/******************************************** CSS AGREGADOS POR MI ****************************************************/
+/******************************************** CSS AGREGADOS POR MI ****************************************************/
+/******************************************** CSS AGREGADOS POR MI ****************************************************/
 .bottom_margin_20 { margin-bottom:20px; }
 .bottom_margin_40 { margin-bottom:40px; }
 .glyphicon{ font-size: 24px; }
@@ -172,6 +174,10 @@ div.required label:after {
     src: url("/web/tipografia/raleway/Raleway-SemiBold.ttf");
 }
 
+img{
+    /*border: none !important ;*/
+}
+
 .contenedor_cabecera_roja_telefono{
     background-color:#CC1401;
     height:40px;
@@ -183,10 +189,25 @@ div.required label:after {
 .contenedor_logo_quinituc_titulo{
     color: rgba(0, 128, 0, 0.78);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     /*font-family: bold;*/
+}
+
+.contenedor_banner_ancho{
+    display: flex;
+}
+
+.banner_ancho{
+    border-radius: 5px;
+    border: grey 1px solid;
+    overflow: hidden;
+}
+
+.contenedor_ultimos_resultados{
+    border: black solid 1px;
+    border-radius: 5px;
 }
 
 .titulo_ultimos_resultados{
@@ -204,11 +225,14 @@ div.required label:after {
     padding-bottom: 5px;
     font-size: 18px;
 }
+
 .numero_tombola{
     width: 50%;
     padding: 5px;
 }
-
+.numero_tombola:first-of-type {
+    color: red;
+}
 .titulo_tabla_sorteos_mat_vesp_tarde_noc{
     width: 100%;
     color: white;
@@ -216,6 +240,7 @@ div.required label:after {
     text-align: center;
     height: 50px;
     padding-top: 10px;
+    border-radius: 5px;
 }
 .contenedor_tabla_sorteos_mat_vesp_tarde_noc{
     font-size: 18px;
@@ -224,18 +249,26 @@ div.required label:after {
     justify-content: space-between;
 
 }
+
+.banner_desp_sorteos{
+    width: 100%;
+    border-radius: 5px;
+}
+
 .item_tabla_sorteos_mat_vesp_tarde_noc{
-    border: black 1px solid ;
+    border: grey 1px solid ;
     width: 20%;
     height: 90px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    border-radius: 5px;
 }
 
 .banner_desp_sorteos{
     width: 100%;
+    border-radius: 5px;
 }
 
 .contenedor_banners_laterales{
@@ -247,7 +280,11 @@ div.required label:after {
 }
 .banners_laterales{
     width: 300px;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: grey 1px solid;
+    overflow: hidden;
+
 }
 .numero_suerte{
     text-align: center;
@@ -257,6 +294,7 @@ div.required label:after {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    border-radius: 5px;
 }
 
 .contenedor_num_atrasado_fav_fija_batacazo{
@@ -274,6 +312,7 @@ div.required label:after {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    border-radius: 5px;
 }
 
 .num_atrasado_fav_fija_batacazo {

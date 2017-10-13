@@ -40,7 +40,7 @@ class BannerController extends Controller
      * @return mixed
      */
     public function actionIndex()
-    {    
+    {
         $searchModel = new BannerSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
@@ -57,18 +57,18 @@ class BannerController extends Controller
      * @return mixed
      */
     public function actionView($id)
-    {   
+    {
         $request = Yii::$app->request;
         if($request->isAjax){
             Yii::$app->response->format = Response::FORMAT_JSON;
             return [
-                    'title'=> "Banner #".$id,
-                    'content'=>$this->renderAjax('view', [
-                        'model' => $this->findModel($id),
-                    ]),
-                    'footer'=> Html::button('Cerrar',['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
-                            Html::a('Modificar',['Modificar','id'=>$id],['class'=>'btn btn-primary','role'=>'modal-remote'])
-                ];    
+                'title'=> "Banner #".$id,
+                'content'=>$this->renderAjax('view', [
+                    'model' => $this->findModel($id),
+                ]),
+                'footer'=> Html::button('Cerrar',['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
+                    Html::a('Modificar',['Modificar','id'=>$id],['class'=>'btn btn-primary','role'=>'modal-remote'])
+            ];
         }else{
             return $this->render('view', [
                 'model' => $this->findModel($id),
@@ -102,9 +102,9 @@ class BannerController extends Controller
                         'secciones' => $secciones,
                     ]),
                     'footer'=> Html::button('Cerrar',['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
-                                Html::button('Save',['class'=>'btn btn-primary','type'=>"submit"])
-        
-                ];         
+                        Html::button('Save',['class'=>'btn btn-primary','type'=>"submit"])
+
+                ];
             }else if($model->load($request->post()) ){
                 if($model->file = UploadedFile::getInstance($model, 'file')){
                     $model->file->saveAs('@web/../img/banners/' . $model->file->baseName . '.' . $model->file->extension);
@@ -116,10 +116,10 @@ class BannerController extends Controller
                     'title'=> "Create new Banner",
                     'content'=>'<span class="text-success">Create Banner success</span>',
                     'footer'=> Html::button('Cerrar',['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
-                            Html::a('Create More',['create'],['class'=>'btn btn-primary','role'=>'modal-remote'])
-        
-                ];         
-            }else{           
+                        Html::a('Create More',['create'],['class'=>'btn btn-primary','role'=>'modal-remote'])
+
+                ];
+            }else{
                 return [
                     'title'=> "Create new Bannerxxxxxx",
                     'content'=>$this->renderAjax('create', [
@@ -127,9 +127,9 @@ class BannerController extends Controller
                         'secciones' => $secciones,
                     ]),
                     'footer'=> Html::button('Cerrar',['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
-                                Html::button('Save',['class'=>'btn btn-primary','type'=>"submit"])
-        
-                ];         
+                        Html::button('Save',['class'=>'btn btn-primary','type'=>"submit"])
+
+                ];
             }
         }else{
             /*
@@ -144,7 +144,7 @@ class BannerController extends Controller
                 ]);
             }
         }
-       
+
     }
 
     /**
@@ -173,8 +173,8 @@ class BannerController extends Controller
                         'secciones' => $secciones,
                     ]),
                     'footer'=> Html::button('Cerrar',['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
-                                Html::button('Guardar',['class'=>'btn btn-primary','type'=>"submit"])
-                ];         
+                        Html::button('Guardar',['class'=>'btn btn-primary','type'=>"submit"])
+                ];
             }else if($model->load($request->post())){
                 if($model->file = UploadedFile::getInstance($model, 'file')){
                     $model->file->saveAs('@web/../img/banners/' . $model->file->baseName . '.' . $model->file->extension);
@@ -189,18 +189,18 @@ class BannerController extends Controller
                         'secciones' => $secciones,
                     ]),
                     'footer'=> Html::button('Cerrar',['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
-                            Html::a('Modificar',['Modificar','id'=>$id],['class'=>'btn btn-primary','role'=>'modal-remote'])
-                ];    
-            }else{
-                 return [
+                        Html::a('Modificar',['Modificar','id'=>$id],['class'=>'btn btn-primary','role'=>'modal-remote'])
+                ];
+            } else {
+                return [
                     'title'=> "Update Banner #".$id,
                     'content'=>$this->renderAjax('update', [
                         'model' => $model,
                         'secciones' => $secciones,
                     ]),
                     'footer'=> Html::button('Cerrar',['class'=>'btn btn-default pull-left','data-dismiss'=>"modal"]).
-                                Html::button('Save',['class'=>'btn btn-primary','type'=>"submit"])
-                ];        
+                        Html::button('Save',['class'=>'btn btn-primary','type'=>"submit"])
+                ];
             }
         }else{
             /*
@@ -241,11 +241,9 @@ class BannerController extends Controller
             */
             return $this->redirect(['index']);
         }
-
-
     }
 
-     /**
+    /**
      * Delete multiple existing Banner model.
      * For ajax request will return json object
      * and for non-ajax request if deletion is successful, the browser will be redirected to the 'index' page.
@@ -253,7 +251,7 @@ class BannerController extends Controller
      * @return mixed
      */
     public function actionBulkDelete()
-    {        
+    {
         $request = Yii::$app->request;
         $pks = explode(',', $request->post( 'pks' )); // Array or selected records primary keys
         foreach ( $pks as $pk ) {
@@ -273,7 +271,7 @@ class BannerController extends Controller
             */
             return $this->redirect(['index']);
         }
-       
+
     }
 
     /**
