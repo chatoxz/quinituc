@@ -85,7 +85,7 @@ AppAsset::register($this);
     </div>
 </div>
 <div class="container footer_quinituc" >
-    <p class="pull-left" style="padding-left: 15px">Todos los Derechos Reservados / QUINITUC 2017</p>
+    <p class="pull-left" style="padding-left: 15px">Todos los Derechos Reservados / QUINITUC 2017 <a class="face_icon" href="https://www.facebook.com/QuiniTuccom-136939513520005/" target="_blank"> <img src="../img/fb-icon.png" alt=""></a></p>
     <!-- <p class="pull-right"><?= Yii::powered() ?></p> -->
 </div>
 
