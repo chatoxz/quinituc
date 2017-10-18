@@ -379,12 +379,19 @@ img{
     color: white;
     padding: 20px;
     height: 100px;
-    margin: 0%;
-    width: 100%;
+    /*margin: 0%;
+    width: 100%;*/
 }
 .footer_quinituc p{
     position: relative;
-    top:65%;
+    width: 100%;
+   /* top:65%;*/
+}
+.face_icon{
+    float:right;
+}
+.face_icon img{
+    height: 38px;
 }
 
 /* MOBILE VERSION*/
