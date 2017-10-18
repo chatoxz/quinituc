@@ -7,7 +7,7 @@ use kartik\grid\GridView;
 /* @var $this yii\web\View */
 /* @var $model app\models\Tombola */
 
-$this->title = $model->id;
+$this->title = '';
 $this->params['breadcrumbs'][] = ['label' => 'Tombola', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>

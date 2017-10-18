@@ -2,6 +2,7 @@
 namespace app\controllers;
 
 use app\models\Banner;
+use app\models\NumerosVarios;
 use app\models\Tombola;
 use app\models\TombolaNumero;
 use app\models\User;
@@ -90,15 +91,34 @@ class SiteController extends Controller
     public function actionIndex()
     {
         $banners = Banner::find()->orderBy('orden')->all();
-        if($tombola = Tombola::find()->orderBy(['id' => SORT_DESC])->one()) {
-            $numerosUltimaTomb = TombolaNumero::find()->where(['id_tombola' => $tombola->id])->one();
-        } else{
-            $numerosUltimaTomb = "";
-        }
+
+        // ULTIMA TOMBOLA
+        $tombola = Tombola::find()->orderBy(['id' => SORT_DESC])->one();
+        $numerosUltimaTomb = TombolaNumero::find()->where(['id_tombola' => $tombola->id])->one();
+
+        //ULTIMOS PRIMEROS PREMIOS DE TOMBOLA MATUTINA - VASPERTINA - TARDE - NOCTURA
+        $ult_tomb_mat = Tombola::find()->where(['id_momento' => 1])->orderBy(['id' => SORT_DESC])->one();
+        $primer_premio_mat = TombolaNumero::find()->where(['id_tombola' => $ult_tomb_mat->id])->one();
+
+        $ult_tomb_vesp = Tombola::find()->where(['id_momento' => 2])->orderBy(['id' => SORT_DESC])->one();
+        $primer_premio_vesp = TombolaNumero::find()->where(['id_tombola' => $ult_tomb_vesp->id])->one();
+
+        $ult_tomb_tarde = Tombola::find()->where(['id_momento' => 3])->orderBy(['id' => SORT_DESC])->one();
+        $primer_premio_tarde = TombolaNumero::find()->where(['id_tombola' => $ult_tomb_tarde->id])->one();
+
+        $ult_tomb_noc = Tombola::find()->where(['id_momento' => 4])->orderBy(['id' => SORT_DESC])->one();
+        $primer_premio_noc = TombolaNumero::find()->where(['id_tombola' => $ult_tomb_noc->id])->one();
+
+        $numeros_varios = NumerosVarios::find()->orderBy(['id' => SORT_DESC])->one();
         //var_dump($numerosUltimaTomb);
         return $this->render('index',[
             'banners' => $banners,
             'numerosUltimaTomb' => $numerosUltimaTomb,
+            'primer_premio_mat' => $primer_premio_mat->numero_1,
+            'primer_premio_vesp' => $primer_premio_vesp->numero_1,
+            'primer_premio_tarde' => $primer_premio_tarde->numero_1,
+            'primer_premio_noc' => $primer_premio_noc->numero_1,
+            'numeros_varios' => $numeros_varios,
         ]);
     }
 

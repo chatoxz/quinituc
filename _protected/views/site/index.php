@@ -56,10 +56,10 @@ $this->title = Yii::t('app', Yii::$app->name);
         <!-- SORTEOS -->
         <h3 class="titulo_tabla_sorteos_mat_vesp_tarde_noc">SORTEOS</h3>
         <div class="contenedor_tabla_sorteos_mat_vesp_tarde_noc">
-            <div class="item_tabla_sorteos_mat_vesp_tarde_noc" style="background-color: rgba(87, 255, 53, 0.47)"><div>matutina</div><div>6541</div></div>
-            <div class="item_tabla_sorteos_mat_vesp_tarde_noc" style="background-color: #ffffff"><div>vespertina</div><div>54564</div></div>
-            <div class="item_tabla_sorteos_mat_vesp_tarde_noc" style="background-color: #f3beff"><div>tarde</div><div>8741</div></div>
-            <div class="item_tabla_sorteos_mat_vesp_tarde_noc" style="background-color: #fffd96"><div>nocturna</div><div>1235</div></div>
+            <div class="item_tabla_sorteos_mat_vesp_tarde_noc" style="background-color: rgba(87, 255, 53, 0.47)"><div>Matutina</div><div><?= $primer_premio_mat ?></div></div>
+            <div class="item_tabla_sorteos_mat_vesp_tarde_noc" style="background-color: #ffffff"><div>Vespertina</div><div><?= $primer_premio_vesp ?></div></div>
+            <div class="item_tabla_sorteos_mat_vesp_tarde_noc" style="background-color: #f3beff"><div>Tarde</div><div><?= $primer_premio_tarde ?></div></div>
+            <div class="item_tabla_sorteos_mat_vesp_tarde_noc" style="background-color: #fffd96"><div>Nocturna</div><div><?= $primer_premio_noc ?></div></div>
         </div>
 
         <!-- BANNER -->
@@ -78,10 +78,26 @@ $this->title = Yii::t('app', Yii::$app->name);
                 <span>BATACAZO</span>
             </div>
             <div class="num_atrasado_fav_fija_batacazo">
-                <span>8729</span>
-                <span>4143</span>
-                <span>6388</span>
-                <span>9284</span>
+                <span><?= $numeros_varios->atrasado ?></span>
+                <span><?= $numeros_varios->favorito ?></span>
+                <span><?= $numeros_varios->fija ?></span>
+                <span><?= $numeros_varios->batacazo ?></span>
+            </div>
+        </div>
+        <br><br>
+        <div class="triplona_cuatriplona bottom_margin_20">
+            <div class="triplona">
+                <span>TRIPLONA</span>
+                <span class="pozo_estimado_label">POZO ESTIMADO DEL SORTEO</span>
+                <span>VESPERTINO <?= date(("d/m/y")) ?></span>
+                <span>$<?= number_format($numeros_varios->triplona,0,",","."); ?></span>
+
+            </div>
+            <div class="cuatriplona">
+                <span>CUATRIPLONA</span>
+                <span class="pozo_estimado_label">POZO ESTIMADO DEL SORTEO</span>
+                <span>VESPERTINO <?= date(("d/m/y")) ?></span>
+                <span>$<?= number_format($numeros_varios->cuatriplona,0,",","."); ?></span>
             </div>
         </div>
     </div>

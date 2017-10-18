@@ -31,7 +31,7 @@ $this->registerJs($search);
     <?php 
     $gridColumn = [
         ['class' => 'yii\grid\SerialColumn'],
-        ['attribute' => 'id', 'visible' => false],
+        ['attribute' => 'id', 'visible' => true],
         [
                 'attribute' => 'id_momento',
                 'label' => 'Momento',

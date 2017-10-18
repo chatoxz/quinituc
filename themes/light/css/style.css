@@ -3,6 +3,7 @@ body {
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
     height: 100%;
+    font-family: RRregular;
 }
 
 .wrap {
@@ -132,7 +133,7 @@ div.required label:after {
 
 .role-employee {
     font-weight: bold;
-    color: #800080;    
+    color: #800080;
 }
 
 .role-premium {
@@ -141,8 +142,8 @@ div.required label:after {
 }
 
 .role-member {
-    font-weight: bold;  
-    color: #4c4cff;      
+    font-weight: bold;
+    color: #4c4cff;
 }
 
 /*-- Password strength --*/
@@ -162,16 +163,37 @@ div.required label:after {
 .glyphicon{ font-size: 24px; }
 
 @font-face {
-    font-family: regular;
+    font-family: RRregular;
     src: url("/web/tipografia/raleway/Raleway-Regular.ttf");
 }
 @font-face {
-    font-family: bold;
+    font-family: RRbold;
     src: url("/web/tipografia/raleway/Raleway-Bold.ttf");
 }
 @font-face {
-    font-family: semibold;
+    font-family: RRsemibold;
     src: url("/web/tipografia/raleway/Raleway-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: os_tic_b;
+    src: url("/web/tipografia/serif_OS_ITC/OFFISB.ttf");
+}
+@font-face {
+    font-family: os_tic_b0;
+    src: url("/web/tipografia/serif_OS_ITC/OFFISB_0.ttf");
+}
+@font-face {
+    font-family: os_tic_fb;
+    src: url("/web/tipografia/serif_OS_ITC/OFFISFB.ttf");
+}
+@font-face {
+    font-family: os_tic_fw;
+    src: url("/web/tipografia/serif_OS_ITC/OFFISFW.ttf");
+}
+@font-face {
+    font-family: os_tic_owi;
+    src: url("/web/tipografia/serif_OS_ITC/OFFSFOWI.ttf");
 }
 
 img{
@@ -192,17 +214,17 @@ img{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    /*font-family: bold;*/
+    font-family: os_tic_b;
+    /*font-family: RRbold;*/
 }
 
 .contenedor_banner_ancho{
     display: flex;
+    justify-content: center;
 }
 
 .banner_ancho{
-    border-radius: 5px;
-    border: grey 1px solid;
-    overflow: hidden;
+    width: 100%;
 }
 
 .contenedor_ultimos_resultados{
@@ -282,8 +304,8 @@ img{
     width: 300px;
     margin-bottom: 10px;
     border-radius: 5px;
-    border: grey 1px solid;
-    overflow: hidden;
+    /*border: grey 1px solid;
+    overflow: hidden;*/
 
 }
 .numero_suerte{
@@ -302,6 +324,8 @@ img{
     text-align: center;
     display: flex;
     flex-direction: column;
+    border: grey solid 1px;
+    border-radius: 6px;
 }
 
 .titulo_num_atrasado_fav_fija_batacazo{
@@ -322,12 +346,47 @@ img{
     justify-content: space-evenly;
     align-items: center;
 }
+
+.triplona_cuatriplona{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.triplona, .cuatriplona{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    border: grey solid 1px;
+    width: 47%;
+}
+.triplona > span:first-of-type, .cuatriplona > span:first-of-type{
+    font-size: 24px;
+    background-color: rgba(87, 255, 53, 0.47);
+    text-align: center;
+    width: 100%;
+    padding: 5px 0px;
+}
+.triplona > span:last-of-type, .cuatriplona > span:last-of-type {
+    font-size: 50px;
+}
+
+.pozo_estimado_label{
+    padding-top: 8px;
+}
 .footer_quinituc{
-    background-color: #569c49;
+    background-color: rgba(103, 162, 33, 0.9);
     color: white;
     padding: 20px;
     height: 100px;
+    margin: 0%;
+    width: 100%;
 }
+.footer_quinituc p{
+    position: relative;
+    top:65%;
+}
+
 /* MOBILE VERSION*/
 /* MOBILE VERSION*/
 /* MOBILE VERSION*/
@@ -342,5 +401,12 @@ img{
     }
     .contenedor_tabla_sorteos_mat_vesp_tarde_noc{
         font-size: 14px;
+    }
+}
+
+@media (max-width: 990px) {
+    .contenedor_banners_laterales{
+        flex-direction: row;
+        justify-content: space-evenly;
     }
 }

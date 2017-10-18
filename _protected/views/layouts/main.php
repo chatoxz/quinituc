@@ -48,6 +48,7 @@ AppAsset::register($this);
         if (Yii::$app->user->can('admin')){
             $menuItems[] = ['label' => Yii::t('app', 'Users'), 'url' => ['/user/index']];
             $menuItems[] = ['label' => Yii::t('app', 'Quiniela'), 'url' => ['/tombola/index']];
+            $menuItems[] = ['label' => Yii::t('app', 'Numeros Varios'), 'url' => ['/numeros-varios/index']];
             $menuItems[] = ['label' => Yii::t('app', 'Banners'), 'url' => ['/banner/index']];
         }
 

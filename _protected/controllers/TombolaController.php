@@ -66,8 +66,15 @@ class TombolaController extends Controller
     {
         $model = new Tombola();
 
-        if ($model->loadAll(Yii::$app->request->post()) && $model->saveAll()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+        if ($model->loadAll(Yii::$app->request->post())) {
+            $model->save();
+            $model['tombolaNumero']->id_tombola = $model->id;
+            $model['tombolaNumero']->save();
+            $tombola_numeros = TombolaNumero::findOne(['id_tombola' => $model->id ]);
+            return $this->render('view', [
+                'model' => $model,
+                'tombola_numeros' => $tombola_numeros,
+            ]);
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -87,9 +94,16 @@ class TombolaController extends Controller
         //$tombolaNumero = TombolaNumero::findOne($id);
 
         if ($model->loadAll(Yii::$app->request->post()) ) {
+            $model->save();
+            $model['tombolaNumero']->id_tombola = $model->id;
             $model['tombolaNumero']->save();
-            $model->saveAll();
-            return $this->redirect(['view', 'id' => $model->id]);
+            $tombola_numeros = TombolaNumero::findOne(['id_tombola' => $model->id ]);
+            /*var_dump($model);
+            var_dump($tombola_numeros);*/
+            return $this->render('view', [
+                'model' => $model,
+                'tombola_numeros' => $tombola_numeros,
+            ]);
         } else {
             return $this->render('update', [
                 'model' => $model,
@@ -110,7 +124,7 @@ class TombolaController extends Controller
         return $this->redirect(['index']);
     }
 
-    
+
     /**
      * Finds the Tombola model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
