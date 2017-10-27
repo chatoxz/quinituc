@@ -7,11 +7,6 @@ header("Access-Control-Allow-Headers: *");
 
 $this->title = Yii::t('app', Yii::$app->name);
 ?>
-<div class="row bottom_margin_20">
-    <div class="contenedor_cabecera_roja_telefono col-md-12">
-        <h4><span class="glyphicon glyphicon-earphone" style="padding-right: 10px"></span>0381 4282724</h4>
-    </div>
-</div>
 <br>
 <div class="row bottom_margin_20">
     <div class="contenedor_logo_quinituc_titulo col-md-12   ">

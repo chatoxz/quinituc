@@ -210,7 +210,7 @@ div.required label:after {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    /*font-family: os_tic_b;*/
+    font-family: os_tic_owi;
     /*font-family: RRbold;*/
 }
 
@@ -375,8 +375,8 @@ div.required label:after {
     color: white;
     padding: 20px;
     height: 100px;
-    /*margin: 0%;
-    width: 100%;*/
+    /*margin: 0%;*/
+    width: 100%;
 }
 .footer_quinituc p{
     position: relative;
