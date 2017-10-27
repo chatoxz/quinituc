@@ -210,7 +210,7 @@ div.required label:after {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    font-family: os_tic_b;
+    /*font-family: os_tic_b;*/
     /*font-family: RRbold;*/
 }
 
