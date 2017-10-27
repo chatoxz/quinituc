@@ -26,12 +26,12 @@ AppAsset::register($this);
 </head>
 <body>
 <?php $this->beginBody() ?>
-<div class="wrap">
-    <div class="row bottom_margin_20">
-        <div class="contenedor_cabecera_roja_telefono col-md-12">
-            <h4><span class="glyphicon glyphicon-earphone" style="padding-right: 10px"></span>0381 4282724</h4>
-        </div>
+<div class="contenedor_cabecera_roja_telefono">
+    <div class="sub_contenedor_cabecera_roja_telefono" >
+        <h4><span class="glyphicon glyphicon-earphone" style="padding-right: 10px"></span>0381 4282724</h4>
     </div>
+</div>
+<div class="wrap">
     <?php
     if(!Yii::$app->user->isGuest){
         NavBar::begin([
@@ -91,8 +91,11 @@ AppAsset::register($this);
         <?= $content ?>
     </div>
 </div>
-<div class="container footer_quinituc" >
-    <p class="pull-left" style="padding-left: 15px">Todos los Derechos Reservados / QUINITUC 2017 <a class="face_icon" href="https://www.facebook.com/QuiniTuccom-136939513520005/" target="_blank"> <img src="../img/fb-icon.png" alt=""></a></p>
+
+<div class="wrap_footer_quinituc" >
+    <div class="footer_quinituc">
+        <h4>Todos los Derechos Reservados / QUINITUC 2017 <a class="face_icon" href="https://www.facebook.com/QuiniTuccom-136939513520005/" target="_blank"> <img src="../img/fb-icon.png" alt=""></a></h4>
+    </div>
     <!-- <p class="pull-right"><?= Yii::powered() ?></p> -->
 </div>
 

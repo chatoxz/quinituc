@@ -197,11 +197,19 @@ div.required label:after {
 }
 
 .contenedor_cabecera_roja_telefono{
+    display: inline-block;
     background-color:#CC1401;
-    height:40px;
+    min-height:40px !important;
     color: white;
-    display: flex;
-    justify-content: flex-end;
+    width: 100%;
+    margin: 0 auto;
+    text-align: right;
+}
+.sub_contenedor_cabecera_roja_telefono{
+    max-width: 1170px;
+    width: 83%;
+    margin: 0 auto;
+
 }
 
 .contenedor_logo_quinituc_titulo{
@@ -370,19 +378,22 @@ div.required label:after {
 .pozo_estimado_label{
     padding-top: 8px;
 }
-.footer_quinituc{
+.wrap_footer_quinituc{
+    display: inline-block;
+    margin: 0 auto;
     background-color: rgba(103, 162, 33, 0.9);
     color: white;
-    padding: 20px;
+    text-align: left;
     height: 100px;
-    /*margin: 0%;*/
     width: 100%;
 }
-.footer_quinituc p{
-    position: relative;
-    width: 100%;
-   /* top:65%;*/
+
+.footer_quinituc{
+    max-width: 1170px;
+    margin: 0 auto;
+    width: 83%;
 }
+
 .face_icon{
     float:right;
 }
@@ -393,6 +404,7 @@ div.required label:after {
 /* MOBILE VERSION*/
 /* MOBILE VERSION*/
 /* MOBILE VERSION*/
+
 
 @media (max-width: 768px) {
     .contenedor_logo_quinituc_titulo{
