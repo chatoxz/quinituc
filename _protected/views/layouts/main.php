@@ -20,6 +20,8 @@ AppAsset::register($this);
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="/img/favicon.fw.png" type="image/x-icon" />
+
     <?php $this->head() ?>
 </head>
 <body>

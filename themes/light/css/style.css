@@ -224,7 +224,7 @@ div.required label:after {
 }
 
 .contenedor_ultimos_resultados{
-    border: black solid 1px;
+    border: grey solid 1px;
     border-radius: 5px;
 }
 
