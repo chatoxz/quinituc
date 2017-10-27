@@ -3,7 +3,7 @@ body {
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
     height: 100%;
-    font-family: RRregular;
+    font-family: RRbold !important;
 }
 
 .wrap {
