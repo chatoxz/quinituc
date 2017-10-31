@@ -167,6 +167,13 @@ div.required label:after {
     src: url("/themes/light/tipografia/raleway/Raleway-Regular.ttf");
 }
 @font-face {
+    font-family: os_tic_owi;
+    src: url("/themes/light/tipografia/serif/OFFSFOWI.TTF") format("truetype");
+}
+
+
+/*
+@font-face {
     font-family: RRbold;
     src: url("/themes/light/tipografia/raleway/Raleway-Bold.ttf");
 }
@@ -174,6 +181,8 @@ div.required label:after {
     font-family: RRsemibold;
     src: url("/themes/light/tipografia/raleway/Raleway-SemiBold.ttf");
 }
+
+
 
 @font-face {
     font-family: os_tic_b;
@@ -190,11 +199,8 @@ div.required label:after {
 @font-face {
     font-family: os_tic_fw;
     src: url("/themes/light/tipografia/serif_OS_ITC/OFFISFW.ttf");
-}
-@font-face {
-    font-family: os_tic_owi;
-    src: url("/themes/light/tipografia/serif_OS_ITC/OFFSFOWI.ttf");
-}
+}*/
+
 
 .contenedor_cabecera_roja_telefono{
     display: inline-block;
@@ -213,13 +219,14 @@ div.required label:after {
 }
 
 .contenedor_logo_quinituc_titulo{
-    color: rgba(0, 128, 0, 0.78);
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    font-family: os_tic_owi;
-    /*font-family: RRbold;*/
+}
+.lema{
+    font-family: os_tic_owi !important;
+    color: rgba(0, 128, 0, 0.78);
 }
 
 .contenedor_banner_ancho{
@@ -355,6 +362,7 @@ div.required label:after {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    text-align: center;
 }
 .triplona, .cuatriplona{
     display: flex;
@@ -405,6 +413,18 @@ div.required label:after {
 /* MOBILE VERSION*/
 /* MOBILE VERSION*/
 
+
+@media (max-width: 450px) {
+    .triplona > span:first-of-type, .cuatriplona > span:first-of-type{
+            font-size: 17px;
+    }
+    .pozo_estimado_label{
+        font-size: 12px;
+    }
+    .triplona > span:last-of-type, .cuatriplona > span:last-of-type {
+        font-size: 30px;
+    }
+}
 
 @media (max-width: 768px) {
     .contenedor_logo_quinituc_titulo{

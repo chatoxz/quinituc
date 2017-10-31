@@ -11,7 +11,7 @@ $this->title = Yii::t('app', Yii::$app->name);
 <div class="row bottom_margin_20">
     <div class="contenedor_logo_quinituc_titulo col-md-12   ">
         <a href="<?= 'http://127.0.13.1/' ?>"><img src="../img/logo.quinituc.jpg" width="164" height="auto"></a>
-        <h3>"EL JUEGO LEGAL AYUDA A LA COMUNIDAD"</h3>
+        <h3 class="lema">"EL JUEGO LEGAL AYUDA A LA COMUNIDAD"</h3>
         <!--<img src="../img/bolsa.fw.png" width="168" height="121">-->
     </div>
 </div>
