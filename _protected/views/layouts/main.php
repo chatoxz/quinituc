@@ -28,7 +28,9 @@ AppAsset::register($this);
 <?php $this->beginBody() ?>
 <div class="contenedor_cabecera_roja_telefono">
     <div class="sub_contenedor_cabecera_roja_telefono" >
-        <h4><span class="glyphicon glyphicon-earphone" style="padding-right: 10px"></span>0381 4282724</h4>
+        <h4><span><img height="30px" src="/img/wa-icon2.png" alt=""></span>381 5864880
+            <!-- <span class="glyphicon glyphicon-earphone" style="padding-right: 10px"></span>-->
+        </h4>
     </div>
 </div>
 <div class="wrap">

@@ -1,6 +1,9 @@
 <?php
 /* @var $this yii\web\View */
 
+use kartik\helpers\Html;
+use yii\helpers\Url;
+
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: PUT, GET, POST, DELETE, OPTIONS");
 header("Access-Control-Allow-Headers: *");
@@ -10,14 +13,14 @@ $this->title = Yii::t('app', Yii::$app->name);
 <br>
 <div class="row bottom_margin_20">
     <div class="contenedor_logo_quinituc_titulo col-md-12   ">
-        <a href="<?= 'http://127.0.13.1/' ?>"><img src="../img/logo.quinituc.jpg" width="164" height="auto"></a>
+        <a href="<?= '/index.php' ?>"><img src="../img/logo.quinituc.jpg" width="164" height="auto"></a>
         <h3 class="lema">"EL JUEGO LEGAL AYUDA A LA COMUNIDAD"</h3>
         <!--<img src="../img/bolsa.fw.png" width="168" height="121">-->
     </div>
 </div>
 <div class="row bottom_margin_20">
     <div class="col-md-12 contenedor_banner_ancho">
-        <a class="banner_ancho" href="<?= $banners[0]->link; ?>"><img src="../img/banners/<?= $banners[0]->foto; ?>" width="100%" height="auto"></a>
+        <a class="banner_ancho" href="<?= $banners[0]->link; ?>" target="_blank"><img src="../img/banners/<?= $banners[0]->foto; ?>" width="100%" height="auto"></a>
     </div>
 </div>
 <div class="row ">
@@ -25,6 +28,7 @@ $this->title = Yii::t('app', Yii::$app->name);
     <div class="col-md-8">
         <div class="contenedor_ultimos_resultados bottom_margin_40">
             <h3 class="titulo_ultimos_resultados"> ÚLTIMOS RESULTADOS DE LA QUINIELA</h3>
+            <h3 class="titulo_ultimos_resultados_momento"><?php echo $momento_ult_tombola ; ?></h3>
             <div class="contenedor_numeros_tombola bottom_margin_20">
                 <div class="numero_tombola">1º <?php echo " ".$numerosUltimaTomb->numero_1 ; ?> </div>
                 <div class="numero_tombola">2º <?php echo " ".$numerosUltimaTomb->numero_2 ; ?> </div>
@@ -47,7 +51,13 @@ $this->title = Yii::t('app', Yii::$app->name);
                 <div class="numero_tombola">19º <?php echo " ".$numerosUltimaTomb->numero_19 ; ?> </div>
                 <div class="numero_tombola">20º <?php echo " ".$numerosUltimaTomb->numero_20 ; ?> </div>
             </div>
+            <div class="imprimir_tombola">
+                <?php $url = Url::to(["/imprimir", 'id_tombola' => $numerosUltimaTomb->id_tombola]);
+                echo Html::a('<span class="">Imprimir Tombola</span>', $url, ['target'=> '_blank']);
+                ?>
+            </div>
         </div>
+
         <!-- SORTEOS -->
         <h3 class="titulo_tabla_sorteos_mat_vesp_tarde_noc">SORTEOS</h3>
         <div class="contenedor_tabla_sorteos_mat_vesp_tarde_noc">
@@ -59,7 +69,7 @@ $this->title = Yii::t('app', Yii::$app->name);
 
         <!-- BANNER -->
         <br>        <br>        <br>
-        <a href="<?= $banners[9]->link; ?>">
+        <a href="<?= $banners[9]->link; ?>"  target="_blank">
             <img class="banner_desp_sorteos" src="../img/banners/<?= $banners[9]->foto; ?>">
         </a>
         <br>        <br>        <br>
@@ -100,40 +110,17 @@ $this->title = Yii::t('app', Yii::$app->name);
     <div class="col-md-4">
         <div class="contenedor_banners_laterales">
             <h4 class="numero_suerte"><span style="color: red;font-weight: bold">TU NUMERO DE LA SUERTE</span><span style="font-size: 24px">6587</span></h4>
-            <a class="banners_laterales"  href="<?= $banners[1]->link; ?>"><img src="../img/banners/<?= $banners[1]->foto; ?>" width="300" height="105"></a>
-            <a class="banners_laterales"  href="<?= $banners[2]->link; ?>"><img src="../img/banners/<?= $banners[2]->foto; ?>" width="300" height="105"></a>
-            <a class="banners_laterales"  href="<?= $banners[3]->link; ?>"><img src="../img/banners/<?= $banners[3]->foto; ?>" width="300" height="105"></a>
-            <a class="banners_laterales"  href="<?= $banners[4]->link; ?>"><img src="../img/banners/<?= $banners[4]->foto; ?>" width="300" height="105"></a>
-            <a class="banners_laterales"  href="<?= $banners[5]->link; ?>"><img src="../img/banners/<?= $banners[5]->foto; ?>" width="300" height="105"></a>
-            <a class="banners_laterales"  href="<?= $banners[6]->link; ?>"><img src="../img/banners/<?= $banners[6]->foto; ?>" width="300" height="105"></a>
-            <a class="banners_laterales"  href="<?= $banners[7]->link; ?>"><img src="../img/banners/<?= $banners[7]->foto; ?>" width="300" height="105"></a>
-            <a class="banners_laterales"  href="<?= $banners[8]->link; ?>"><img src="../img/banners/<?= $banners[8]->foto; ?>" width="300" height="105"></a>
+            <a class="banners_laterales"  href="<?= $banners[1]->link; ?>" target="_blank"><img src="../img/banners/<?= $banners[1]->foto; ?>" width="300" height="105"></a>
+            <a class="banners_laterales"  href="<?= $banners[2]->link; ?>" target="_blank"><img src="../img/banners/<?= $banners[2]->foto; ?>" width="300" height="105"></a>
+            <a class="banners_laterales"  href="<?= $banners[3]->link; ?>" target="_blank"><img src="../img/banners/<?= $banners[3]->foto; ?>" width="300" height="105"></a>
+            <a class="banners_laterales"  href="<?= $banners[4]->link; ?>" target="_blank"><img src="../img/banners/<?= $banners[4]->foto; ?>" width="300" height="105"></a>
+            <a class="banners_laterales"  href="<?= $banners[5]->link; ?>" target="_blank"><img src="../img/banners/<?= $banners[5]->foto; ?>" width="300" height="105"></a>
+            <a class="banners_laterales"  href="<?= $banners[6]->link; ?>" target="_blank"><img src="../img/banners/<?= $banners[6]->foto; ?>" width="300" height="105"></a>
+            <a class="banners_laterales"  href="<?= $banners[7]->link; ?>" target="_blank"><img src="../img/banners/<?= $banners[7]->foto; ?>" width="300" height="105"></a>
+            <a class="banners_laterales"  href="<?= $banners[8]->link; ?>" target="_blank"><img src="../img/banners/<?= $banners[8]->foto; ?>" width="300" height="105"></a>
         </div>
     </div>
 </div>
-<!--
-<div class="gototop js-top">
-    <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
-</div>
--->
-<!-- Main
-<div class="gtco-container">
-    <div class="row copyright">
-        <div class="col-md-12">
-            <p class="pull-left"> <small class="block">&copy; 2017 Todos los Derechos Reservados</small> <small class="block">QUINITUC <a href="http://unsplash.co/" target="_blank"></a></small> </p>
-            <p class="pull-right">
-            <ul class="gtco-social-icons pull-right">
-                <li><a href="#"><i class="icon-twitter"></i></a></li>
-                <li><a href="#"><i class="icon-facebook"></i></a></li>
-                <li><a href="#"><i class="icon-linkedin"></i></a></li>
-                <li><a href="#"><i class="icon-dribbble"></i></a></li>
-            </ul>
-            <p></p>
-        </div>
-    </div>
-</div>
-<script src="js/main.js"></script>
 
--->
 </body>
 </html>

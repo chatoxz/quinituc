@@ -248,6 +248,16 @@ div.required label:after {
     color: rgba(0, 128, 0, 0.78);;
     text-align: center;
 }
+
+.titulo_ultimos_resultados_momento, .imprimir_tombola{
+    width: 100%;
+    /*color: rgba(0, 128, 0, 0.78);;*/
+    text-align: center;
+}
+.imprimir_tombola a{
+    text-decoration: none;
+
+}
 .contenedor_numeros_tombola{
     display: flex;
     flex-wrap: wrap;

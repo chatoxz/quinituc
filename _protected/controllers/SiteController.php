@@ -4,6 +4,7 @@ namespace app\controllers;
 use app\models\Banner;
 use app\models\NumerosVarios;
 use app\models\Tombola;
+use app\models\TombolaMomento;
 use app\models\TombolaNumero;
 use app\models\User;
 use app\models\LoginForm;
@@ -12,6 +13,7 @@ use app\models\PasswordResetRequestForm;
 use app\models\ResetPasswordForm;
 use app\models\SignupForm;
 use app\models\ContactForm;
+use mPDF;
 use yii\helpers\Html;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
@@ -93,8 +95,8 @@ class SiteController extends Controller
         $banners = Banner::find()->orderBy('orden')->all();
 
         // ULTIMA TOMBOLA
-        $tombola = Tombola::find()->orderBy(['id' => SORT_DESC])->one();
-        $numerosUltimaTomb = TombolaNumero::find()->where(['id_tombola' => $tombola->id])->one();
+        $ult_tombola = Tombola::find()->orderBy(['id' => SORT_DESC])->one();
+        $numerosUltimaTomb = TombolaNumero::find()->where(['id_tombola' => $ult_tombola->id])->one();
 
         //ULTIMOS PRIMEROS PREMIOS DE TOMBOLA MATUTINA - VASPERTINA - TARDE - NOCTURA
         $ult_tomb_mat = Tombola::find()->where(['id_momento' => 1])->orderBy(['id' => SORT_DESC])->one();
@@ -119,8 +121,67 @@ class SiteController extends Controller
             'primer_premio_tarde' => $primer_premio_tarde->numero_1,
             'primer_premio_noc' => $primer_premio_noc->numero_1,
             'numeros_varios' => $numeros_varios,
+            'momento_ult_tombola' => TombolaMomento::findOne(['id' => $ult_tombola->id_momento])->nombre,
         ]);
     }
+
+    /**
+     *
+     *
+     * @return string
+     */
+    public function actionImprimir($id_tombola)
+    {
+        $ult_tombola = Tombola::findOne(['id' => $id_tombola]);
+        $momento_ult_tombola = TombolaMomento::findOne(['id' => $ult_tombola->id_momento])->nombre;
+        $numerosUltimaTomb   = TombolaNumero::find()->where(['id_tombola' => $id_tombola])->one();
+
+        $html = '
+        <div class="row bottom_margin_20" style="text-align: center">
+            <div class="col-md-12" style="display: block;margin: auto">
+                <a><img src="../img/logo.quinituc.jpg" width="164" height="auto"></a>
+                <h3 class="lema">"EL JUEGO LEGAL AYUDA A LA COMUNIDAD"</h3>
+            </div>
+        </div>
+        <div class="contenedor_ultimos_resultados bottom_margin_40">
+            <h3 class="titulo_ultimos_resultados"> ÚLTIMOS RESULTADOS DE LA QUINIELA</h3>
+            <h3 class="titulo_ultimos_resultados_momento">'.$momento_ult_tombola.'</h3>
+            <div class="contenedor_numeros_tombola bottom_margin_20" style="width: 49%;float: left">
+                <div class="numero_tombola">1º '.$numerosUltimaTomb->numero_1.' </div>
+                <div class="numero_tombola">2º '.$numerosUltimaTomb->numero_2.' </div>
+                <div class="numero_tombola">3º '.$numerosUltimaTomb->numero_3.' </div>
+                <div class="numero_tombola">4º '.$numerosUltimaTomb->numero_4.' </div>
+                <div class="numero_tombola">5º '.$numerosUltimaTomb->numero_5.' </div>
+                <div class="numero_tombola">6º '.$numerosUltimaTomb->numero_6.' </div>
+                <div class="numero_tombola">7º '.$numerosUltimaTomb->numero_7.' </div>
+                <div class="numero_tombola">8º '.$numerosUltimaTomb->numero_8.' </div>
+                <div class="numero_tombola">9º '.$numerosUltimaTomb->numero_9.' </div>
+                <div class="numero_tombola">10º '.$numerosUltimaTomb->numero_10.' </div>
+            </div>
+            <div class="contenedor_numeros_tombola bottom_margin_20" style="width: 49%;float: left">
+                <div class="numero_tombola">11º '.$numerosUltimaTomb->numero_11.' </div>
+                <div class="numero_tombola">12º '.$numerosUltimaTomb->numero_12.' </div>
+                <div class="numero_tombola">13º '.$numerosUltimaTomb->numero_13.' </div>
+                <div class="numero_tombola">14º '.$numerosUltimaTomb->numero_14.' </div>
+                <div class="numero_tombola">15º '.$numerosUltimaTomb->numero_15.' </div>
+                <div class="numero_tombola">16º '.$numerosUltimaTomb->numero_16.' </div>
+                <div class="numero_tombola">17º '.$numerosUltimaTomb->numero_17.' </div>
+                <div class="numero_tombola">18º '.$numerosUltimaTomb->numero_18.' </div>
+                <div class="numero_tombola">19º '.$numerosUltimaTomb->numero_19.' </div>
+                <div class="numero_tombola">20º '.$numerosUltimaTomb->numero_20.' </div>
+            </div>
+        </div>';
+
+        $mpdf = new mPDF();
+        $css = file_get_contents('themes/light/css/style.css');
+        $mpdf->WriteHTML($css, 1);
+        $mpdf->WriteHTML($html);
+        $mpdf->Output();
+        exit;
+       
+    }
+
+
 
     /**
      * Displays the about static page.
