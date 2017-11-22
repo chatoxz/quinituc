@@ -18,7 +18,7 @@ use yii\helpers\Url;
     <div class="col-md-12" style=" display: flex; flex-wrap: wrap; justify-content: space-around; flex-direction: row;font-size: 18px;">
         <?php foreach ($todas_tombolas as $tombola){ ?>
             <?php $url = Url::to(["/sorteos_anteriores", 'fecha' => $tombola->fecha]);
-            echo Html::a('<span>'.$tombola->fecha.'</span>', $url, ['target'=> '_blank','class'=> 'col-md-2',
+            echo Html::a('<span>'.$tombola->fecha.'</span>', $url, ['class'=> 'col-md-2',
                 'style' => 'border: grey 1px solid; border-radius: 5px;text-align: center;margin: 5px 5px']); ?><?php } ?>
     </div>
 </div>
