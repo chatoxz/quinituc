@@ -16,6 +16,7 @@ use app\models\ContactForm;
 use mPDF;
 use yii\helpers\Html;
 use yii\base\InvalidParamException;
+use yii\helpers\VarDumper;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
@@ -115,6 +116,7 @@ class SiteController extends Controller
         //var_dump($numerosUltimaTomb);
         return $this->render('index',[
             'banners' => $banners,
+            'ult_tombola' => $ult_tombola,
             'numerosUltimaTomb' => $numerosUltimaTomb,
             'primer_premio_mat' => $primer_premio_mat->numero_1,
             'primer_premio_vesp' => $primer_premio_vesp->numero_1,
@@ -184,6 +186,25 @@ class SiteController extends Controller
 
 
     /**
+     * Displays the sorteos anteriores.
+     *
+     * @return string
+     */
+    public function actionSorteos_anteriores($fecha)
+    {
+        $ulti_tombolas = Tombola::find()->where(["fecha" => $fecha ])->all();
+        $todas_tombolas = Tombola::find()->limit(120)->all();
+        //$tombola = Tombola::find()->where(["fecha" => $fecha ])->one();
+        //VarDumper::dump($tombola);
+        //echo TombolaMomento::find()->where(["id" => $tombola->getMomento()->one()])->one();
+        return $this->render('sorteos_anteriores',[
+            'ulti_tombolas' => $ulti_tombolas,
+            'todas_tombolas' => $todas_tombolas,
+        ]);
+    }
+
+
+ /**
      * Displays the about static page.
      *
      * @return string

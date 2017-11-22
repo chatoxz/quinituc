@@ -28,7 +28,7 @@ $this->title = Yii::t('app', Yii::$app->name);
     <div class="col-md-8">
         <div class="contenedor_ultimos_resultados bottom_margin_40">
             <h3 class="titulo_ultimos_resultados"> ÚLTIMOS RESULTADOS DE LA QUINIELA</h3>
-            <h3 class="titulo_ultimos_resultados_momento"><?php echo $momento_ult_tombola ; ?></h3>
+            <h3 class="titulo_ultimos_resultados_momento"><?php echo $momento_ult_tombola." ".Yii::$app->formatter->asDate($ult_tombola->fecha, 'd/M/Y'); ; ?></h3>
             <div class="contenedor_numeros_tombola bottom_margin_20">
                 <div class="numero_tombola">1º <?php echo " ".$numerosUltimaTomb->numero_1 ; ?> </div>
                 <div class="numero_tombola">2º <?php echo " ".$numerosUltimaTomb->numero_2 ; ?> </div>
@@ -52,9 +52,11 @@ $this->title = Yii::t('app', Yii::$app->name);
                 <div class="numero_tombola">20º <?php echo " ".$numerosUltimaTomb->numero_20 ; ?> </div>
             </div>
             <div class="imprimir_tombola">
+                Los datos son solamente informativos y no revisten valor legal.<br>
+                <?php $url = Url::to(["/sorteos_anteriores", 'fecha' => $ult_tombola->fecha]); ?>
+                <?= Html::a('<span class="">Sorteos Anteriores</span>', $url , ['target'=> '_blank']); ?><br>
                 <?php $url = Url::to(["/imprimir", 'id_tombola' => $numerosUltimaTomb->id_tombola]);
-                echo Html::a('<span class="">Imprimir Tombola</span>', $url, ['target'=> '_blank']);
-                ?>
+                echo Html::a('<span class="">Imprimir Tombola</span>', $url, ['target'=> '_blank']); ?>
             </div>
         </div>
 
