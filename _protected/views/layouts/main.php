@@ -17,6 +17,13 @@ AppAsset::register($this);
 <head>
     <meta charset="<?= Yii::$app->charset ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:url"           content="https://www.your-domain.com/your-page.html" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="Quinituc" />
+    <meta property="og:description"   content="Compartir" />
+    <meta property="og:image"         content="https://www.quinituc/img/logo.quinituc.jpg" />
+
     <?= Html::csrfMetaTags() ?>
     <title>Quinituc</title>
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>

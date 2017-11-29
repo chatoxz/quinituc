@@ -54,10 +54,12 @@ use yii\helpers\Url;
                     <div class="numero_tombola">19º <?php echo " ".$numerosUltimaTomb->numero_19 ; ?> </div>
                     <div class="numero_tombola">20º <?php echo " ".$numerosUltimaTomb->numero_20 ; ?> </div>
                 </div>
-                <div class="imprimir_tombola">
-                    Los datos son solamente informativos y no revisten valor legal.<br>
-                    <?php $url = Url::to(["/imprimir", 'id_tombola' => $numerosUltimaTomb->id_tombola]);
-                    echo Html::a('<span class="">Imprimir Tombola</span>', $url, ['target'=> '_blank']); ?>
+                <div class="wrap_impr_ult_sort_face bottom_margin_20">
+                    <div class="imprimir_tombola">
+                        Los datos son solamente informativos y no revisten valor legal.<br>
+                        <?php $url = Url::to(["/imprimir", 'id_tombola' => $numerosUltimaTomb->id_tombola]);
+                        echo Html::a('<span class="">Imprimir Tombola</span>', $url, ['target'=> '_blank']); ?>
+                    </div>
                 </div>
             </div>
         </div>

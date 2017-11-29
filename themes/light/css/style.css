@@ -249,12 +249,37 @@ div.required label:after {
     text-align: center;
 }
 
-.titulo_ultimos_resultados_momento, .imprimir_tombola{
+.titulo_ultimos_resultados_momento, .wrap_impr_ult_sort_face{
     width: 100%;
     /*color: rgba(0, 128, 0, 0.78);;*/
     text-align: center;
 }
-.imprimir_tombola a{
+.link_ultimo_sorteo, .link_imprimir_tombola {
+    background-color: #4267b2;
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 11px;
+    opacity: 0.9;
+    font-weight: 700;
+    margin-top: 15px;
+}
+.link_ultimo_sorteo:hover, .link_imprimir_tombola:hover {
+    background-color: #4267b2;
+    color: white;
+    opacity: 1;
+}
+.wrap_face_links{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.fb-like{
+    max-width: 350px;
+}
+
+
+.wrap_impr_ult_sort_face a{
     text-decoration: none;
 
 }

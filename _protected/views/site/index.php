@@ -26,7 +26,7 @@ $this->title = Yii::t('app', Yii::$app->name);
 <div class="row ">
     <!-- COLUMNA IZQ -->
     <div class="col-md-8">
-        <div class="contenedor_ultimos_resultados bottom_margin_40">
+        <div href="#contenedor_ultimos_resultados" class="contenedor_ultimos_resultados bottom_margin_40">
             <h3 class="titulo_ultimos_resultados"> ÚLTIMOS RESULTADOS DE LA QUINIELA</h3>
             <h3 class="titulo_ultimos_resultados_momento"><?php echo $momento_ult_tombola." ".Yii::$app->formatter->asDate($ult_tombola->fecha, 'd/M/Y'); ; ?></h3>
             <div class="contenedor_numeros_tombola bottom_margin_20">
@@ -51,12 +51,28 @@ $this->title = Yii::t('app', Yii::$app->name);
                 <div class="numero_tombola">19º <?php echo " ".$numerosUltimaTomb->numero_19 ; ?> </div>
                 <div class="numero_tombola">20º <?php echo " ".$numerosUltimaTomb->numero_20 ; ?> </div>
             </div>
-            <div class="imprimir_tombola">
+            <div class="wrap_impr_ult_sort_face bottom_margin_20">
                 Los datos son solamente informativos y no revisten valor legal.<br>
                 <?php $url = Url::to(["/sorteos_anteriores", 'fecha' => $ult_tombola->fecha]); ?>
-                <?= Html::a('<span class="">Sorteos Anteriores</span>', $url , ['target'=> '_blank']); ?><br>
+                <?= Html::a('<span class="">Sorteos Anteriores</span>', $url , ['target'=> '_blank','class' => 'link_ultimo_sorteo']); ?>
                 <?php $url = Url::to(["/imprimir", 'id_tombola' => $numerosUltimaTomb->id_tombola]);
-                echo Html::a('<span class="">Imprimir Tombola</span>', $url, ['target'=> '_blank']); ?>
+                echo Html::a('<span class="">Imprimir Tombola</span>', $url, ['target'=> '_blank','class' => 'link_imprimir_tombola']); ?>
+
+                <div id="fb-root"></div>
+                <?php $url = Url::to(["sorteo_individual", 'id_tombola' => $ult_tombola->id]); ?>
+                <?= $url = "quinituc.appe.com.ar".$url; ?>
+                <div class="wrap_face_links">
+                    <div class="fb-like"
+                         data-href="<?= $url ?>"
+                         data-layout="standard"
+                         data-action="like"
+                         data-show-faces="true">
+                    </div>
+                    <div class="fb-share-button"
+                         data-href="<?= $url ?>"
+                         data-layout="button_count">
+                    </div>
+                </div>
             </div>
         </div>
 
