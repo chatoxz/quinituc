@@ -67,13 +67,13 @@ $this->title = Yii::t('app', Yii::$app->name);
                 <?php $url = Url::to(["sorteo_individual", 'id_tombola' => $ult_tombola->id]); ?>
                 <div id="fb-root"></div>
                 <div class="wrap_face_links">
-                    <div class="fb-like"
+                    <div class="fb-like col-md-12"
                          data-href="<?= $url ?>"
                          data-layout="standard"
                          data-action="like"
                          data-show-faces="true">
                     </div>
-                    <div class="fb-share-button"
+                    <div class="fb-share-button col-md-12"
                          data-href="<?= $url ?>"
                          data-layout="button_count">
                     </div>

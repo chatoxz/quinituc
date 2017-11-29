@@ -269,13 +269,15 @@ div.required label:after {
     color: white;
     opacity: 1;
 }
+
 .wrap_face_links{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    overflow: hidden;
 }
-.fb-like{
-    max-width: 350px;
+.fb-like, .fb-share-button{
+    margin-top: 10px;
 }
 
 
@@ -332,6 +334,7 @@ div.required label:after {
     flex-direction: column;
     justify-content: space-evenly;
     border-radius: 5px;
+    overflow-x: hidden;
 }
 
 .banner_desp_sorteos{
@@ -459,6 +462,12 @@ div.required label:after {
     .triplona > span:last-of-type, .cuatriplona > span:last-of-type {
         font-size: 30px;
     }
+}
+@media (max-width: 500px) {
+.fb-like span {
+    max-width: 278px;
+    overflow: hidden;
+}
 }
 
 @media (max-width: 768px) {
