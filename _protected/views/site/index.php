@@ -10,6 +10,12 @@ header("Access-Control-Allow-Headers: *");
 
 $this->title = Yii::t('app', Yii::$app->name);
 ?>
+<?php //CONFIG FOR FACEBOOK ?>
+<?php $url = Url::to(["sorteo_individual", 'id_tombola' => $ult_tombola->id]); ?>
+<head>
+    <meta property="og:url" content="<?= "http://quinituc.appe.com.ar".$url ?>" />
+</head>
+
 <br>
 <div class="row bottom_margin_20">
     <div class="contenedor_logo_quinituc_titulo col-md-12   ">
@@ -58,9 +64,8 @@ $this->title = Yii::t('app', Yii::$app->name);
                 <?php $url = Url::to(["/imprimir", 'id_tombola' => $numerosUltimaTomb->id_tombola]);
                 echo Html::a('<span class="">Imprimir Tombola</span>', $url, ['target'=> '_blank','class' => 'link_imprimir_tombola']); ?>
 
-                <div id="fb-root"></div>
                 <?php $url = Url::to(["sorteo_individual", 'id_tombola' => $ult_tombola->id]); ?>
-                <?= $url = "quinituc.appe.com.ar".$url; ?>
+                <div id="fb-root"></div>
                 <div class="wrap_face_links">
                     <div class="fb-like"
                          data-href="<?= $url ?>"

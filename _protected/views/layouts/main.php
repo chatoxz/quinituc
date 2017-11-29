@@ -18,11 +18,10 @@ AppAsset::register($this);
     <meta charset="<?= Yii::$app->charset ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta property="og:url"           content="https://www.your-domain.com/your-page.html" />
     <meta property="og:type"          content="website" />
     <meta property="og:title"         content="Quinituc" />
     <meta property="og:description"   content="Compartir" />
-    <meta property="og:image"         content="https://www.quinituc/img/logo.quinituc.jpg" />
+    <meta property="og:image"         content="http://quinituc.appe.com.ar/img/logo.quinituc2.jpg" />
 
     <?= Html::csrfMetaTags() ?>
     <title>Quinituc</title>

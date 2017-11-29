@@ -264,7 +264,7 @@ div.required label:after {
     font-weight: 700;
     margin-top: 15px;
 }
-.link_ultimo_sorteo:hover, .link_imprimir_tombola:hover {
+.link_ultimo_sorteo:hover, .link_imprimir_tombola:hover, .link_imprimir_tombola:visited, .link_ultimo_sorteo:visited{
     background-color: #4267b2;
     color: white;
     opacity: 1;
