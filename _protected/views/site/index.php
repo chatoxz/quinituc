@@ -13,7 +13,7 @@ $this->title = Yii::t('app', Yii::$app->name);
 <?php //CONFIG FOR FACEBOOK ?>
 <?php $url = Url::to(["sorteo_individual", 'id_tombola' => $ult_tombola->id]); ?>
 <head>
-    <meta property="og:url" content="<?= "http://quinituc.appe.com.ar".$url ?>" />
+    <meta property="og:url" content="<?= "http://quinituc.appe.com.ar" . $url ?>" />
 </head>
 
 <br>
@@ -34,35 +34,35 @@ $this->title = Yii::t('app', Yii::$app->name);
     <div class="col-md-8">
         <div href="#contenedor_ultimos_resultados" class="contenedor_ultimos_resultados bottom_margin_40">
             <h3 class="titulo_ultimos_resultados"> ÚLTIMOS RESULTADOS DE LA QUINIELA</h3>
-            <h3 class="titulo_ultimos_resultados_momento"><?php echo $momento_ult_tombola." ".Yii::$app->formatter->asDate($ult_tombola->fecha, 'd/M/Y'); ; ?></h3>
+            <h3 class="titulo_ultimos_resultados_momento"><?php echo $momento_ult_tombola . " " . Yii::$app->formatter->asDate($ult_tombola->fecha, 'd/M/Y');; ?></h3>
             <div class="contenedor_numeros_tombola bottom_margin_20">
-                <div class="numero_tombola">1º <?php echo " ".$numerosUltimaTomb->numero_1 ; ?> </div>
-                <div class="numero_tombola">2º <?php echo " ".$numerosUltimaTomb->numero_2 ; ?> </div>
-                <div class="numero_tombola">3º <?php echo " ".$numerosUltimaTomb->numero_3 ; ?> </div>
-                <div class="numero_tombola">4º <?php echo " ".$numerosUltimaTomb->numero_4 ; ?> </div>
-                <div class="numero_tombola">5º <?php echo " ".$numerosUltimaTomb->numero_5 ; ?> </div>
-                <div class="numero_tombola">6º <?php echo " ".$numerosUltimaTomb->numero_6 ; ?> </div>
-                <div class="numero_tombola">7º <?php echo " ".$numerosUltimaTomb->numero_7 ; ?> </div>
-                <div class="numero_tombola">8º <?php echo " ".$numerosUltimaTomb->numero_8 ; ?> </div>
-                <div class="numero_tombola">9º <?php echo " ".$numerosUltimaTomb->numero_9 ; ?> </div>
-                <div class="numero_tombola">10º <?php echo " ".$numerosUltimaTomb->numero_10 ; ?> </div>
-                <div class="numero_tombola">11º <?php echo " ".$numerosUltimaTomb->numero_11 ; ?> </div>
-                <div class="numero_tombola">12º <?php echo " ".$numerosUltimaTomb->numero_12 ; ?> </div>
-                <div class="numero_tombola">13º <?php echo " ".$numerosUltimaTomb->numero_13 ; ?> </div>
-                <div class="numero_tombola">14º <?php echo " ".$numerosUltimaTomb->numero_14 ; ?> </div>
-                <div class="numero_tombola">15º <?php echo " ".$numerosUltimaTomb->numero_15 ; ?> </div>
-                <div class="numero_tombola">16º <?php echo " ".$numerosUltimaTomb->numero_16 ; ?> </div>
-                <div class="numero_tombola">17º <?php echo " ".$numerosUltimaTomb->numero_17 ; ?> </div>
-                <div class="numero_tombola">18º <?php echo " ".$numerosUltimaTomb->numero_18 ; ?> </div>
-                <div class="numero_tombola">19º <?php echo " ".$numerosUltimaTomb->numero_19 ; ?> </div>
-                <div class="numero_tombola">20º <?php echo " ".$numerosUltimaTomb->numero_20 ; ?> </div>
+                 <div class="numero_tombola">1º <?php echo " " . substr("000" . $numerosUltimaTomb->numero_1, -4); ?> </div>
+                <div class="numero_tombola">2º <?php echo " " . substr("000" . $numerosUltimaTomb->numero_2, -4); ?> </div>
+                <div class="numero_tombola">3º <?php echo " " . substr("000" . $numerosUltimaTomb->numero_3, -4); ?> </div>
+                <div class="numero_tombola">4º <?php echo " " . substr("000" . $numerosUltimaTomb->numero_4, -4); ?> </div>
+                <div class="numero_tombola">5º <?php echo " " . substr("000" . $numerosUltimaTomb->numero_5, -4); ?> </div>
+                <div class="numero_tombola">6º <?php echo " " . substr("000" . $numerosUltimaTomb->numero_6, -4); ?> </div>
+                <div class="numero_tombola">7º <?php echo " " . substr("000" . $numerosUltimaTomb->numero_7, -4); ?> </div>
+                <div class="numero_tombola">8º <?php echo " " . substr("000" . $numerosUltimaTomb->numero_8, -4); ?> </div>
+                <div class="numero_tombola">9º <?php echo " " . substr("000" . $numerosUltimaTomb->numero_9, -4); ?> </div>
+                <div class="numero_tombola">10º <?php echo " " . substr("000" . $numerosUltimaTomb->numero_10, -4); ?> </div>
+                <div class="numero_tombola">11º <?php echo " " . substr("000" . $numerosUltimaTomb->numero_11, -4); ?> </div>
+                <div class="numero_tombola">12º <?php echo " " . substr("000" . $numerosUltimaTomb->numero_12, -4); ?> </div>
+                <div class="numero_tombola">13º <?php echo " " . substr("000" . $numerosUltimaTomb->numero_13, -4); ?> </div>
+                <div class="numero_tombola">14º <?php echo " " . substr("000" . $numerosUltimaTomb->numero_14, -4); ?> </div>
+                <div class="numero_tombola">15º <?php echo " " . substr("000" . $numerosUltimaTomb->numero_15, -4); ?> </div>
+                <div class="numero_tombola">16º <?php echo " " . substr("000" . $numerosUltimaTomb->numero_16, -4); ?> </div>
+                <div class="numero_tombola">17º <?php echo " " . substr("000" . $numerosUltimaTomb->numero_17, -4); ?> </div>
+                <div class="numero_tombola">18º <?php echo " " . substr("000" . $numerosUltimaTomb->numero_18, -4); ?> </div>
+                <div class="numero_tombola">19º <?php echo " " . substr("000" . $numerosUltimaTomb->numero_19, -4); ?> </div>
+                <div class="numero_tombola">20º <?php echo " " . substr("000" . $numerosUltimaTomb->numero_20, -4); ?> </div>
             </div>
             <div class="wrap_impr_ult_sort_face bottom_margin_20">
                 Los datos son solamente informativos y no revisten valor legal.<br>
                 <?php $url = Url::to(["/sorteos_anteriores", 'fecha' => $ult_tombola->fecha]); ?>
-                <?= Html::a('<span class="">Sorteos Anteriores</span>', $url , ['target'=> '_blank','class' => 'link_ultimo_sorteo']); ?>
+                <?= Html::a('<span class="">Sorteos Anteriores</span>', $url, ['target' => '_blank', 'class' => 'link_ultimo_sorteo']); ?>
                 <?php $url = Url::to(["/imprimir", 'id_tombola' => $numerosUltimaTomb->id_tombola]);
-                echo Html::a('<span class="">Imprimir Tombola</span>', $url, ['target'=> '_blank','class' => 'link_imprimir_tombola']); ?>
+                echo Html::a('<span class="">Imprimir Tombola</span>', $url, ['target' => '_blank', 'class' => 'link_imprimir_tombola']); ?>
 
                 <?php $url = Url::to(["sorteo_individual", 'id_tombola' => $ult_tombola->id]); ?>
                 <div id="fb-root"></div>
@@ -84,16 +84,16 @@ $this->title = Yii::t('app', Yii::$app->name);
         <!-- SORTEOS -->
         <h3 class="titulo_tabla_sorteos_mat_vesp_tarde_noc">SORTEOS</h3>
         <div class="contenedor_tabla_sorteos_mat_vesp_tarde_noc">
-            <div class="item_tabla_sorteos_mat_vesp_tarde_noc" style="background-color: rgba(87, 255, 53, 0.47)"><div>Matutina</div><div><?= $primer_premio_mat ?></div></div>
-            <div class="item_tabla_sorteos_mat_vesp_tarde_noc" style="background-color: #ffffff"><div>Vespertina</div><div><?= $primer_premio_vesp ?></div></div>
-            <div class="item_tabla_sorteos_mat_vesp_tarde_noc" style="background-color: #f3beff"><div>Tarde</div><div><?= $primer_premio_tarde ?></div></div>
-            <div class="item_tabla_sorteos_mat_vesp_tarde_noc" style="background-color: #fffd96"><div>Nocturna</div><div><?= $primer_premio_noc ?></div></div>
+             <div class="item_tabla_sorteos_mat_vesp_tarde_noc" style="background-color: rgba(87, 255, 53, 0.47)"><div>Matutina</div><div><?= substr("000" . $primer_premio_mat, -4) ?></div></div>
+            <div class="item_tabla_sorteos_mat_vesp_tarde_noc" style="background-color: #ffffff"><div>Vespertina</div><div><?= substr("000" . $primer_premio_vesp, -4) ?></div></div>
+            <div class="item_tabla_sorteos_mat_vesp_tarde_noc" style="background-color: #f3beff"><div>Tarde</div><div><?= substr("000" . $primer_premio_tarde, -4) ?></div></div>
+            <div class="item_tabla_sorteos_mat_vesp_tarde_noc" style="background-color: #fffd96"><div>Nocturna</div><div><?= substr("000" . $primer_premio_noc, -4) ?></div></div>
         </div>
 
         <!-- BANNER -->
         <br>        <br>        <br>
-        <a href="<?= $banners[9]->link; ?>"  target="_blank">
-            <img class="banner_desp_sorteos" src="../img/banners/<?= $banners[9]->foto; ?>">
+        <a href="<?= $banners[1]->link; ?>"  target="_blank">
+            <img class="banner_desp_sorteos" src="../img/banners/<?= $banners[1]->foto; ?>">
         </a>
         <br>        <br>        <br>
 
@@ -106,10 +106,10 @@ $this->title = Yii::t('app', Yii::$app->name);
                 <span>BATACAZO</span>
             </div>
             <div class="num_atrasado_fav_fija_batacazo">
-                <span><?= $numeros_varios->atrasado ?></span>
-                <span><?= $numeros_varios->favorito ?></span>
-                <span><?= $numeros_varios->fija ?></span>
-                <span><?= $numeros_varios->batacazo ?></span>
+                <span><?= substr("0" . $numeros_varios->atrasado, -2) ?></span>
+                <span><?= substr("0" . $numeros_varios->favorito, -2) ?></span>
+                <span><?= substr("0" . $numeros_varios->fija, -2) ?></span>
+                <span><?= substr("0" . $numeros_varios->batacazo, -2) ?></span>
             </div>
         </div>
         <br><br>
@@ -118,14 +118,14 @@ $this->title = Yii::t('app', Yii::$app->name);
                 <span>TRIPLONA</span>
                 <span class="pozo_estimado_label">POZO ESTIMADO DEL SORTEO</span>
                 <span>VESPERTINO <?= date(("d/m/y")) ?></span>
-                <span>$<?= number_format($numeros_varios->triplona,0,",","."); ?></span>
+                <span>$<?= number_format($numeros_varios->triplona, 2, ",", "."); ?></span>
 
             </div>
             <div class="cuatriplona">
                 <span>CUATRIPLONA</span>
                 <span class="pozo_estimado_label">POZO ESTIMADO DEL SORTEO</span>
                 <span>VESPERTINO <?= date(("d/m/y")) ?></span>
-                <span>$<?= number_format($numeros_varios->cuatriplona,0,",","."); ?></span>
+                <span>$<?= number_format($numeros_varios->cuatriplona, 2, ",", "."); ?></span>
             </div>
         </div>
     </div>
@@ -133,14 +133,13 @@ $this->title = Yii::t('app', Yii::$app->name);
     <div class="col-md-4">
         <div class="contenedor_banners_laterales">
             <h4 class="numero_suerte"><span style="color: red;font-weight: bold">TU NUMERO DE LA SUERTE</span><span style="font-size: 24px">6587</span></h4>
-            <a class="banners_laterales"  href="<?= $banners[1]->link; ?>" target="_blank"><img src="../img/banners/<?= $banners[1]->foto; ?>" width="300" height="105"></a>
-            <a class="banners_laterales"  href="<?= $banners[2]->link; ?>" target="_blank"><img src="../img/banners/<?= $banners[2]->foto; ?>" width="300" height="105"></a>
-            <a class="banners_laterales"  href="<?= $banners[3]->link; ?>" target="_blank"><img src="../img/banners/<?= $banners[3]->foto; ?>" width="300" height="105"></a>
-            <a class="banners_laterales"  href="<?= $banners[4]->link; ?>" target="_blank"><img src="../img/banners/<?= $banners[4]->foto; ?>" width="300" height="105"></a>
-            <a class="banners_laterales"  href="<?= $banners[5]->link; ?>" target="_blank"><img src="../img/banners/<?= $banners[5]->foto; ?>" width="300" height="105"></a>
-            <a class="banners_laterales"  href="<?= $banners[6]->link; ?>" target="_blank"><img src="../img/banners/<?= $banners[6]->foto; ?>" width="300" height="105"></a>
-            <a class="banners_laterales"  href="<?= $banners[7]->link; ?>" target="_blank"><img src="../img/banners/<?= $banners[7]->foto; ?>" width="300" height="105"></a>
-            <a class="banners_laterales"  href="<?= $banners[8]->link; ?>" target="_blank"><img src="../img/banners/<?= $banners[8]->foto; ?>" width="300" height="105"></a>
+            <?php 
+            $flag = 0;
+            foreach ($banners as $key => $banner) { 
+                if($flag > 1){ ?>
+                    <a class="banners_laterales"  href="<?= $banner->link; ?>" target="_blank"><img src="../img/banners/<?= $banner->foto; ?>" width="300" height="105"></a>
+                <?php }
+                $flag++; } ?>
         </div>
     </div>
 </div>

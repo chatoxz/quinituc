@@ -29,6 +29,16 @@ AppAsset::register($this);
     <link rel="shortcut icon" href="/img/favicon.fw.png" type="image/x-icon" />
 
     <?php $this->head() ?>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129593460-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-129593460-1');
+    </script>
+
 </head>
 <body>
 <?php $this->beginBody() ?>
@@ -101,10 +111,16 @@ AppAsset::register($this);
 </div>
 
 <div class="wrap_footer_quinituc" >
-    <div class="footer_quinituc">
-        <h4>Todos los Derechos Reservados / QUINITUC 2017 <a class="face_icon" href="https://www.facebook.com/QuiniTuccom-136939513520005/" target="_blank"> <img src="../img/fb-icon.png" alt=""></a></h4>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 footer_quinituc" style="">
+                <div style="float: left;margin-right: 10px">Todos los Derechos Reservados / QUINITUC 2017</div>
+                <a style="margin-right: 10px" class="appe_link clearfix" href="https://www.appe.com.ar" target="_blank">Desarrollado por AppE Studio<img style="margin-left: 10px" src="../img/APPE.png" alt=""></a>
+                <a style="margin-right: 10px" class="face_icon" href="https://www.facebook.com/QuiniTuccom-136939513520005/" target="_blank"><img src="../img/fb-icon.png" alt=""></a>
+            </div>
+        </div>
     </div>
-    <!-- <p class="pull-right"><?= Yii::powered() ?></p> -->
+    <!-- <p class="pull-right"><?php //echo Yii::powered() ?></p> -->
 </div>
 
 

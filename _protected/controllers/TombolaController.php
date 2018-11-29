@@ -65,11 +65,14 @@ class TombolaController extends Controller
     public function actionCreate()
     {
         $model = new Tombola();
+        $numeros = new TombolaNumero();
 
-        if ($model->loadAll(Yii::$app->request->post())) {
+        if ($model->load(Yii::$app->request->post()) && $numeros->load(Yii::$app->request->post())) {
+            //$model->save();
+            $model->id = (Tombola::find()->orderBy(['id'=> SORT_DESC])->one()->id) + 1;
             $model->save();
-            $model['tombolaNumero']->id_tombola = $model->id;
-            $model['tombolaNumero']->save();
+            $numeros->id_tombola = $model->id;
+            $numeros->save();
             $tombola_numeros = TombolaNumero::findOne(['id_tombola' => $model->id ]);
             return $this->render('view', [
                 'model' => $model,
@@ -119,7 +122,11 @@ class TombolaController extends Controller
      */
     public function actionDelete($id)
     {
-        $this->findModel($id)->deleteWithRelated();
+       $model = $this->findModel($id);
+        $numeros = TombolaNumero::findOne(['id_tombola' => $model->id]);
+        if ($numeros->delete()){
+            $model->delete();
+        }
 
         return $this->redirect(['index']);
     }

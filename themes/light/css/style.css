@@ -425,7 +425,7 @@ div.required label:after {
     padding-top: 8px;
 }
 .wrap_footer_quinituc{
-    display: inline-block;
+    /*display: inline-block;*/
     margin: 0 auto;
     background-color: rgba(103, 162, 33, 0.9);
     color: white;
@@ -435,9 +435,12 @@ div.required label:after {
 }
 
 .footer_quinituc{
-    max-width: 1170px;
-    margin: 0 auto;
-    width: 83%;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .face_icon{
@@ -446,7 +449,14 @@ div.required label:after {
 .face_icon img{
     height: 38px;
 }
-
+.appe_link{
+    color: white;
+    float: right;
+}
+.appe_link:hover, .appe_link:focus{
+    text-decoration: none;
+    color: white;
+}
 /* MOBILE VERSION*/
 /* MOBILE VERSION*/
 /* MOBILE VERSION*/
@@ -454,7 +464,7 @@ div.required label:after {
 
 @media (max-width: 450px) {
     .triplona > span:first-of-type, .cuatriplona > span:first-of-type{
-            font-size: 17px;
+        font-size: 17px;
     }
     .pozo_estimado_label{
         font-size: 12px;
@@ -464,10 +474,10 @@ div.required label:after {
     }
 }
 @media (max-width: 500px) {
-.fb-like span {
-    max-width: 278px;
-    overflow: hidden;
-}
+    .fb-like span {
+        max-width: 278px;
+        overflow: hidden;
+    }
 }
 
 @media (max-width: 768px) {
@@ -489,3 +499,4 @@ div.required label:after {
         justify-content: space-evenly;
     }
 }
+

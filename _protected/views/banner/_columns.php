@@ -14,7 +14,7 @@ return [
     ],
     // [
     // 'class'=>'\kartik\grid\DataColumn',
-    // 'attribute'=>'id',
+     'attribute'=>'id',
     // ],
     [
         'class'=>'\kartik\grid\DataColumn',

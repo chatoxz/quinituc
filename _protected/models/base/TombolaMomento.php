@@ -69,7 +69,7 @@ class TombolaMomento extends \yii\db\ActiveRecord
      * @inheritdoc
      * @return array mixed
      */ 
-    public function behaviors()
+   /* public function behaviors()
     {
         return [
             'timestamp' => [
@@ -88,7 +88,7 @@ class TombolaMomento extends \yii\db\ActiveRecord
                 'column' => 'id',
             ],
         ];
-    }
+    }*/
 
     /**
      * @inheritdoc

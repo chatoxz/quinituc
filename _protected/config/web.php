@@ -4,7 +4,7 @@ $params = require(__DIR__ . '/params.php');
 
 $config = [
     'id' => 'basic',
-    'name' => 'BASIC',
+    'name' => 'Quinituc',
     'language' => 'es',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log', 'app\components\Aliases'],
@@ -44,21 +44,21 @@ $config = [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'EX1qEGWqDHgDnbuc6bHTE28UIEHY5Bz6',
         ],
-        // you can set your theme here - template comes with: 'light' and 'dark'
+        // ESTA DESACTIVADO XQ DAN ERROR LOS GLYPH ICONS, PARA ACTIVARLO DE VUELTA DESCOMENTAR assetmanager QUE ESTA ABAJO
         'view' => [
             'theme' => [
                 'pathMap' => ['@app/views' => '@webroot/themes/light/views'],
                 'baseUrl' => '@web/themes/light',
             ],
         ],
-        'assetManager' => [
+        /*'assetManager' => [
             'bundles' => [
                 // we will use bootstrap css from our theme
                 'yii\bootstrap\BootstrapAsset' => [
                     'css' => [], // do not use yii default one
                 ],
             ],
-        ],
+        ],*/
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
@@ -112,12 +112,12 @@ $config = [
             'translations' => [
                 'app*' => [
                     'class' => 'yii\i18n\PhpMessageSource',
-                    'basePath' => '@app/translations',
+                    'basePath' => 'translations',
                     'sourceLanguage' => 'en',
                 ],
                 'yii' => [
                     'class' => 'yii\i18n\PhpMessageSource',
-                    'basePath' => '@app/translations',
+                    'basePath' => 'translations',
                     'sourceLanguage' => 'en'
                 ],
             ],
