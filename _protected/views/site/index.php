@@ -34,7 +34,7 @@ $this->title = Yii::t('app', Yii::$app->name);
     <div class="col-md-8">
         <div href="#contenedor_ultimos_resultados" class="contenedor_ultimos_resultados bottom_margin_40">
             <h3 class="titulo_ultimos_resultados"> ÚLTIMOS RESULTADOS DE LA QUINIELA</h3>
-            <h3 class="titulo_ultimos_resultados_momento"><?php echo $momento_ult_tombola . " " . Yii::$app->formatter->asDate($ult_tombola->fecha, 'd/M/Y');; ?></h3>
+            <h3 class="titulo_ultimos_resultados_momento"><?php echo $momento_ult_tombola . " " . Yii::$app->formatter->asDate($ult_tombola->fecha, 'd/M/Y'); ?></h3>
             <div class="contenedor_numeros_tombola bottom_margin_20">
                  <div class="numero_tombola">1º <?php echo " " . substr("000" . $numerosUltimaTomb->numero_1, -4); ?> </div>
                 <div class="numero_tombola">2º <?php echo " " . substr("000" . $numerosUltimaTomb->numero_2, -4); ?> </div>

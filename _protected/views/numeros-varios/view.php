@@ -17,6 +17,7 @@ use yii\widgets\DetailView;
             'batacazo',
             'triplona',
             'cuatriplona',
+            'suerte',
         ],
     ]) ?>
 

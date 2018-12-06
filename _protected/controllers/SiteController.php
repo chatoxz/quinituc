@@ -81,9 +81,9 @@ class SiteController extends Controller
         ];
     }
 
-//------------------------------------------------------------------------------------------------//
-// STATIC PAGES
-//------------------------------------------------------------------------------------------------//
+    //------------------------------------------------------------------------------------------------//
+    // STATIC PAGES
+    //------------------------------------------------------------------------------------------------//
 
     /**
      * Displays the index (home) page.
@@ -96,25 +96,25 @@ class SiteController extends Controller
         $banners = Banner::find()->orderBy('orden')->all();
 
         // ULTIMA TOMBOLA
-        $ult_tombola = Tombola::find()->orderBy(['id' => SORT_DESC])->one();
+        $ult_tombola = Tombola::find()->orderBy(['fecha' => SORT_DESC, 'id_momento' => SORT_DESC])->one();
         $numerosUltimaTomb = TombolaNumero::find()->where(['id_tombola' => $ult_tombola->id])->one();
 
         //ULTIMOS PRIMEROS PREMIOS DE TOMBOLA MATUTINA - VASPERTINA - TARDE - NOCTURA
-        $ult_tomb_mat = Tombola::find()->where(['id_momento' => 1])->orderBy(['id' => SORT_DESC])->one();
+        $ult_tomb_mat = Tombola::find()->where(['id_momento' => 1])->orderBy(['fecha' => SORT_DESC])->one();
         $primer_premio_mat = TombolaNumero::find()->where(['id_tombola' => $ult_tomb_mat->id])->one();
 
-        $ult_tomb_vesp = Tombola::find()->where(['id_momento' => 2])->orderBy(['id' => SORT_DESC])->one();
+        $ult_tomb_vesp = Tombola::find()->where(['id_momento' => 2])->orderBy(['fecha' => SORT_DESC])->one();
         $primer_premio_vesp = TombolaNumero::find()->where(['id_tombola' => $ult_tomb_vesp->id])->one();
 
-        $ult_tomb_tarde = Tombola::find()->where(['id_momento' => 3])->orderBy(['id' => SORT_DESC])->one();
+        $ult_tomb_tarde = Tombola::find()->where(['id_momento' => 3])->orderBy(['fecha' => SORT_DESC])->one();
         $primer_premio_tarde = TombolaNumero::find()->where(['id_tombola' => $ult_tomb_tarde->id])->one();
 
-        $ult_tomb_noc = Tombola::find()->where(['id_momento' => 4])->orderBy(['id' => SORT_DESC])->one();
+        $ult_tomb_noc = Tombola::find()->where(['id_momento' => 4])->orderBy(['fecha' => SORT_DESC])->one();
         $primer_premio_noc = TombolaNumero::find()->where(['id_tombola' => $ult_tomb_noc->id])->one();
 
         $numeros_varios = NumerosVarios::find()->orderBy(['id' => SORT_DESC])->one();
         //var_dump($numerosUltimaTomb);
-        return $this->render('index',[
+        return $this->render('index', [
             'banners' => $banners,
             'ult_tombola' => $ult_tombola,
             'numerosUltimaTomb' => $numerosUltimaTomb,
@@ -129,7 +129,7 @@ class SiteController extends Controller
     public function actionSorteo_individual($id_tombola)
     {
         $tombola = Tombola::find()->where(["id" => $id_tombola ])->one();
-        return $this->render('sorteo_individual',[
+        return $this->render('sorteo_individual', [
             'tombola' => $tombola,
         ]);
     }
@@ -154,31 +154,33 @@ class SiteController extends Controller
         </div>
         <div class="contenedor_ultimos_resultados bottom_margin_40">
             <h3 class="titulo_ultimos_resultados"> ÚLTIMOS RESULTADOS DE LA QUINIELA</h3>
-            <h3 class="titulo_ultimos_resultados_momento">'.$momento_ult_tombola.'</h3>
-            <div class="contenedor_numeros_tombola bottom_margin_20" style="width: 49%;float: left">
-                <div class="numero_tombola">1º '.$numerosUltimaTomb->numero_1.' </div>
-                <div class="numero_tombola">2º '.$numerosUltimaTomb->numero_2.' </div>
-                <div class="numero_tombola">3º '.$numerosUltimaTomb->numero_3.' </div>
-                <div class="numero_tombola">4º '.$numerosUltimaTomb->numero_4.' </div>
-                <div class="numero_tombola">5º '.$numerosUltimaTomb->numero_5.' </div>
-                <div class="numero_tombola">6º '.$numerosUltimaTomb->numero_6.' </div>
-                <div class="numero_tombola">7º '.$numerosUltimaTomb->numero_7.' </div>
-                <div class="numero_tombola">8º '.$numerosUltimaTomb->numero_8.' </div>
-                <div class="numero_tombola">9º '.$numerosUltimaTomb->numero_9.' </div>
-                <div class="numero_tombola">10º '.$numerosUltimaTomb->numero_10.' </div>
+            <h3 class="titulo_ultimos_resultados_momento">'.$momento_ult_tombola. ' ' . Yii::$app->formatter->asDate($ult_tombola->fecha, 'd/M/Y').'</h3>
+        <div style="padding-left: 120px">
+            <div class="contenedor_numeros_tombola bottom_margin_20" style="width: 49%;float: left;font-size: 34px">
+                <div class="numero_tombola">1º '." " . substr("000" . $numerosUltimaTomb->numero_1, -4).' </div>
+                <div class="numero_tombola">2º '." " . substr("000" . $numerosUltimaTomb->numero_2, -4).' </div>
+                <div class="numero_tombola">3º '." " . substr("000" . $numerosUltimaTomb->numero_3, -4).' </div>
+                <div class="numero_tombola">4º '." " . substr("000" . $numerosUltimaTomb->numero_4, -4).' </div>
+                <div class="numero_tombola">5º '." " . substr("000" . $numerosUltimaTomb->numero_5, -4).' </div>
+                <div class="numero_tombola">6º '." " . substr("000" . $numerosUltimaTomb->numero_6, -4).' </div>
+                <div class="numero_tombola">7º '." " . substr("000" . $numerosUltimaTomb->numero_7, -4).' </div>
+                <div class="numero_tombola">8º '." " . substr("000" . $numerosUltimaTomb->numero_8, -4).' </div>
+                <div class="numero_tombola">9º '." " . substr("000" . $numerosUltimaTomb->numero_9, -4).' </div>
+                <div class="numero_tombola">10º '." " . substr("000" . $numerosUltimaTomb->numero_10, -4).' </div>
             </div>
-            <div class="contenedor_numeros_tombola bottom_margin_20" style="width: 49%;float: left">
-                <div class="numero_tombola">11º '.$numerosUltimaTomb->numero_11.' </div>
-                <div class="numero_tombola">12º '.$numerosUltimaTomb->numero_12.' </div>
-                <div class="numero_tombola">13º '.$numerosUltimaTomb->numero_13.' </div>
-                <div class="numero_tombola">14º '.$numerosUltimaTomb->numero_14.' </div>
-                <div class="numero_tombola">15º '.$numerosUltimaTomb->numero_15.' </div>
-                <div class="numero_tombola">16º '.$numerosUltimaTomb->numero_16.' </div>
-                <div class="numero_tombola">17º '.$numerosUltimaTomb->numero_17.' </div>
-                <div class="numero_tombola">18º '.$numerosUltimaTomb->numero_18.' </div>
-                <div class="numero_tombola">19º '.$numerosUltimaTomb->numero_19.' </div>
-                <div class="numero_tombola">20º '.$numerosUltimaTomb->numero_20.' </div>
+            <div class="contenedor_numeros_tombola bottom_margin_20" style="width: 49%;float: left;font-size: 34px">     
+                <div class="numero_tombola">11º '." " . substr("000" . $numerosUltimaTomb->numero_11, -4).' </div>
+                <div class="numero_tombola">12º '." " . substr("000" . $numerosUltimaTomb->numero_12, -4).' </div>
+                <div class="numero_tombola">13º '." " . substr("000" . $numerosUltimaTomb->numero_13, -4).' </div>
+                <div class="numero_tombola">14º '." " . substr("000" . $numerosUltimaTomb->numero_14, -4).' </div>
+                <div class="numero_tombola">15º '." " . substr("000" . $numerosUltimaTomb->numero_15, -4).' </div>
+                <div class="numero_tombola">16º '." " . substr("000" . $numerosUltimaTomb->numero_16, -4).' </div>
+                <div class="numero_tombola">17º '." " . substr("000" . $numerosUltimaTomb->numero_17, -4).' </div>
+                <div class="numero_tombola">18º '." " . substr("000" . $numerosUltimaTomb->numero_18, -4).' </div>
+                <div class="numero_tombola">19º '." " . substr("000" . $numerosUltimaTomb->numero_19, -4).' </div>
+                <div class="numero_tombola">20º '." " . substr("000" . $numerosUltimaTomb->numero_20, -4).' </div>
             </div>
+        </div>
         </div>';
 
         $mpdf = new mPDF();
@@ -187,7 +189,6 @@ class SiteController extends Controller
         $mpdf->WriteHTML($html);
         $mpdf->Output();
         exit;
-       
     }
 
 
@@ -199,23 +200,23 @@ class SiteController extends Controller
      */
     public function actionSorteos_anteriores($fecha)
     {
-        $ulti_tombolas = Tombola::find()->where(["fecha" => $fecha ])->all();
-        $todas_tombolas = Tombola::find()->limit(120)->all();
+        $ulti_tombolas  = Tombola::find()->where(["fecha" => $fecha ])->all();
+        $todas_tombolas = Tombola::find()->groupBy(['fecha'])->limit(120)->all();
         //$tombola = Tombola::find()->where(["fecha" => $fecha ])->one();
         //VarDumper::dump($tombola);
         //echo TombolaMomento::find()->where(["id" => $tombola->getMomento()->one()])->one();
-        return $this->render('sorteos_anteriores',[
+        return $this->render('sorteos_anteriores', [
             'ulti_tombolas' => $ulti_tombolas,
             'todas_tombolas' => $todas_tombolas,
         ]);
     }
 
 
- /**
-     * Displays the about static page.
-     *
-     * @return string
-     */
+    /**
+        * Displays the about static page.
+        *
+        * @return string
+        */
     public function actionAbout()
     {
         return $this->render('about');
@@ -239,15 +240,17 @@ class SiteController extends Controller
             return $this->refresh();
         }
 
-        Yii::$app->session->setFlash('success', Yii::t('app',
-            'Thank you for contacting us. We will respond to you as soon as possible.'));
+        Yii::$app->session->setFlash('success', Yii::t(
+            'app',
+            'Thank you for contacting us. We will respond to you as soon as possible.'
+        ));
 
         return $this->refresh();
     }
 
-//------------------------------------------------------------------------------------------------//
-// LOG IN / LOG OUT / PASSWORD RESET
-//------------------------------------------------------------------------------------------------//
+    //------------------------------------------------------------------------------------------------//
+    // LOG IN / LOG OUT / PASSWORD RESET
+    //------------------------------------------------------------------------------------------------//
 
     /**
      * Logs in the user if his account is activated,
@@ -278,8 +281,10 @@ class SiteController extends Controller
 
         // if user's account is not activated, he will have to activate it first
         if ($model->status === User::STATUS_INACTIVE && $successfulLogin === false) {
-            Yii::$app->session->setFlash('error', Yii::t('app',
-                'You have to activate your account first. Please check your email.'));
+            Yii::$app->session->setFlash('error', Yii::t(
+                'app',
+                'You have to activate your account first. Please check your email.'
+            ));
             return $this->refresh();
         }
 
@@ -322,8 +327,10 @@ class SiteController extends Controller
         }
 
         if (!$model->sendEmail()) {
-            Yii::$app->session->setFlash('error', Yii::t('app',
-                'Sorry, we are unable to reset password for email provided.'));
+            Yii::$app->session->setFlash('error', Yii::t(
+                'app',
+                'Sorry, we are unable to reset password for email provided.'
+            ));
             return $this->refresh();
         }
 
@@ -357,9 +364,9 @@ class SiteController extends Controller
         return $this->goHome();
     }
 
-//------------------------------------------------------------------------------------------------//
-// SIGN UP / ACCOUNT ACTIVATION
-//------------------------------------------------------------------------------------------------//
+    //------------------------------------------------------------------------------------------------//
+    // SIGN UP / ACCOUNT ACTIVATION
+    //------------------------------------------------------------------------------------------------//
 
     /**
      * Signs up the user.
@@ -423,8 +430,10 @@ class SiteController extends Controller
         // sending email has failed
         if (!$model->sendAccountActivationEmail($user)) {
             // display error message to user
-            Yii::$app->session->setFlash('error', Yii::t('app',
-                'We couldn\'t send you account activation email, please contact us.'));
+            Yii::$app->session->setFlash('error', Yii::t(
+                'app',
+                'We couldn\'t send you account activation email, please contact us.'
+            ));
 
             // log this error, so we can debug possible problem easier.
             Yii::error('Signup failed! User '.Html::encode($user->username).' could not sign up. 
@@ -458,8 +467,10 @@ class SiteController extends Controller
         }
 
         if (!$user->activateAccount()) {
-            Yii::$app->session->setFlash('error', Html::encode($user->username). Yii::t('app',
-                    ' your account could not be activated, please contact us!'));
+            Yii::$app->session->setFlash('error', Html::encode($user->username). Yii::t(
+                'app',
+                    ' your account could not be activated, please contact us!'
+            ));
             return $this->goHome();
         }
 

@@ -39,6 +39,10 @@ return [
         'attribute'=>'cuatriplona',
     ],
     [
+        'class'=>'\kartik\grid\DataColumn',
+        'attribute'=>'suerte',
+    ],
+    [
         'class' => 'kartik\grid\ActionColumn',
         'dropdown' => false,
         'vAlign'=>'middle',
