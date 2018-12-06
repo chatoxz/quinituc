@@ -81,9 +81,9 @@ class SiteController extends Controller
         ];
     }
 
-    //------------------------------------------------------------------------------------------------//
-    // STATIC PAGES
-    //------------------------------------------------------------------------------------------------//
+//------------------------------------------------------------------------------------------------//
+// STATIC PAGES
+//------------------------------------------------------------------------------------------------//
 
     /**
      * Displays the index (home) page.
@@ -114,7 +114,7 @@ class SiteController extends Controller
 
         $numeros_varios = NumerosVarios::find()->orderBy(['id' => SORT_DESC])->one();
         //var_dump($numerosUltimaTomb);
-        return $this->render('index', [
+        return $this->render('index',[
             'banners' => $banners,
             'ult_tombola' => $ult_tombola,
             'numerosUltimaTomb' => $numerosUltimaTomb,
@@ -129,7 +129,7 @@ class SiteController extends Controller
     public function actionSorteo_individual($id_tombola)
     {
         $tombola = Tombola::find()->where(["id" => $id_tombola ])->one();
-        return $this->render('sorteo_individual', [
+        return $this->render('sorteo_individual',[
             'tombola' => $tombola,
         ]);
     }
@@ -152,11 +152,13 @@ class SiteController extends Controller
                 <h3 class="lema">"EL JUEGO LEGAL AYUDA A LA COMUNIDAD"</h3>
             </div>
         </div>
-        <div class="contenedor_ultimos_resultados bottom_margin_40">
+        <div class="contenedor_ultimos_resultados bottom_margin_40" style="font-size: 20px">
             <h3 class="titulo_ultimos_resultados"> ÚLTIMOS RESULTADOS DE LA QUINIELA</h3>
             <h3 class="titulo_ultimos_resultados_momento">'.$momento_ult_tombola. ' ' . Yii::$app->formatter->asDate($ult_tombola->fecha, 'd/M/Y').'</h3>
-        <div style="padding-left: 120px">
-            <div class="contenedor_numeros_tombola bottom_margin_20" style="width: 49%;float: left;font-size: 34px">
+
+
+          <div style="padding-left: 120px;padding-top: 40px">
+            <div class="contenedor_numeros_tombola bottom_margin_20" style="width: 49%;float: left;font-size: 30px">
                 <div class="numero_tombola">1º '." " . substr("000" . $numerosUltimaTomb->numero_1, -4).' </div>
                 <div class="numero_tombola">2º '." " . substr("000" . $numerosUltimaTomb->numero_2, -4).' </div>
                 <div class="numero_tombola">3º '." " . substr("000" . $numerosUltimaTomb->numero_3, -4).' </div>
@@ -168,7 +170,7 @@ class SiteController extends Controller
                 <div class="numero_tombola">9º '." " . substr("000" . $numerosUltimaTomb->numero_9, -4).' </div>
                 <div class="numero_tombola">10º '." " . substr("000" . $numerosUltimaTomb->numero_10, -4).' </div>
             </div>
-            <div class="contenedor_numeros_tombola bottom_margin_20" style="width: 49%;float: left;font-size: 34px">     
+            <div class="contenedor_numeros_tombola bottom_margin_20" style="width: 49%;float: left;font-size: 30px">
                 <div class="numero_tombola">11º '." " . substr("000" . $numerosUltimaTomb->numero_11, -4).' </div>
                 <div class="numero_tombola">12º '." " . substr("000" . $numerosUltimaTomb->numero_12, -4).' </div>
                 <div class="numero_tombola">13º '." " . substr("000" . $numerosUltimaTomb->numero_13, -4).' </div>
@@ -181,6 +183,7 @@ class SiteController extends Controller
                 <div class="numero_tombola">20º '." " . substr("000" . $numerosUltimaTomb->numero_20, -4).' </div>
             </div>
         </div>
+          </div>
         </div>';
 
         $mpdf = new mPDF();
@@ -189,6 +192,7 @@ class SiteController extends Controller
         $mpdf->WriteHTML($html);
         $mpdf->Output();
         exit;
+       
     }
 
 
@@ -205,18 +209,18 @@ class SiteController extends Controller
         //$tombola = Tombola::find()->where(["fecha" => $fecha ])->one();
         //VarDumper::dump($tombola);
         //echo TombolaMomento::find()->where(["id" => $tombola->getMomento()->one()])->one();
-        return $this->render('sorteos_anteriores', [
+        return $this->render('sorteos_anteriores',[
             'ulti_tombolas' => $ulti_tombolas,
             'todas_tombolas' => $todas_tombolas,
         ]);
     }
 
 
-    /**
-        * Displays the about static page.
-        *
-        * @return string
-        */
+ /**
+     * Displays the about static page.
+     *
+     * @return string
+     */
     public function actionAbout()
     {
         return $this->render('about');
@@ -240,17 +244,15 @@ class SiteController extends Controller
             return $this->refresh();
         }
 
-        Yii::$app->session->setFlash('success', Yii::t(
-            'app',
-            'Thank you for contacting us. We will respond to you as soon as possible.'
-        ));
+        Yii::$app->session->setFlash('success', Yii::t('app',
+            'Thank you for contacting us. We will respond to you as soon as possible.'));
 
         return $this->refresh();
     }
 
-    //------------------------------------------------------------------------------------------------//
-    // LOG IN / LOG OUT / PASSWORD RESET
-    //------------------------------------------------------------------------------------------------//
+//------------------------------------------------------------------------------------------------//
+// LOG IN / LOG OUT / PASSWORD RESET
+//------------------------------------------------------------------------------------------------//
 
     /**
      * Logs in the user if his account is activated,
@@ -281,10 +283,8 @@ class SiteController extends Controller
 
         // if user's account is not activated, he will have to activate it first
         if ($model->status === User::STATUS_INACTIVE && $successfulLogin === false) {
-            Yii::$app->session->setFlash('error', Yii::t(
-                'app',
-                'You have to activate your account first. Please check your email.'
-            ));
+            Yii::$app->session->setFlash('error', Yii::t('app',
+                'You have to activate your account first. Please check your email.'));
             return $this->refresh();
         }
 
@@ -327,10 +327,8 @@ class SiteController extends Controller
         }
 
         if (!$model->sendEmail()) {
-            Yii::$app->session->setFlash('error', Yii::t(
-                'app',
-                'Sorry, we are unable to reset password for email provided.'
-            ));
+            Yii::$app->session->setFlash('error', Yii::t('app',
+                'Sorry, we are unable to reset password for email provided.'));
             return $this->refresh();
         }
 
@@ -364,9 +362,9 @@ class SiteController extends Controller
         return $this->goHome();
     }
 
-    //------------------------------------------------------------------------------------------------//
-    // SIGN UP / ACCOUNT ACTIVATION
-    //------------------------------------------------------------------------------------------------//
+//------------------------------------------------------------------------------------------------//
+// SIGN UP / ACCOUNT ACTIVATION
+//------------------------------------------------------------------------------------------------//
 
     /**
      * Signs up the user.
@@ -430,10 +428,8 @@ class SiteController extends Controller
         // sending email has failed
         if (!$model->sendAccountActivationEmail($user)) {
             // display error message to user
-            Yii::$app->session->setFlash('error', Yii::t(
-                'app',
-                'We couldn\'t send you account activation email, please contact us.'
-            ));
+            Yii::$app->session->setFlash('error', Yii::t('app',
+                'We couldn\'t send you account activation email, please contact us.'));
 
             // log this error, so we can debug possible problem easier.
             Yii::error('Signup failed! User '.Html::encode($user->username).' could not sign up. 
@@ -467,10 +463,8 @@ class SiteController extends Controller
         }
 
         if (!$user->activateAccount()) {
-            Yii::$app->session->setFlash('error', Html::encode($user->username). Yii::t(
-                'app',
-                    ' your account could not be activated, please contact us!'
-            ));
+            Yii::$app->session->setFlash('error', Html::encode($user->username). Yii::t('app',
+                    ' your account could not be activated, please contact us!'));
             return $this->goHome();
         }
 
