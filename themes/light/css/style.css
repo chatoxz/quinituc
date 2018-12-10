@@ -327,7 +327,7 @@ div.required label:after {
 
 .item_tabla_sorteos_mat_vesp_tarde_noc{
     border: grey 1px solid ;
-    width: 20%;
+    width: 24.5%;
     height: 90px;
     text-align: center;
     display: flex;
@@ -366,6 +366,7 @@ div.required label:after {
     flex-direction: column;
     justify-content: space-evenly;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .contenedor_num_atrasado_fav_fija_batacazo{
@@ -464,7 +465,7 @@ div.required label:after {
 
 @media (max-width: 450px) {
     .triplona > span:first-of-type, .cuatriplona > span:first-of-type{
-        font-size: 17px;
+            font-size: 17px;
     }
     .pozo_estimado_label{
         font-size: 12px;
@@ -474,10 +475,10 @@ div.required label:after {
     }
 }
 @media (max-width: 500px) {
-    .fb-like span {
-        max-width: 278px;
-        overflow: hidden;
-    }
+.fb-like span {
+    max-width: 278px;
+    overflow: hidden;
+}
 }
 
 @media (max-width: 768px) {
@@ -491,6 +492,9 @@ div.required label:after {
     .contenedor_tabla_sorteos_mat_vesp_tarde_noc{
         font-size: 14px;
     }
+    .triplona > span:last-of-type, .cuatriplona > span:last-of-type {
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 990px) {
@@ -499,4 +503,3 @@ div.required label:after {
         justify-content: space-evenly;
     }
 }
-

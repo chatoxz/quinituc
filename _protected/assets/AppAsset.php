@@ -30,6 +30,7 @@ class AppAsset extends AssetBundle
 
     public $js = [
         'js/facebook.js',
+        'js/main.js',
     ];
 
     public $depends = [
