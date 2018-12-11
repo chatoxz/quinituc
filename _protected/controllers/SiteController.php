@@ -126,6 +126,7 @@ class SiteController extends Controller
             'momento_ult_tombola' => TombolaMomento::findOne(['id' => $ult_tombola->id_momento])->nombre,
         ]);
     }
+    
     public function actionSorteo_individual($id_tombola)
     {
         $tombola = Tombola::find()->where(["id" => $id_tombola ])->one();
