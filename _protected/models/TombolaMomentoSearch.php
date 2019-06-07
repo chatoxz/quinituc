@@ -66,6 +66,8 @@ class TombolaMomentoSearch extends TombolaMomento
         $query->andFilterWhere(['like', 'nombre', $this->nombre])
             ->andFilterWhere(['like', 'horario', $this->horario]);
 
+        $query->orderBy('horario');
+
         return $dataProvider;
     }
 }
