@@ -55,7 +55,7 @@ AppAsset::register($this);
         <?php
         if(!Yii::$app->user->isGuest){
             NavBar::begin([
-                'brandLabel' => Yii::t('app', "Administracion Quinituc"),
+                'brandLabel' => Yii::t('app', "Administración Quinituc"),
                 'brandUrl' => Yii::$app->homeUrl,
                 'options' => [
                     'class' => 'navbar-default navbar-fixed-top',
