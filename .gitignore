@@ -1,8 +1,12 @@
 # yii console command
 /yii
+.runtime
 
 # phpstorm project files
 .idea
+
+# vscode history
+.history
 
 # netbeans project files
 nbproject
