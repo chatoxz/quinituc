@@ -81,9 +81,9 @@ class SiteController extends Controller
         ];
     }
 
-//------------------------------------------------------------------------------------------------//
-// STATIC PAGES
-//------------------------------------------------------------------------------------------------//
+    //------------------------------------------------------------------------------------------------//
+    // STATIC PAGES
+    //------------------------------------------------------------------------------------------------//
 
     /**
      * Displays the index (home) page.
@@ -100,7 +100,8 @@ class SiteController extends Controller
         $numerosUltimaTomb = TombolaNumero::find()->where(['id_tombola' => $ult_tombola->id])->one();
 
         //ULTIMOS PRIMEROS PREMIOS DE TOMBOLA MATUTINA - VASPERTINA - TARDE - NOCTURA
-        $ult_tomb_mat = Tombola::find()->where(['id_momento' => 1])->orderBy(['fecha' => SORT_DESC])->one();
+        $tipos_tombolas =
+            $ult_tomb_mat = Tombola::find()->where(['id_momento' => 1])->orderBy(['fecha' => SORT_DESC])->one();
         $primer_premio_mat = TombolaNumero::find()->where(['id_tombola' => $ult_tomb_mat->id])->one();
 
         $ult_tomb_vesp = Tombola::find()->where(['id_momento' => 2])->orderBy(['fecha' => SORT_DESC])->one();
@@ -114,7 +115,7 @@ class SiteController extends Controller
 
         $numeros_varios = NumerosVarios::find()->orderBy(['id' => SORT_DESC])->one();
         //var_dump($numerosUltimaTomb);
-        return $this->render('index',[
+        return $this->render('index', [
             'banners' => $banners,
             'ult_tombola' => $ult_tombola,
             'numerosUltimaTomb' => $numerosUltimaTomb,
@@ -122,15 +123,17 @@ class SiteController extends Controller
             'primer_premio_vesp' => $primer_premio_vesp->numero_1,
             'primer_premio_tarde' => $primer_premio_tarde->numero_1,
             'primer_premio_noc' => $primer_premio_noc->numero_1,
+            'primer_premio_vesp_seg' => $primer_premio_noc->numero_1,
+            'primer_premio_noc_seg' => $primer_premio_noc->numero_1,
             'numeros_varios' => $numeros_varios,
             'momento_ult_tombola' => TombolaMomento::findOne(['id' => $ult_tombola->id_momento])->nombre,
         ]);
     }
-    
+
     public function actionSorteo_individual($id_tombola)
     {
-        $tombola = Tombola::find()->where(["id" => $id_tombola ])->one();
-        return $this->render('sorteo_individual',[
+        $tombola = Tombola::find()->where(["id" => $id_tombola])->one();
+        return $this->render('sorteo_individual', [
             'tombola' => $tombola,
         ]);
     }
@@ -155,33 +158,33 @@ class SiteController extends Controller
         </div>
         <div class="contenedor_ultimos_resultados bottom_margin_40" style="font-size: 20px">
             <h3 class="titulo_ultimos_resultados"> ÚLTIMOS RESULTADOS DE LA QUINIELA</h3>
-            <h3 class="titulo_ultimos_resultados_momento">'.$momento_ult_tombola. ' ' . Yii::$app->formatter->asDate($ult_tombola->fecha, 'd/M/Y').'</h3>
+            <h3 class="titulo_ultimos_resultados_momento">' . $momento_ult_tombola . ' ' . Yii::$app->formatter->asDate($ult_tombola->fecha, 'd/M/Y') . '</h3>
 
 
           <div style="padding-left: 120px;padding-top: 40px">
             <div class="contenedor_numeros_tombola bottom_margin_20" style="width: 49%;float: left;font-size: 30px">
-                <div class="numero_tombola">1º '." " . substr("000" . $numerosUltimaTomb->numero_1, -4).' </div>
-                <div class="numero_tombola">2º '." " . substr("000" . $numerosUltimaTomb->numero_2, -4).' </div>
-                <div class="numero_tombola">3º '." " . substr("000" . $numerosUltimaTomb->numero_3, -4).' </div>
-                <div class="numero_tombola">4º '." " . substr("000" . $numerosUltimaTomb->numero_4, -4).' </div>
-                <div class="numero_tombola">5º '." " . substr("000" . $numerosUltimaTomb->numero_5, -4).' </div>
-                <div class="numero_tombola">6º '." " . substr("000" . $numerosUltimaTomb->numero_6, -4).' </div>
-                <div class="numero_tombola">7º '." " . substr("000" . $numerosUltimaTomb->numero_7, -4).' </div>
-                <div class="numero_tombola">8º '." " . substr("000" . $numerosUltimaTomb->numero_8, -4).' </div>
-                <div class="numero_tombola">9º '." " . substr("000" . $numerosUltimaTomb->numero_9, -4).' </div>
-                <div class="numero_tombola">10º '." " . substr("000" . $numerosUltimaTomb->numero_10, -4).' </div>
+                <div class="numero_tombola">1º ' . " " . substr("000" . $numerosUltimaTomb->numero_1, -4) . ' </div>
+                <div class="numero_tombola">2º ' . " " . substr("000" . $numerosUltimaTomb->numero_2, -4) . ' </div>
+                <div class="numero_tombola">3º ' . " " . substr("000" . $numerosUltimaTomb->numero_3, -4) . ' </div>
+                <div class="numero_tombola">4º ' . " " . substr("000" . $numerosUltimaTomb->numero_4, -4) . ' </div>
+                <div class="numero_tombola">5º ' . " " . substr("000" . $numerosUltimaTomb->numero_5, -4) . ' </div>
+                <div class="numero_tombola">6º ' . " " . substr("000" . $numerosUltimaTomb->numero_6, -4) . ' </div>
+                <div class="numero_tombola">7º ' . " " . substr("000" . $numerosUltimaTomb->numero_7, -4) . ' </div>
+                <div class="numero_tombola">8º ' . " " . substr("000" . $numerosUltimaTomb->numero_8, -4) . ' </div>
+                <div class="numero_tombola">9º ' . " " . substr("000" . $numerosUltimaTomb->numero_9, -4) . ' </div>
+                <div class="numero_tombola">10º ' . " " . substr("000" . $numerosUltimaTomb->numero_10, -4) . ' </div>
             </div>
             <div class="contenedor_numeros_tombola bottom_margin_20" style="width: 49%;float: left;font-size: 30px">
-                <div class="numero_tombola">11º '." " . substr("000" . $numerosUltimaTomb->numero_11, -4).' </div>
-                <div class="numero_tombola">12º '." " . substr("000" . $numerosUltimaTomb->numero_12, -4).' </div>
-                <div class="numero_tombola">13º '." " . substr("000" . $numerosUltimaTomb->numero_13, -4).' </div>
-                <div class="numero_tombola">14º '." " . substr("000" . $numerosUltimaTomb->numero_14, -4).' </div>
-                <div class="numero_tombola">15º '." " . substr("000" . $numerosUltimaTomb->numero_15, -4).' </div>
-                <div class="numero_tombola">16º '." " . substr("000" . $numerosUltimaTomb->numero_16, -4).' </div>
-                <div class="numero_tombola">17º '." " . substr("000" . $numerosUltimaTomb->numero_17, -4).' </div>
-                <div class="numero_tombola">18º '." " . substr("000" . $numerosUltimaTomb->numero_18, -4).' </div>
-                <div class="numero_tombola">19º '." " . substr("000" . $numerosUltimaTomb->numero_19, -4).' </div>
-                <div class="numero_tombola">20º '." " . substr("000" . $numerosUltimaTomb->numero_20, -4).' </div>
+                <div class="numero_tombola">11º ' . " " . substr("000" . $numerosUltimaTomb->numero_11, -4) . ' </div>
+                <div class="numero_tombola">12º ' . " " . substr("000" . $numerosUltimaTomb->numero_12, -4) . ' </div>
+                <div class="numero_tombola">13º ' . " " . substr("000" . $numerosUltimaTomb->numero_13, -4) . ' </div>
+                <div class="numero_tombola">14º ' . " " . substr("000" . $numerosUltimaTomb->numero_14, -4) . ' </div>
+                <div class="numero_tombola">15º ' . " " . substr("000" . $numerosUltimaTomb->numero_15, -4) . ' </div>
+                <div class="numero_tombola">16º ' . " " . substr("000" . $numerosUltimaTomb->numero_16, -4) . ' </div>
+                <div class="numero_tombola">17º ' . " " . substr("000" . $numerosUltimaTomb->numero_17, -4) . ' </div>
+                <div class="numero_tombola">18º ' . " " . substr("000" . $numerosUltimaTomb->numero_18, -4) . ' </div>
+                <div class="numero_tombola">19º ' . " " . substr("000" . $numerosUltimaTomb->numero_19, -4) . ' </div>
+                <div class="numero_tombola">20º ' . " " . substr("000" . $numerosUltimaTomb->numero_20, -4) . ' </div>
             </div>
         </div>
           </div>
@@ -193,7 +196,6 @@ class SiteController extends Controller
         $mpdf->WriteHTML($html);
         $mpdf->Output();
         exit;
-       
     }
 
 
@@ -205,19 +207,19 @@ class SiteController extends Controller
      */
     public function actionSorteos_anteriores($fecha)
     {
-        $ulti_tombolas  = Tombola::find()->where(["fecha" => $fecha ])->all();
+        $ulti_tombolas  = Tombola::find()->where(["fecha" => $fecha])->all();
         $todas_tombolas = Tombola::find()->groupBy(['fecha'])->limit(120)->all();
         //$tombola = Tombola::find()->where(["fecha" => $fecha ])->one();
         //VarDumper::dump($tombola);
         //echo TombolaMomento::find()->where(["id" => $tombola->getMomento()->one()])->one();
-        return $this->render('sorteos_anteriores',[
+        return $this->render('sorteos_anteriores', [
             'ulti_tombolas' => $ulti_tombolas,
             'todas_tombolas' => $todas_tombolas,
         ]);
     }
 
 
- /**
+    /**
      * Displays the about static page.
      *
      * @return string
@@ -245,15 +247,17 @@ class SiteController extends Controller
             return $this->refresh();
         }
 
-        Yii::$app->session->setFlash('success', Yii::t('app',
-            'Thank you for contacting us. We will respond to you as soon as possible.'));
+        Yii::$app->session->setFlash('success', Yii::t(
+            'app',
+            'Thank you for contacting us. We will respond to you as soon as possible.'
+        ));
 
         return $this->refresh();
     }
 
-//------------------------------------------------------------------------------------------------//
-// LOG IN / LOG OUT / PASSWORD RESET
-//------------------------------------------------------------------------------------------------//
+    //------------------------------------------------------------------------------------------------//
+    // LOG IN / LOG OUT / PASSWORD RESET
+    //------------------------------------------------------------------------------------------------//
 
     /**
      * Logs in the user if his account is activated,
@@ -284,8 +288,10 @@ class SiteController extends Controller
 
         // if user's account is not activated, he will have to activate it first
         if ($model->status === User::STATUS_INACTIVE && $successfulLogin === false) {
-            Yii::$app->session->setFlash('error', Yii::t('app',
-                'You have to activate your account first. Please check your email.'));
+            Yii::$app->session->setFlash('error', Yii::t(
+                'app',
+                'You have to activate your account first. Please check your email.'
+            ));
             return $this->refresh();
         }
 
@@ -328,8 +334,10 @@ class SiteController extends Controller
         }
 
         if (!$model->sendEmail()) {
-            Yii::$app->session->setFlash('error', Yii::t('app',
-                'Sorry, we are unable to reset password for email provided.'));
+            Yii::$app->session->setFlash('error', Yii::t(
+                'app',
+                'Sorry, we are unable to reset password for email provided.'
+            ));
             return $this->refresh();
         }
 
@@ -363,9 +371,9 @@ class SiteController extends Controller
         return $this->goHome();
     }
 
-//------------------------------------------------------------------------------------------------//
-// SIGN UP / ACCOUNT ACTIVATION
-//------------------------------------------------------------------------------------------------//
+    //------------------------------------------------------------------------------------------------//
+    // SIGN UP / ACCOUNT ACTIVATION
+    //------------------------------------------------------------------------------------------------//
 
     /**
      * Signs up the user.
@@ -412,7 +420,7 @@ class SiteController extends Controller
             Yii::$app->session->setFlash('warning', Yii::t('app', 'Please try to log in.'));
 
             // log this error, so we can debug possible problem easier.
-            Yii::error('Login after sign up failed! User '.Html::encode($user->username).' could not log in.');
+            Yii::error('Login after sign up failed! User ' . Html::encode($user->username) . ' could not log in.');
         }
 
         return $this->goHome();
@@ -429,17 +437,19 @@ class SiteController extends Controller
         // sending email has failed
         if (!$model->sendAccountActivationEmail($user)) {
             // display error message to user
-            Yii::$app->session->setFlash('error', Yii::t('app',
-                'We couldn\'t send you account activation email, please contact us.'));
+            Yii::$app->session->setFlash('error', Yii::t(
+                'app',
+                'We couldn\'t send you account activation email, please contact us.'
+            ));
 
             // log this error, so we can debug possible problem easier.
-            Yii::error('Signup failed! User '.Html::encode($user->username).' could not sign up. 
+            Yii::error('Signup failed! User ' . Html::encode($user->username) . ' could not sign up.
                 Possible causes: verification email could not be sent.');
         }
 
         // everything is OK
-        Yii::$app->session->setFlash('success', Yii::t('app', 'Hello').' '.Html::encode($user->username). '. ' .
-            Yii::t('app', 'To be able to log in, you need to confirm your registration. 
+        Yii::$app->session->setFlash('success', Yii::t('app', 'Hello') . ' ' . Html::encode($user->username) . '. ' .
+            Yii::t('app', 'To be able to log in, you need to confirm your registration.
                 Please check your email, we have sent you a message.'));
     }
 
@@ -464,13 +474,15 @@ class SiteController extends Controller
         }
 
         if (!$user->activateAccount()) {
-            Yii::$app->session->setFlash('error', Html::encode($user->username). Yii::t('app',
-                    ' your account could not be activated, please contact us!'));
+            Yii::$app->session->setFlash('error', Html::encode($user->username) . Yii::t(
+                'app',
+                ' your account could not be activated, please contact us!'
+            ));
             return $this->goHome();
         }
 
-        Yii::$app->session->setFlash('success', Yii::t('app', 'Success! You can now log in.').' '.
-            Yii::t('app', 'Thank you').' '.Html::encode($user->username).' '.Yii::t('app', 'for joining us!'));
+        Yii::$app->session->setFlash('success', Yii::t('app', 'Success! You can now log in.') . ' ' .
+            Yii::t('app', 'Thank you') . ' ' . Html::encode($user->username) . ' ' . Yii::t('app', 'for joining us!'));
 
         return $this->redirect('login');
     }

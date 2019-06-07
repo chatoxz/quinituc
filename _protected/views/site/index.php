@@ -10,8 +10,10 @@ header("Access-Control-Allow-Headers: *");
 
 $this->title = Yii::t('app', Yii::$app->name);
 ?>
-<?php //CONFIG FOR FACEBOOK ?>
+<?php 
+?>
 <?php $url = Url::to(["sorteo_individual", 'id_tombola' => $ult_tombola->id]); ?>
+
 <head>
     <meta property="og:url" content="<?= "http://quinituc.appe.com.ar" . $url ?>" />
 </head>
@@ -67,15 +69,9 @@ $this->title = Yii::t('app', Yii::$app->name);
                 <?php $url = Url::to(["sorteo_individual", 'id_tombola' => $ult_tombola->id]); ?>
                 <div id="fb-root"></div>
                 <div class="wrap_face_links">
-                    <div class="fb-like col-md-12"
-                         data-href="<?= $url ?>"
-                         data-layout="standard"
-                         data-action="like"
-                         data-show-faces="true">
+                    <div class="fb-like col-md-12" data-href="<?= $url ?>" data-layout="standard" data-action="like" data-show-faces="true">
                     </div>
-                    <div class="fb-share-button col-md-12"
-                         data-href="<?= $url ?>"
-                         data-layout="button_count">
+                    <div class="fb-share-button col-md-12" data-href="<?= $url ?>" data-layout="button_count">
                     </div>
                 </div>
             </div>
@@ -84,18 +80,30 @@ $this->title = Yii::t('app', Yii::$app->name);
         <!-- SORTEOS -->
         <h3 class="titulo_tabla_sorteos_mat_vesp_tarde_noc">SORTEOS</h3>
         <div class="contenedor_tabla_sorteos_mat_vesp_tarde_noc">
-             <div class="item_tabla_sorteos_mat_vesp_tarde_noc" style="background-color: rgba(87, 255, 53, 0.47)"><div>Matutina</div><div><?= substr("000" . $primer_premio_mat, -4) ?></div></div>
-            <div class="item_tabla_sorteos_mat_vesp_tarde_noc" style="background-color: #ffffff"><div>Vespertina</div><div><?= substr("000" . $primer_premio_vesp, -4) ?></div></div>
-            <div class="item_tabla_sorteos_mat_vesp_tarde_noc" style="background-color: #f3beff"><div>Tarde</div><div><?= substr("000" . $primer_premio_tarde, -4) ?></div></div>
-            <div class="item_tabla_sorteos_mat_vesp_tarde_noc" style="background-color: #fffd96"><div>Nocturna</div><div><?= substr("000" . $primer_premio_noc, -4) ?></div></div>
+            <div class="item_tabla_sorteos_mat_vesp_tarde_noc" style="background-color: rgba(87, 255, 53, 0.47)">
+                <div>Matutina</div>
+                <div><?= substr("000" . $primer_premio_mat, -4) ?></div>
+            </div>
+            <div class="item_tabla_sorteos_mat_vesp_tarde_noc" style="background-color: #ffffff">
+                <div>Vespertina</div>
+                <div><?= substr("000" . $primer_premio_vesp, -4) ?></div>
+            </div>
+            <div class="item_tabla_sorteos_mat_vesp_tarde_noc" style="background-color: #f3beff">
+                <div>Tarde</div>
+                <div><?= substr("000" . $primer_premio_tarde, -4) ?></div>
+            </div>
+            <div class="item_tabla_sorteos_mat_vesp_tarde_noc" style="background-color: #fffd96">
+                <div>Nocturna</div>
+                <div><?= substr("000" . $primer_premio_noc, -4) ?></div>
+            </div>
         </div>
 
         <!-- BANNER -->
-        <br>        <br>        <br>
-        <a href="<?= $banners[1]->link; ?>"  target="_blank">
+        <br> <br> <br>
+        <a href="<?= $banners[1]->link; ?>" target="_blank">
             <img class="banner_desp_sorteos" src="../img/banners/<?= $banners[1]->foto; ?>">
         </a>
-        <br>        <br>        <br>
+        <br> <br> <br>
 
         <!-- ATRASADO FAVORITO FIJA BATACAZO -->
         <div class="contenedor_num_atrasado_fav_fija_batacazo">
@@ -134,19 +142,21 @@ $this->title = Yii::t('app', Yii::$app->name);
         <div class="contenedor_banners_laterales">
             <h4 class="numero_suerte" onclick='change_suerte()'>
                 <span style="color: red;font-weight: bold">TU NUMERO DE LA SUERTE</span>
-                <span id="numero_suerte_span" style="font-size: 24px" >                
+                <span id="numero_suerte_span" style="font-size: 24px">
                 </span>
             </h4>
-            <?php 
+            <?php
             $flag = 0;
-            foreach ($banners as $key => $banner) { 
-                if($flag > 1){ ?>
-                    <a class="banners_laterales"  href="<?= $banner->link; ?>" target="_blank"><img src="../img/banners/<?= $banner->foto; ?>" width="300" height="105"></a>
+            foreach ($banners as $key => $banner) {
+                if ($flag > 1) { ?>
+                    <a class="banners_laterales" href="<?= $banner->link; ?>" target="_blank"><img src="../img/banners/<?= $banner->foto; ?>" width="300" height="105"></a>
                 <?php }
-                $flag++; } ?>
+            $flag++;
+        } ?>
         </div>
     </div>
 </div>
 
 </body>
+
 </html>

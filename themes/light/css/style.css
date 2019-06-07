@@ -1,156 +1,157 @@
 html,
 body {
-    /*text-rendering: optimizeLegibility !important;
+  /*text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;*/
-    height: 100%;
-    font-family: RRregular !important;
+  height: 100%;
+  font-family: RRregular !important;
 }
 
 .wrap {
-    min-height: 100%;
-    height: auto;
-    margin: 0 auto -60px;
-    padding: 0 0 60px;
+  min-height: 100%;
+  height: auto;
+  margin: 0 auto -60px;
+  padding: 0 0 60px;
 }
 
 .wrap > .container {
-    padding: 70px 15px 20px;
+  padding: 70px 15px 20px;
 }
 
 .jumbotron {
-    text-align: center;
-    border: 1px solid #e5e5e5;
+  text-align: center;
+  border: 1px solid #e5e5e5;
 }
 
 .jumbotron .btn {
-    font-size: 21px;
-    padding: 14px 24px;
+  font-size: 21px;
+  padding: 14px 24px;
 }
 
 .footer {
-    height: 60px;
-    border-top: 1px solid #e5e5e5;
-    padding-top: 20px;
+  height: 60px;
+  border-top: 1px solid #e5e5e5;
+  padding-top: 20px;
 }
 
 .not-set {
-    color: #c55;
-    font-style: italic;
+  color: #c55;
+  font-style: italic;
 }
 
 /* add sorting icons to gridview sort links */
-a.asc:after, a.desc:after {
-    position: relative;
-    top: 1px;
-    display: inline-block;
-    font-family: 'Glyphicons Halflings';
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-    padding-left: 5px;
+a.asc:after,
+a.desc:after {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: "Glyphicons Halflings";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  padding-left: 5px;
 }
 
 a.asc:after {
-    content: "\e151";
+  content: "\e151";
 }
 
 a.desc:after {
-    content: "\e152";
+  content: "\e152";
 }
 
 .sort-numerical a.asc:after {
-    content: "\e153";
+  content: "\e153";
 }
 
 .sort-numerical a.desc:after {
-    content: "\e154";
+  content: "\e154";
 }
 
 .sort-ordinal a.asc:after {
-    content: "\e155";
+  content: "\e155";
 }
 
 .sort-ordinal a.desc:after {
-    content: "\e156";
+  content: "\e156";
 }
 
 .grid-view td {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
 .grid-view .filters input,
 .grid-view .filters select {
-    min-width: 50px;
+  min-width: 50px;
 }
 
 .grid-view td:last-child {
-    width: 68px;
+  width: 68px;
 }
 
 .hint-block {
-    display: block;
-    margin-top: 5px;
-    color: #999;
+  display: block;
+  margin-top: 5px;
+  color: #999;
 }
 
 .error-summary {
-    color: #a94442;
-    background: #fdf7f7;
-    border-left: 3px solid #eed3d7;
-    padding: 10px 20px;
-    margin: 0 0 15px 0;
+  color: #a94442;
+  background: #fdf7f7;
+  border-left: 3px solid #eed3d7;
+  padding: 10px 20px;
+  margin: 0 0 15px 0;
 }
 
 /* add red asterisk to required form fields */
 div.required label:after {
-    content: " *";
-    color: #e13431;
+  content: " *";
+  color: #e13431;
 }
 
 /*-- Css for nicer display of boolean yes/no values --*/
 
 .boolean-true {
-    font-weight: bold;
-    color: green;
+  font-weight: bold;
+  color: green;
 }
 
 .boolean-false {
-    font-weight: bold;
-    color: #e13431;
+  font-weight: bold;
+  color: #e13431;
 }
 
 /*-- Css for nicer display of user roles --*/
 
 .role-theCreator {
-    font-weight: bold;
-    color: black;
+  font-weight: bold;
+  color: black;
 }
 
 .role-admin {
-    font-weight: bold;
-    color: #c4a500;
+  font-weight: bold;
+  color: #c4a500;
 }
 
 .role-employee {
-    font-weight: bold;
-    color: #800080;
+  font-weight: bold;
+  color: #800080;
 }
 
 .role-premium {
-    font-weight: bold;
-    color: #009d00;
+  font-weight: bold;
+  color: #009d00;
 }
 
 .role-member {
-    font-weight: bold;
-    color: #4c4cff;
+  font-weight: bold;
+  color: #4c4cff;
 }
 
 /*-- Password strength --*/
 
 /* Ajust the size so it fits nicely */
 .kv-meter-container {
-    width: 105px;
+  width: 105px;
 }
 
 /******************************************** CSS AGREGADOS POR MI ****************************************************/
@@ -158,19 +159,24 @@ div.required label:after {
 /******************************************** CSS AGREGADOS POR MI ****************************************************/
 /******************************************** CSS AGREGADOS POR MI ****************************************************/
 /******************************************** CSS AGREGADOS POR MI ****************************************************/
-.bottom_margin_20 { margin-bottom:20px; }
-.bottom_margin_40 { margin-bottom:40px; }
-.glyphicon{ font-size: 24px; }
+.bottom_margin_20 {
+  margin-bottom: 20px;
+}
+.bottom_margin_40 {
+  margin-bottom: 40px;
+}
+.glyphicon {
+  font-size: 24px;
+}
 
 @font-face {
-    font-family: RRregular;
-    src: url("/themes/light/tipografia/raleway/Raleway-Regular.ttf");
+  font-family: RRregular;
+  src: url("/themes/light/tipografia/raleway/Raleway-Regular.ttf");
 }
 @font-face {
-    font-family: os_tic_owi;
-    src: url("/themes/light/tipografia/serif/OFFSFOWI.TTF") format("truetype");
+  font-family: os_tic_owi;
+  src: url("/themes/light/tipografia/serif/OFFSFOWI.TTF") format("truetype");
 }
-
 
 /*
 @font-face {
@@ -201,305 +207,323 @@ div.required label:after {
     src: url("/themes/light/tipografia/serif_OS_ITC/OFFISFW.ttf");
 }*/
 
-
-.contenedor_cabecera_roja_telefono{
-    display: inline-block;
-    background-color:#CC1401;
-    min-height:40px !important;
-    color: white;
-    width: 100%;
-    margin: 0 auto;
-    text-align: right;
+.contenedor_cabecera_roja_telefono {
+  display: inline-block;
+  background-color: #cc1401;
+  min-height: 40px !important;
+  color: white;
+  width: 100%;
+  margin: 0 auto;
+  text-align: right;
 }
-.sub_contenedor_cabecera_roja_telefono{
-    max-width: 1170px;
-    width: 83%;
-    margin: 0 auto;
-
+.sub_contenedor_cabecera_roja_telefono {
+  max-width: 1170px;
+  width: 83%;
+  margin: 0 auto;
 }
 
-.contenedor_logo_quinituc_titulo{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+.contenedor_logo_quinituc_titulo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.lema{
-    font-family: os_tic_owi !important;
-    color: rgba(0, 128, 0, 0.78);
-}
-
-.contenedor_banner_ancho{
-    display: flex;
-    justify-content: center;
+.lema {
+  font-family: os_tic_owi !important;
+  color: rgba(0, 128, 0, 0.78);
 }
 
-.banner_ancho{
-    width: 100%;
+.contenedor_banner_ancho {
+  display: flex;
+  justify-content: center;
 }
 
-.contenedor_ultimos_resultados{
-    border: grey solid 1px;
-    border-radius: 5px;
+.banner_ancho {
+  width: 100%;
 }
 
-.titulo_ultimos_resultados{
-    width: 100%;
-    color: rgba(0, 128, 0, 0.78);;
-    text-align: center;
+.contenedor_ultimos_resultados {
+  border: grey solid 1px;
+  border-radius: 5px;
 }
 
-.titulo_ultimos_resultados_momento, .wrap_impr_ult_sort_face{
-    width: 100%;
-    /*color: rgba(0, 128, 0, 0.78);;*/
-    text-align: center;
-}
-.link_ultimo_sorteo, .link_imprimir_tombola {
-    background-color: #4267b2;
-    color: white;
-    padding: 3px;
-    border-radius: 5px;
-    font-size: 11px;
-    opacity: 0.9;
-    font-weight: 700;
-    margin-top: 15px;
-}
-.link_ultimo_sorteo:hover, .link_imprimir_tombola:hover, .link_imprimir_tombola:visited, .link_ultimo_sorteo:visited{
-    background-color: #4267b2;
-    color: white;
-    opacity: 1;
+.titulo_ultimos_resultados {
+  width: 100%;
+  color: rgba(0, 128, 0, 0.78);
+  text-align: center;
 }
 
-.wrap_face_links{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    overflow: hidden;
+.titulo_ultimos_resultados_momento,
+.wrap_impr_ult_sort_face {
+  width: 100%;
+  /*color: rgba(0, 128, 0, 0.78);;*/
+  text-align: center;
 }
-.fb-like, .fb-share-button{
-    margin-top: 10px;
+.link_ultimo_sorteo,
+.link_imprimir_tombola {
+  background-color: #4267b2;
+  color: white;
+  padding: 3px;
+  border-radius: 5px;
+  font-size: 11px;
+  opacity: 0.9;
+  font-weight: 700;
+  margin-top: 15px;
+}
+.link_ultimo_sorteo:hover,
+.link_imprimir_tombola:hover,
+.link_imprimir_tombola:visited,
+.link_ultimo_sorteo:visited {
+  background-color: #4267b2;
+  color: white;
+  opacity: 1;
 }
 
-
-.wrap_impr_ult_sort_face a{
-    text-decoration: none;
-
+.wrap_face_links {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  overflow: hidden;
 }
-.contenedor_numeros_tombola{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    flex-direction: column;
-    height: 389px;
-    text-align: center;
-    padding-bottom: 5px;
-    font-size: 18px;
+.fb-like,
+.fb-share-button {
+  margin-top: 10px;
 }
 
-.numero_tombola{
-    width: 50%;
-    padding: 5px;
+.wrap_impr_ult_sort_face a {
+  text-decoration: none;
+}
+.contenedor_numeros_tombola {
+  background-image: url("/img/logos/logo-quinituc2.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  flex-direction: column;
+  height: 389px;
+  text-align: center;
+  padding-bottom: 5px;
+  font-size: 18px;
+}
+
+.numero_tombola {
+  width: 50%;
+  padding: 5px;
 }
 .numero_tombola:first-of-type {
-    color: red;
+  color: red;
 }
-.titulo_tabla_sorteos_mat_vesp_tarde_noc{
-    width: 100%;
-    color: white;
-    background-color:#CC1401;
-    text-align: center;
-    height: 50px;
-    padding-top: 10px;
-    border-radius: 5px;
+.titulo_tabla_sorteos_mat_vesp_tarde_noc {
+  width: 100%;
+  color: white;
+  background-color: #cc1401;
+  text-align: center;
+  height: 50px;
+  padding-top: 10px;
+  border-radius: 5px;
 }
-.contenedor_tabla_sorteos_mat_vesp_tarde_noc{
-    font-size: 18px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-}
-
-.banner_desp_sorteos{
-    width: 100%;
-    border-radius: 5px;
+.contenedor_tabla_sorteos_mat_vesp_tarde_noc {
+  font-size: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.item_tabla_sorteos_mat_vesp_tarde_noc{
-    border: grey 1px solid ;
-    width: 24.5%;
-    height: 90px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    border-radius: 5px;
-    overflow-x: hidden;
+.banner_desp_sorteos {
+  width: 100%;
+  border-radius: 5px;
 }
 
-.banner_desp_sorteos{
-    width: 100%;
-    border-radius: 5px;
+.item_tabla_sorteos_mat_vesp_tarde_noc {
+  border: grey 1px solid;
+  /*width: 24.5%;*/
+  width: 180px;
+  height: 90px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  overflow-x: hidden;
 }
 
-.contenedor_banners_laterales{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    flex-direction:column;
+.banner_desp_sorteos {
+  width: 100%;
+  border-radius: 5px;
 }
-.banners_laterales{
-    width: 300px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    /*border: grey 1px solid;
+
+.contenedor_banners_laterales {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.banners_laterales {
+  width: 300px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  /*border: grey 1px solid;
     overflow: hidden;*/
-
 }
-.numero_suerte{
-    text-align: center;
-    width: 300px;
-    background-color: #F5E2CE;
-    height: 90px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.contenedor_num_atrasado_fav_fija_batacazo{
-    font-size: 18px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    border: grey solid 1px;
-    border-radius: 6px;
+.numero_suerte {
+  text-align: center;
+  width: 300px;
+  background-color: #f5e2ce;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.titulo_num_atrasado_fav_fija_batacazo{
-    background-color: #CC1401;
-    color: white;
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    border-radius: 5px;
+.contenedor_num_atrasado_fav_fija_batacazo {
+  font-size: 18px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border: grey solid 1px;
+  border-radius: 6px;
+}
+
+.titulo_num_atrasado_fav_fija_batacazo {
+  background-color: #cc1401;
+  color: white;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 5px;
 }
 
 .num_atrasado_fav_fija_batacazo {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.triplona_cuatriplona{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: center;
+.triplona_cuatriplona {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
 }
-.triplona, .cuatriplona{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 5px;
-    border: grey solid 1px;
-    width: 47%;
+.triplona,
+.cuatriplona {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  border: grey solid 1px;
+  width: 47%;
 }
-.triplona > span:first-of-type, .cuatriplona > span:first-of-type{
-    font-size: 24px;
-    background-color: rgba(87, 255, 53, 0.47);
-    text-align: center;
-    width: 100%;
-    padding: 5px 0px;
+.triplona > span:first-of-type,
+.cuatriplona > span:first-of-type {
+  font-size: 24px;
+  background-color: rgba(87, 255, 53, 0.47);
+  text-align: center;
+  width: 100%;
+  padding: 5px 0px;
 }
-.triplona > span:last-of-type, .cuatriplona > span:last-of-type {
-    font-size: 50px;
-}
-
-.pozo_estimado_label{
-    padding-top: 8px;
-}
-.wrap_footer_quinituc{
-    /*display: inline-block;*/
-    margin: 0 auto;
-    background-color: rgba(103, 162, 33, 0.9);
-    color: white;
-    text-align: left;
-    height: 100px;
-    width: 100%;
+.triplona > span:last-of-type,
+.cuatriplona > span:last-of-type {
+  font-size: 50px;
 }
 
-.footer_quinituc{
-    margin-top: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.pozo_estimado_label {
+  padding-top: 8px;
+}
+.wrap_footer_quinituc {
+  /*display: inline-block;*/
+  margin: 0 auto;
+  background-color: rgba(103, 162, 33, 0.9);
+  color: white;
+  text-align: left;
+  height: 100px;
+  width: 100%;
 }
 
-.face_icon{
-    float:right;
+.footer_quinituc {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-.face_icon img{
-    height: 38px;
+
+.face_icon {
+  float: right;
 }
-.appe_link{
-    color: white;
-    float: right;
+.face_icon img {
+  height: 38px;
 }
-.appe_link:hover, .appe_link:focus{
-    text-decoration: none;
-    color: white;
+.appe_link {
+  color: white;
+  float: right;
+}
+.appe_link:hover,
+.appe_link:focus {
+  text-decoration: none;
+  color: white;
 }
 /* MOBILE VERSION*/
 /* MOBILE VERSION*/
 /* MOBILE VERSION*/
-
 
 @media (max-width: 450px) {
-    .triplona > span:first-of-type, .cuatriplona > span:first-of-type{
-            font-size: 17px;
-    }
-    .pozo_estimado_label{
-        font-size: 12px;
-    }
-    .triplona > span:last-of-type, .cuatriplona > span:last-of-type {
-        font-size: 30px;
-    }
+  .triplona > span:first-of-type,
+  .cuatriplona > span:first-of-type {
+    font-size: 17px;
+  }
+  .pozo_estimado_label {
+    font-size: 12px;
+  }
+  .triplona > span:last-of-type,
+  .cuatriplona > span:last-of-type {
+    font-size: 30px;
+  }
 }
 @media (max-width: 500px) {
-.fb-like span {
+  .fb-like span {
     max-width: 278px;
     overflow: hidden;
-}
+  }
 }
 
 @media (max-width: 768px) {
-    .contenedor_logo_quinituc_titulo{
-        text-align: center;
-        justify-content: center;
-    }
-    .contenedor_num_atrasado_fav_fija_batacazo{
-        font-size: 16px;
-    }
-    .contenedor_tabla_sorteos_mat_vesp_tarde_noc{
-        font-size: 14px;
-    }
-    .triplona > span:last-of-type, .cuatriplona > span:last-of-type {
-        font-size: 20px;
-    }
+  .contenedor_logo_quinituc_titulo {
+    text-align: center;
+    justify-content: center;
+  }
+  .contenedor_num_atrasado_fav_fija_batacazo {
+    font-size: 16px;
+  }
+  .contenedor_tabla_sorteos_mat_vesp_tarde_noc {
+    font-size: 14px;
+  }
+  .triplona > span:last-of-type,
+  .cuatriplona > span:last-of-type {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 990px) {
-    .contenedor_banners_laterales{
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
+  .contenedor_banners_laterales {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+.telefono,
+.telefono:hover,
+.telefono:focus {
+  text-decoration: none;
+  color: white;
 }
