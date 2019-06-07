@@ -112,12 +112,12 @@ $config = [
             'translations' => [
                 'app*' => [
                     'class' => 'yii\i18n\PhpMessageSource',
-                    'basePath' => 'translations',
+                    'basePath' => '@app/translations',
                     'sourceLanguage' => 'en',
                 ],
                 'yii' => [
                     'class' => 'yii\i18n\PhpMessageSource',
-                    'basePath' => 'translations',
+                    'basePath' => '@app/translations',
                     'sourceLanguage' => 'en'
                 ],
             ],
@@ -137,3 +137,5 @@ if (YII_ENV_DEV) {
 }
 
 return $config;
+// sebastian10
+// 54DfsA87
