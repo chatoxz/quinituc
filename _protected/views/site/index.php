@@ -3,6 +3,7 @@
 
 use kartik\helpers\Html;
 use yii\helpers\Url;
+//use app\models\Tombola;
 
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: PUT, GET, POST, DELETE, OPTIONS");
@@ -10,7 +11,7 @@ header("Access-Control-Allow-Headers: *");
 
 $this->title = Yii::t('app', Yii::$app->name);
 ?>
-<?php 
+<?php
 ?>
 <?php $url = Url::to(["sorteo_individual", 'id_tombola' => $ult_tombola->id]); ?>
 
@@ -88,6 +89,12 @@ $this->title = Yii::t('app', Yii::$app->name);
                 <div>Vespertina</div>
                 <div><?= substr("000" . $primer_premio_vesp, -4) ?></div>
             </div>
+            <?php if ($primer_premio_vesp_2) { ?>
+                <div class="item_tabla_sorteos_mat_vesp_tarde_noc" style="background-color: #5576bab3">
+                    <div>Vespertina chance 2</div>
+                    <div><?= substr("000" . $primer_premio_vesp_2, -4); ?></div>
+                </div>
+            <?php } ?>
             <div class="item_tabla_sorteos_mat_vesp_tarde_noc" style="background-color: #f3beff">
                 <div>Tarde</div>
                 <div><?= substr("000" . $primer_premio_tarde, -4) ?></div>
@@ -96,6 +103,12 @@ $this->title = Yii::t('app', Yii::$app->name);
                 <div>Nocturna</div>
                 <div><?= substr("000" . $primer_premio_noc, -4) ?></div>
             </div>
+            <?php if ($primer_premio_noc_2) { ?>
+                <div class="item_tabla_sorteos_mat_vesp_tarde_noc" style="background-color: #1a1900b3;color: white;">
+                    <div>Nocturna chance 2</div>
+                    <div><?= substr("000" . $primer_premio_noc_2, -4) ?></div>
+                </div>
+            <?php } ?>
         </div>
 
         <!-- BANNER -->

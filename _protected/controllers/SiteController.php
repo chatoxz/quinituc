@@ -100,31 +100,36 @@ class SiteController extends Controller
         $numerosUltimaTomb = TombolaNumero::find()->where(['id_tombola' => $ult_tombola->id])->one();
 
         //ULTIMOS PRIMEROS PREMIOS DE TOMBOLA MATUTINA - VASPERTINA - TARDE - NOCTURA
-        $tipos_tombolas =
-            $ult_tomb_mat = Tombola::find()->where(['id_momento' => 1])->orderBy(['fecha' => SORT_DESC])->one();
-        $primer_premio_mat = TombolaNumero::find()->where(['id_tombola' => $ult_tomb_mat->id])->one();
+        $ult_tomb_mat = Tombola::find()->where(['id_momento' => 1])->orderBy(['fecha' => SORT_DESC])->one();
+        $primer_premio_mat = TombolaNumero::find()->where(['id_tombola' => $ult_tomb_mat->id])->one()->numero_1;
 
         $ult_tomb_vesp = Tombola::find()->where(['id_momento' => 2])->orderBy(['fecha' => SORT_DESC])->one();
-        $primer_premio_vesp = TombolaNumero::find()->where(['id_tombola' => $ult_tomb_vesp->id])->one();
+        $primer_premio_vesp = TombolaNumero::find()->where(['id_tombola' => $ult_tomb_vesp->id])->one()->numero_1;
+
+        $ult_tomb_vesp_2 = Tombola::find()->where(['id_momento' => 5])->orderBy(['fecha' => SORT_DESC])->one();
+        $primer_premio_vesp_2 = count($ult_tomb_vesp_2) > 0 ? TombolaNumero::find()->where(['id_tombola' => $ult_tomb_vesp_2->id])->one()->numero_1 : NULL;
 
         $ult_tomb_tarde = Tombola::find()->where(['id_momento' => 3])->orderBy(['fecha' => SORT_DESC])->one();
-        $primer_premio_tarde = TombolaNumero::find()->where(['id_tombola' => $ult_tomb_tarde->id])->one();
+        $primer_premio_tarde = TombolaNumero::find()->where(['id_tombola' => $ult_tomb_tarde->id])->one()->numero_1;
 
         $ult_tomb_noc = Tombola::find()->where(['id_momento' => 4])->orderBy(['fecha' => SORT_DESC])->one();
-        $primer_premio_noc = TombolaNumero::find()->where(['id_tombola' => $ult_tomb_noc->id])->one();
+        $primer_premio_noc = TombolaNumero::find()->where(['id_tombola' => $ult_tomb_noc->id])->one()->numero_1;
+
+        $ult_tomb_noc_2 = Tombola::find()->where(['id_momento' => 6])->orderBy(['fecha' => SORT_DESC])->one();
+        $primer_premio_noc_2 = count($ult_tomb_noc_2) > 0 ? TombolaNumero::find()->where(['id_tombola' => $ult_tomb_noc_2->id])->one()->numero_1 : NULL;
 
         $numeros_varios = NumerosVarios::find()->orderBy(['id' => SORT_DESC])->one();
-        //var_dump($numerosUltimaTomb);
+
         return $this->render('index', [
             'banners' => $banners,
             'ult_tombola' => $ult_tombola,
             'numerosUltimaTomb' => $numerosUltimaTomb,
-            'primer_premio_mat' => $primer_premio_mat->numero_1,
-            'primer_premio_vesp' => $primer_premio_vesp->numero_1,
-            'primer_premio_tarde' => $primer_premio_tarde->numero_1,
-            'primer_premio_noc' => $primer_premio_noc->numero_1,
-            'primer_premio_vesp_seg' => $primer_premio_noc->numero_1,
-            'primer_premio_noc_seg' => $primer_premio_noc->numero_1,
+            'primer_premio_mat' => $primer_premio_mat,
+            'primer_premio_vesp' => $primer_premio_vesp,
+            'primer_premio_tarde' => $primer_premio_tarde,
+            'primer_premio_noc' => $primer_premio_noc,
+            'primer_premio_vesp_2' => $primer_premio_vesp_2,
+            'primer_premio_noc_2' => $primer_premio_noc_2,
             'numeros_varios' => $numeros_varios,
             'momento_ult_tombola' => TombolaMomento::findOne(['id' => $ult_tombola->id_momento])->nombre,
         ]);

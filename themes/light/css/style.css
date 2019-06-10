@@ -328,25 +328,21 @@ div.required label:after {
   font-size: 18px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.banner_desp_sorteos {
-  width: 100%;
-  border-radius: 5px;
+  justify-content: space-around;
 }
 
 .item_tabla_sorteos_mat_vesp_tarde_noc {
-  border: grey 1px solid;
-  /*width: 24.5%;*/
-  width: 180px;
+  border: #80808052 1px solid;
+  width: 24%;
+  /*width: 180px;*/
   height: 90px;
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   border-radius: 5px;
   overflow-x: hidden;
+  margin-top: 5px;
 }
 
 .banner_desp_sorteos {
