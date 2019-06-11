@@ -22488,3 +22488,2553 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1560185709.855
     'REQUEST_TIME' => 1560185709
 ]
+2019-06-10 19:42:28 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'array' (T_ARRAY)' in C:\wamp64\www\quinituc\_protected\controllers\SiteController.php:104
+Stack trace:
+#0 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Module.php(633): ::spl_autoload_call()
+#1 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Module.php(633): ::class_exists()
+#2 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Module.php(591): yii\base\Module->createControllerByID()
+#3 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Module.php(517): yii\base\Module->createController()
+#4 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#5 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#6 C:\wamp64\www\quinituc\index.php(12): yii\base\Application->run()
+#7 {main}
+2019-06-10 19:42:27 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.1457964660.1559925064'
+    '_identity' => '097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"bXWYol4yXIyujRvHpmjMLebQV65S90it\",2592000]\";}'
+    'PHPSESSID' => 't369167l92q723gq5et99gt8e5'
+    '_csrf' => '9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"·Žzcp00S4·ß^’†”:Ôiž©©hÈÍP%\";}'
+    '_gid' => 'GA1.1.847649596.1560183122'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'quinituc'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://quinituc/'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_ga=GA1.1.1457964660.1559925064; _identity=097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bXWYol4yXIyujRvHpmjMLebQV65S90it%22%2C2592000%5D%22%3B%7D; PHPSESSID=t369167l92q723gq5et99gt8e5; _csrf=9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1A%B7%8Ezc%0Dp%7F00S4%B7%DF%5E%92%15%1B%86%94%3A%D4i%9E%A9%A9h%C8%CDP%01%25%22%3B%7D; _gid=GA1.1.847649596.1560183122'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\wamp64\\bin\\php\\php7.1.16;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Subversion\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\WinSCP\\;C:\\gradle-4.6-bin\\gradle-4.6\\bin\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp64\\bin\\mysql\\mysql5.7.21\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\chatoxz\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win64) PHP/5.6.35 Server at quinituc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/5.6.35'
+    'SERVER_NAME' => 'quinituc'
+    'SERVER_ADDR' => '127.0.13.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/quinituc/index.php'
+    'REMOTE_PORT' => '50688'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1560195747.034
+    'REQUEST_TIME' => 1560195747
+]
+2019-06-10 19:42:38 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'array' (T_ARRAY)' in C:\wamp64\www\quinituc\_protected\controllers\SiteController.php:104
+Stack trace:
+#0 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Module.php(633): ::spl_autoload_call()
+#1 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Module.php(633): ::class_exists()
+#2 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Module.php(591): yii\base\Module->createControllerByID()
+#3 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Module.php(517): yii\base\Module->createController()
+#4 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#5 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#6 C:\wamp64\www\quinituc\index.php(12): yii\base\Application->run()
+#7 {main}
+2019-06-10 19:42:38 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.1457964660.1559925064'
+    '_identity' => '097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"bXWYol4yXIyujRvHpmjMLebQV65S90it\",2592000]\";}'
+    'PHPSESSID' => 't369167l92q723gq5et99gt8e5'
+    '_csrf' => '9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"·Žzcp00S4·ß^’†”:Ôiž©©hÈÍP%\";}'
+    '_gid' => 'GA1.1.847649596.1560183122'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'quinituc'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://quinituc/'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_ga=GA1.1.1457964660.1559925064; _identity=097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bXWYol4yXIyujRvHpmjMLebQV65S90it%22%2C2592000%5D%22%3B%7D; PHPSESSID=t369167l92q723gq5et99gt8e5; _csrf=9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1A%B7%8Ezc%0Dp%7F00S4%B7%DF%5E%92%15%1B%86%94%3A%D4i%9E%A9%A9h%C8%CDP%01%25%22%3B%7D; _gid=GA1.1.847649596.1560183122'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\wamp64\\bin\\php\\php7.1.16;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Subversion\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\WinSCP\\;C:\\gradle-4.6-bin\\gradle-4.6\\bin\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp64\\bin\\mysql\\mysql5.7.21\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\chatoxz\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win64) PHP/5.6.35 Server at quinituc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/5.6.35'
+    'SERVER_NAME' => 'quinituc'
+    'SERVER_ADDR' => '127.0.13.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/quinituc/index.php'
+    'REMOTE_PORT' => '50700'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1560195758.39
+    'REQUEST_TIME' => 1560195758
+]
+2019-06-10 19:42:48 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected 'array' (T_ARRAY)' in C:\wamp64\www\quinituc\_protected\controllers\SiteController.php:104
+Stack trace:
+#0 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Module.php(633): ::spl_autoload_call()
+#1 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Module.php(633): ::class_exists()
+#2 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Module.php(591): yii\base\Module->createControllerByID()
+#3 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Module.php(517): yii\base\Module->createController()
+#4 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#5 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#6 C:\wamp64\www\quinituc\index.php(12): yii\base\Application->run()
+#7 {main}
+2019-06-10 19:42:48 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.1457964660.1559925064'
+    '_identity' => '097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"bXWYol4yXIyujRvHpmjMLebQV65S90it\",2592000]\";}'
+    'PHPSESSID' => 't369167l92q723gq5et99gt8e5'
+    '_csrf' => '9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"·Žzcp00S4·ß^’†”:Ôiž©©hÈÍP%\";}'
+    '_gid' => 'GA1.1.847649596.1560183122'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'quinituc'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://quinituc/'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_ga=GA1.1.1457964660.1559925064; _identity=097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bXWYol4yXIyujRvHpmjMLebQV65S90it%22%2C2592000%5D%22%3B%7D; PHPSESSID=t369167l92q723gq5et99gt8e5; _csrf=9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1A%B7%8Ezc%0Dp%7F00S4%B7%DF%5E%92%15%1B%86%94%3A%D4i%9E%A9%A9h%C8%CDP%01%25%22%3B%7D; _gid=GA1.1.847649596.1560183122'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\wamp64\\bin\\php\\php7.1.16;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Subversion\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\WinSCP\\;C:\\gradle-4.6-bin\\gradle-4.6\\bin\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp64\\bin\\mysql\\mysql5.7.21\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\chatoxz\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win64) PHP/5.6.35 Server at quinituc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/5.6.35'
+    'SERVER_NAME' => 'quinituc'
+    'SERVER_ADDR' => '127.0.13.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/quinituc/index.php'
+    'REMOTE_PORT' => '50706'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1560195768.099
+    'REQUEST_TIME' => 1560195768
+]
+2019-06-10 19:42:59 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Cannot modify header information - headers already sent by (output started at C:\wamp64\www\quinituc\_protected\controllers\SiteController.php:107)' in C:\wamp64\www\quinituc\_protected\views\site\index.php:8
+Stack trace:
+#0 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\View.php(330): ::unknown()
+#1 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#2 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile()
+#3 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render()
+#4 C:\wamp64\www\quinituc\_protected\controllers\SiteController.php(141): yii\base\Controller->render()
+#5 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): app\controllers\SiteController->actionIndex()
+#6 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#7 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#8 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#9 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#10 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#11 C:\wamp64\www\quinituc\index.php(12): yii\base\Application->run()
+#12 {main}
+2019-06-10 19:42:59 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.1457964660.1559925064'
+    '_identity' => '097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"bXWYol4yXIyujRvHpmjMLebQV65S90it\",2592000]\";}'
+    'PHPSESSID' => 't369167l92q723gq5et99gt8e5'
+    '_csrf' => '9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"·Žzcp00S4·ß^’†”:Ôiž©©hÈÍP%\";}'
+    '_gid' => 'GA1.1.847649596.1560183122'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'quinituc'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://quinituc/'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_ga=GA1.1.1457964660.1559925064; _identity=097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bXWYol4yXIyujRvHpmjMLebQV65S90it%22%2C2592000%5D%22%3B%7D; PHPSESSID=t369167l92q723gq5et99gt8e5; _csrf=9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1A%B7%8Ezc%0Dp%7F00S4%B7%DF%5E%92%15%1B%86%94%3A%D4i%9E%A9%A9h%C8%CDP%01%25%22%3B%7D; _gid=GA1.1.847649596.1560183122'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\wamp64\\bin\\php\\php7.1.16;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Subversion\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\WinSCP\\;C:\\gradle-4.6-bin\\gradle-4.6\\bin\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp64\\bin\\mysql\\mysql5.7.21\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\chatoxz\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win64) PHP/5.6.35 Server at quinituc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/5.6.35'
+    'SERVER_NAME' => 'quinituc'
+    'SERVER_ADDR' => '127.0.13.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/quinituc/index.php'
+    'REMOTE_PORT' => '50715'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1560195779.376
+    'REQUEST_TIME' => 1560195779
+]
+2019-06-10 19:51:55 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/app.php
+    in C:\wamp64\www\quinituc\_protected\views\site\index.php:14
+    in C:\wamp64\www\quinituc\_protected\controllers\SiteController.php:144
+2019-06-10 19:51:55 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/yii.php
+    in C:\wamp64\www\quinituc\_protected\views\site\index.php:42
+    in C:\wamp64\www\quinituc\_protected\controllers\SiteController.php:144
+2019-06-10 19:51:55 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\models\Tombola::numero_1' in C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Component.php:147
+Stack trace:
+#0 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\db\BaseActiveRecord.php(286): yii\base\Component->__get('numero_1')
+#1 C:\wamp64\www\quinituc\_protected\views\site\index.php(98): yii\db\BaseActiveRecord->__get('numero_1')
+#2 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\View.php(330): require('C:\\wamp64\\www\\q...')
+#3 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('C:\\wamp64\\www\\q...', Array)
+#4 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile('C:\\wamp64\\www\\q...', Array, Object(app\controllers\SiteController))
+#5 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render('index', Array, Object(app\controllers\SiteController))
+#6 C:\wamp64\www\quinituc\_protected\controllers\SiteController.php(144): yii\base\Controller->render('index', Array)
+#7 [internal function]: app\controllers\SiteController->actionIndex()
+#8 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#10 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#11 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/index', Array)
+#12 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\wamp64\www\quinituc\index.php(12): yii\base\Application->run()
+#14 {main}
+2019-06-10 19:51:55 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.1457964660.1559925064'
+    '_identity' => '097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"bXWYol4yXIyujRvHpmjMLebQV65S90it\",2592000]\";}'
+    'PHPSESSID' => 't369167l92q723gq5et99gt8e5'
+    '_csrf' => '9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"·Žzcp00S4·ß^’†”:Ôiž©©hÈÍP%\";}'
+    '_gid' => 'GA1.1.847649596.1560183122'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'quinituc'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://quinituc/'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_ga=GA1.1.1457964660.1559925064; _identity=097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bXWYol4yXIyujRvHpmjMLebQV65S90it%22%2C2592000%5D%22%3B%7D; PHPSESSID=t369167l92q723gq5et99gt8e5; _csrf=9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1A%B7%8Ezc%0Dp%7F00S4%B7%DF%5E%92%15%1B%86%94%3A%D4i%9E%A9%A9h%C8%CDP%01%25%22%3B%7D; _gid=GA1.1.847649596.1560183122'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\wamp64\\bin\\php\\php7.1.16;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Subversion\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\WinSCP\\;C:\\gradle-4.6-bin\\gradle-4.6\\bin\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp64\\bin\\mysql\\mysql5.7.21\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\chatoxz\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win64) PHP/5.6.35 Server at quinituc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/5.6.35'
+    'SERVER_NAME' => 'quinituc'
+    'SERVER_ADDR' => '127.0.13.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/quinituc/index.php'
+    'REMOTE_PORT' => '50919'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1560196315.609
+    'REQUEST_TIME' => 1560196315
+]
+2019-06-10 19:52:17 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/app.php
+    in C:\wamp64\www\quinituc\_protected\views\site\index.php:14
+    in C:\wamp64\www\quinituc\_protected\controllers\SiteController.php:144
+2019-06-10 19:52:17 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/yii.php
+    in C:\wamp64\www\quinituc\_protected\views\site\index.php:42
+    in C:\wamp64\www\quinituc\_protected\controllers\SiteController.php:144
+2019-06-10 19:52:16 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.1457964660.1559925064'
+    '_identity' => '097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"bXWYol4yXIyujRvHpmjMLebQV65S90it\",2592000]\";}'
+    'PHPSESSID' => 't369167l92q723gq5et99gt8e5'
+    '_csrf' => '9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"·Žzcp00S4·ß^’†”:Ôiž©©hÈÍP%\";}'
+    '_gid' => 'GA1.1.847649596.1560183122'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'quinituc'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://quinituc/'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_ga=GA1.1.1457964660.1559925064; _identity=097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bXWYol4yXIyujRvHpmjMLebQV65S90it%22%2C2592000%5D%22%3B%7D; PHPSESSID=t369167l92q723gq5et99gt8e5; _csrf=9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1A%B7%8Ezc%0Dp%7F00S4%B7%DF%5E%92%15%1B%86%94%3A%D4i%9E%A9%A9h%C8%CDP%01%25%22%3B%7D; _gid=GA1.1.847649596.1560183122'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\wamp64\\bin\\php\\php7.1.16;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Subversion\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\WinSCP\\;C:\\gradle-4.6-bin\\gradle-4.6\\bin\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp64\\bin\\mysql\\mysql5.7.21\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\chatoxz\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win64) PHP/5.6.35 Server at quinituc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/5.6.35'
+    'SERVER_NAME' => 'quinituc'
+    'SERVER_ADDR' => '127.0.13.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/quinituc/index.php'
+    'REMOTE_PORT' => '50933'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1560196336.866
+    'REQUEST_TIME' => 1560196336
+]
+2019-06-10 19:52:18 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/yii.php
+2019-06-10 19:52:18 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "img/logos/logo-quinituc2.png".' in C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('img/logos/logo-...', Array)
+#1 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\quinituc\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\quinituc\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-06-10 19:52:18 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/app.php
+    in C:\wamp64\www\quinituc\_protected\views\site\error.php:19
+2019-06-10 19:52:17 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.1457964660.1559925064'
+    '_identity' => '097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"bXWYol4yXIyujRvHpmjMLebQV65S90it\",2592000]\";}'
+    'PHPSESSID' => 't369167l92q723gq5et99gt8e5'
+    '_csrf' => '9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"·Žzcp00S4·ß^’†”:Ôiž©©hÈÍP%\";}'
+    '_gid' => 'GA1.1.847649596.1560183122'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'quinituc'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'image/webp,*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://quinituc/themes/light/css/style.css'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_ga=GA1.1.1457964660.1559925064; _identity=097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bXWYol4yXIyujRvHpmjMLebQV65S90it%22%2C2592000%5D%22%3B%7D; PHPSESSID=t369167l92q723gq5et99gt8e5; _csrf=9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1A%B7%8Ezc%0Dp%7F00S4%B7%DF%5E%92%15%1B%86%94%3A%D4i%9E%A9%A9h%C8%CDP%01%25%22%3B%7D; _gid=GA1.1.847649596.1560183122'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\wamp64\\bin\\php\\php7.1.16;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Subversion\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\WinSCP\\;C:\\gradle-4.6-bin\\gradle-4.6\\bin\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp64\\bin\\mysql\\mysql5.7.21\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\chatoxz\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win64) PHP/5.6.35 Server at quinituc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/5.6.35'
+    'SERVER_NAME' => 'quinituc'
+    'SERVER_ADDR' => '127.0.13.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/quinituc/index.php'
+    'REMOTE_PORT' => '50939'
+    'REDIRECT_URL' => '/img/logos/logo-quinituc2.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/img/logos/logo-quinituc2.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1560196337.942
+    'REQUEST_TIME' => 1560196337
+]
+2019-06-10 19:52:35 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/yii.php
+    in C:\wamp64\www\quinituc\_protected\models\TombolaSearch.php:32
+    in C:\wamp64\www\quinituc\_protected\models\TombolaSearch.php:52
+    in C:\wamp64\www\quinituc\_protected\controllers\TombolaController.php:37
+2019-06-10 19:52:35 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/app.php
+    in C:\wamp64\www\quinituc\_protected\models\base\Tombola.php:54
+    in C:\wamp64\www\quinituc\_protected\views\tombola\_search.php:18
+    in C:\wamp64\www\quinituc\_protected\views\tombola\index.php:29
+2019-06-10 19:52:34 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.1457964660.1559925064'
+    '_identity' => '097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"bXWYol4yXIyujRvHpmjMLebQV65S90it\",2592000]\";}'
+    'PHPSESSID' => 't369167l92q723gq5et99gt8e5'
+    '_csrf' => '9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"·Žzcp00S4·ß^’†”:Ôiž©©hÈÍP%\";}'
+    '_gid' => 'GA1.1.847649596.1560183122'
+    '_gat_gtag_UA_129593460_1' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'quinituc'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://quinituc/index'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_ga=GA1.1.1457964660.1559925064; _identity=097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bXWYol4yXIyujRvHpmjMLebQV65S90it%22%2C2592000%5D%22%3B%7D; PHPSESSID=t369167l92q723gq5et99gt8e5; _csrf=9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1A%B7%8Ezc%0Dp%7F00S4%B7%DF%5E%92%15%1B%86%94%3A%D4i%9E%A9%A9h%C8%CDP%01%25%22%3B%7D; _gid=GA1.1.847649596.1560183122; _gat_gtag_UA_129593460_1=1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\wamp64\\bin\\php\\php7.1.16;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Subversion\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\WinSCP\\;C:\\gradle-4.6-bin\\gradle-4.6\\bin\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp64\\bin\\mysql\\mysql5.7.21\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\chatoxz\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win64) PHP/5.6.35 Server at quinituc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/5.6.35'
+    'SERVER_NAME' => 'quinituc'
+    'SERVER_ADDR' => '127.0.13.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/quinituc/index.php'
+    'REMOTE_PORT' => '50958'
+    'REDIRECT_URL' => '/tombola/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/tombola/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1560196354.95
+    'REQUEST_TIME' => 1560196354
+]
+2019-06-10 19:52:50 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/yii.php
+    in C:\wamp64\www\quinituc\_protected\views\tombola\view.php:48
+    in C:\wamp64\www\quinituc\_protected\controllers\TombolaController.php:57
+2019-06-10 19:52:50 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/app.php
+    in C:\wamp64\www\quinituc\_protected\models\base\Tombola.php:54
+    in C:\wamp64\www\quinituc\_protected\views\tombola\view.php:48
+    in C:\wamp64\www\quinituc\_protected\controllers\TombolaController.php:57
+2019-06-10 19:52:49 [127.0.0.1][1][-][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_COOKIE = [
+    '_ga' => 'GA1.1.1457964660.1559925064'
+    '_identity' => '097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"bXWYol4yXIyujRvHpmjMLebQV65S90it\",2592000]\";}'
+    'PHPSESSID' => 't369167l92q723gq5et99gt8e5'
+    '_csrf' => '9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"·Žzcp00S4·ß^’†”:Ôiž©©hÈÍP%\";}'
+    '_gid' => 'GA1.1.847649596.1560183122'
+    '_gat_gtag_UA_129593460_1' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'quinituc'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://quinituc/tombola/index'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_ga=GA1.1.1457964660.1559925064; _identity=097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bXWYol4yXIyujRvHpmjMLebQV65S90it%22%2C2592000%5D%22%3B%7D; PHPSESSID=t369167l92q723gq5et99gt8e5; _csrf=9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1A%B7%8Ezc%0Dp%7F00S4%B7%DF%5E%92%15%1B%86%94%3A%D4i%9E%A9%A9h%C8%CDP%01%25%22%3B%7D; _gid=GA1.1.847649596.1560183122; _gat_gtag_UA_129593460_1=1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\wamp64\\bin\\php\\php7.1.16;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Subversion\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\WinSCP\\;C:\\gradle-4.6-bin\\gradle-4.6\\bin\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp64\\bin\\mysql\\mysql5.7.21\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\chatoxz\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win64) PHP/5.6.35 Server at quinituc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/5.6.35'
+    'SERVER_NAME' => 'quinituc'
+    'SERVER_ADDR' => '127.0.13.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/quinituc/index.php'
+    'REMOTE_PORT' => '50973'
+    'REDIRECT_URL' => '/tombola/view'
+    'REDIRECT_QUERY_STRING' => 'id=2'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=2'
+    'REQUEST_URI' => '/tombola/view?id=2'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1560196369.871
+    'REQUEST_TIME' => 1560196369
+]
+2019-06-10 19:52:55 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/app.php
+    in C:\wamp64\www\quinituc\_protected\views\site\index.php:14
+    in C:\wamp64\www\quinituc\_protected\controllers\SiteController.php:144
+2019-06-10 19:52:55 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/yii.php
+    in C:\wamp64\www\quinituc\_protected\views\site\index.php:42
+    in C:\wamp64\www\quinituc\_protected\controllers\SiteController.php:144
+2019-06-10 19:52:55 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.1457964660.1559925064'
+    '_identity' => '097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"bXWYol4yXIyujRvHpmjMLebQV65S90it\",2592000]\";}'
+    'PHPSESSID' => 't369167l92q723gq5et99gt8e5'
+    '_csrf' => '9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"·Žzcp00S4·ß^’†”:Ôiž©©hÈÍP%\";}'
+    '_gid' => 'GA1.1.847649596.1560183122'
+    '_gat_gtag_UA_129593460_1' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'quinituc'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://quinituc/tombola/view?id=2'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_ga=GA1.1.1457964660.1559925064; _identity=097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bXWYol4yXIyujRvHpmjMLebQV65S90it%22%2C2592000%5D%22%3B%7D; PHPSESSID=t369167l92q723gq5et99gt8e5; _csrf=9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1A%B7%8Ezc%0Dp%7F00S4%B7%DF%5E%92%15%1B%86%94%3A%D4i%9E%A9%A9h%C8%CDP%01%25%22%3B%7D; _gid=GA1.1.847649596.1560183122; _gat_gtag_UA_129593460_1=1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\wamp64\\bin\\php\\php7.1.16;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Subversion\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\WinSCP\\;C:\\gradle-4.6-bin\\gradle-4.6\\bin\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp64\\bin\\mysql\\mysql5.7.21\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\chatoxz\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win64) PHP/5.6.35 Server at quinituc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/5.6.35'
+    'SERVER_NAME' => 'quinituc'
+    'SERVER_ADDR' => '127.0.13.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/quinituc/index.php'
+    'REMOTE_PORT' => '50973'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1560196375.207
+    'REQUEST_TIME' => 1560196375
+]
+2019-06-10 19:52:56 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/yii.php
+2019-06-10 19:52:56 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "img/logos/logo-quinituc2.png".' in C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('img/logos/logo-...', Array)
+#1 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\quinituc\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\quinituc\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-06-10 19:52:56 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/app.php
+    in C:\wamp64\www\quinituc\_protected\views\site\error.php:19
+2019-06-10 19:52:55 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.1457964660.1559925064'
+    '_identity' => '097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"bXWYol4yXIyujRvHpmjMLebQV65S90it\",2592000]\";}'
+    'PHPSESSID' => 't369167l92q723gq5et99gt8e5'
+    '_csrf' => '9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"·Žzcp00S4·ß^’†”:Ôiž©©hÈÍP%\";}'
+    '_gid' => 'GA1.1.847649596.1560183122'
+    '_gat_gtag_UA_129593460_1' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'quinituc'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'image/webp,*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://quinituc/themes/light/css/style.css'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_ga=GA1.1.1457964660.1559925064; _identity=097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bXWYol4yXIyujRvHpmjMLebQV65S90it%22%2C2592000%5D%22%3B%7D; PHPSESSID=t369167l92q723gq5et99gt8e5; _csrf=9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1A%B7%8Ezc%0Dp%7F00S4%B7%DF%5E%92%15%1B%86%94%3A%D4i%9E%A9%A9h%C8%CDP%01%25%22%3B%7D; _gid=GA1.1.847649596.1560183122; _gat_gtag_UA_129593460_1=1'
+    'PATH' => 'C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\wamp64\\bin\\php\\php7.1.16;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Subversion\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\WinSCP\\;C:\\gradle-4.6-bin\\gradle-4.6\\bin\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp64\\bin\\mysql\\mysql5.7.21\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\chatoxz\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win64) PHP/5.6.35 Server at quinituc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/5.6.35'
+    'SERVER_NAME' => 'quinituc'
+    'SERVER_ADDR' => '127.0.13.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/quinituc/index.php'
+    'REMOTE_PORT' => '50973'
+    'REDIRECT_URL' => '/img/logos/logo-quinituc2.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/img/logos/logo-quinituc2.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1560196375.802
+    'REQUEST_TIME' => 1560196375
+]
+2019-06-10 19:53:22 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/app.php
+    in C:\wamp64\www\quinituc\_protected\views\site\index.php:14
+    in C:\wamp64\www\quinituc\_protected\controllers\SiteController.php:144
+2019-06-10 19:53:22 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/yii.php
+    in C:\wamp64\www\quinituc\_protected\views\site\index.php:42
+    in C:\wamp64\www\quinituc\_protected\controllers\SiteController.php:144
+2019-06-10 19:53:22 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.1457964660.1559925064'
+    '_identity' => '097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"bXWYol4yXIyujRvHpmjMLebQV65S90it\",2592000]\";}'
+    'PHPSESSID' => 't369167l92q723gq5et99gt8e5'
+    '_csrf' => '9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"·Žzcp00S4·ß^’†”:Ôiž©©hÈÍP%\";}'
+    '_gid' => 'GA1.1.847649596.1560183122'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'quinituc'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://quinituc/tombola/view?id=2'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_ga=GA1.1.1457964660.1559925064; _identity=097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bXWYol4yXIyujRvHpmjMLebQV65S90it%22%2C2592000%5D%22%3B%7D; PHPSESSID=t369167l92q723gq5et99gt8e5; _csrf=9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1A%B7%8Ezc%0Dp%7F00S4%B7%DF%5E%92%15%1B%86%94%3A%D4i%9E%A9%A9h%C8%CDP%01%25%22%3B%7D; _gid=GA1.1.847649596.1560183122'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\wamp64\\bin\\php\\php7.1.16;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Subversion\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\WinSCP\\;C:\\gradle-4.6-bin\\gradle-4.6\\bin\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp64\\bin\\mysql\\mysql5.7.21\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\chatoxz\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win64) PHP/5.6.35 Server at quinituc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/5.6.35'
+    'SERVER_NAME' => 'quinituc'
+    'SERVER_ADDR' => '127.0.13.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/quinituc/index.php'
+    'REMOTE_PORT' => '50998'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1560196402.023
+    'REQUEST_TIME' => 1560196402
+]
+2019-06-10 19:53:22 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/yii.php
+2019-06-10 19:53:22 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "img/logos/logo-quinituc2.png".' in C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('img/logos/logo-...', Array)
+#1 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\quinituc\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\quinituc\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-06-10 19:53:22 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/app.php
+    in C:\wamp64\www\quinituc\_protected\views\site\error.php:19
+2019-06-10 19:53:22 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.1457964660.1559925064'
+    '_identity' => '097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"bXWYol4yXIyujRvHpmjMLebQV65S90it\",2592000]\";}'
+    'PHPSESSID' => 't369167l92q723gq5et99gt8e5'
+    '_csrf' => '9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"·Žzcp00S4·ß^’†”:Ôiž©©hÈÍP%\";}'
+    '_gid' => 'GA1.1.847649596.1560183122'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'quinituc'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'image/webp,*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://quinituc/themes/light/css/style.css'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_ga=GA1.1.1457964660.1559925064; _identity=097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bXWYol4yXIyujRvHpmjMLebQV65S90it%22%2C2592000%5D%22%3B%7D; PHPSESSID=t369167l92q723gq5et99gt8e5; _csrf=9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1A%B7%8Ezc%0Dp%7F00S4%B7%DF%5E%92%15%1B%86%94%3A%D4i%9E%A9%A9h%C8%CDP%01%25%22%3B%7D; _gid=GA1.1.847649596.1560183122'
+    'PATH' => 'C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\wamp64\\bin\\php\\php7.1.16;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Subversion\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\WinSCP\\;C:\\gradle-4.6-bin\\gradle-4.6\\bin\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp64\\bin\\mysql\\mysql5.7.21\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\chatoxz\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win64) PHP/5.6.35 Server at quinituc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/5.6.35'
+    'SERVER_NAME' => 'quinituc'
+    'SERVER_ADDR' => '127.0.13.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/quinituc/index.php'
+    'REMOTE_PORT' => '51001'
+    'REDIRECT_URL' => '/img/logos/logo-quinituc2.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/img/logos/logo-quinituc2.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1560196402.662
+    'REQUEST_TIME' => 1560196402
+]
+2019-06-10 19:53:31 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/app.php
+    in C:\wamp64\www\quinituc\_protected\views\site\index.php:14
+    in C:\wamp64\www\quinituc\_protected\controllers\SiteController.php:144
+2019-06-10 19:53:31 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/yii.php
+    in C:\wamp64\www\quinituc\_protected\views\site\index.php:42
+    in C:\wamp64\www\quinituc\_protected\controllers\SiteController.php:144
+2019-06-10 19:53:31 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.1457964660.1559925064'
+    '_identity' => '097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"bXWYol4yXIyujRvHpmjMLebQV65S90it\",2592000]\";}'
+    'PHPSESSID' => 't369167l92q723gq5et99gt8e5'
+    '_csrf' => '9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"·Žzcp00S4·ß^’†”:Ôiž©©hÈÍP%\";}'
+    '_gid' => 'GA1.1.847649596.1560183122'
+    '_gat_gtag_UA_129593460_1' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'quinituc'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://quinituc/tombola/view?id=2'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_ga=GA1.1.1457964660.1559925064; _identity=097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bXWYol4yXIyujRvHpmjMLebQV65S90it%22%2C2592000%5D%22%3B%7D; PHPSESSID=t369167l92q723gq5et99gt8e5; _csrf=9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1A%B7%8Ezc%0Dp%7F00S4%B7%DF%5E%92%15%1B%86%94%3A%D4i%9E%A9%A9h%C8%CDP%01%25%22%3B%7D; _gid=GA1.1.847649596.1560183122; _gat_gtag_UA_129593460_1=1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\wamp64\\bin\\php\\php7.1.16;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Subversion\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\WinSCP\\;C:\\gradle-4.6-bin\\gradle-4.6\\bin\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp64\\bin\\mysql\\mysql5.7.21\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\chatoxz\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win64) PHP/5.6.35 Server at quinituc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/5.6.35'
+    'SERVER_NAME' => 'quinituc'
+    'SERVER_ADDR' => '127.0.13.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/quinituc/index.php'
+    'REMOTE_PORT' => '51008'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1560196411.061
+    'REQUEST_TIME' => 1560196411
+]
+2019-06-10 19:53:31 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/yii.php
+2019-06-10 19:53:31 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "img/logos/logo-quinituc2.png".' in C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('img/logos/logo-...', Array)
+#1 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\quinituc\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\quinituc\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-06-10 19:53:31 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/app.php
+    in C:\wamp64\www\quinituc\_protected\views\site\error.php:19
+2019-06-10 19:53:31 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.1457964660.1559925064'
+    '_identity' => '097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"bXWYol4yXIyujRvHpmjMLebQV65S90it\",2592000]\";}'
+    'PHPSESSID' => 't369167l92q723gq5et99gt8e5'
+    '_csrf' => '9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"·Žzcp00S4·ß^’†”:Ôiž©©hÈÍP%\";}'
+    '_gid' => 'GA1.1.847649596.1560183122'
+    '_gat_gtag_UA_129593460_1' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'quinituc'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'image/webp,*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://quinituc/themes/light/css/style.css'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_ga=GA1.1.1457964660.1559925064; _identity=097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bXWYol4yXIyujRvHpmjMLebQV65S90it%22%2C2592000%5D%22%3B%7D; PHPSESSID=t369167l92q723gq5et99gt8e5; _csrf=9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1A%B7%8Ezc%0Dp%7F00S4%B7%DF%5E%92%15%1B%86%94%3A%D4i%9E%A9%A9h%C8%CDP%01%25%22%3B%7D; _gid=GA1.1.847649596.1560183122; _gat_gtag_UA_129593460_1=1'
+    'PATH' => 'C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\wamp64\\bin\\php\\php7.1.16;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Subversion\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\WinSCP\\;C:\\gradle-4.6-bin\\gradle-4.6\\bin\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp64\\bin\\mysql\\mysql5.7.21\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\chatoxz\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win64) PHP/5.6.35 Server at quinituc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/5.6.35'
+    'SERVER_NAME' => 'quinituc'
+    'SERVER_ADDR' => '127.0.13.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/quinituc/index.php'
+    'REMOTE_PORT' => '51013'
+    'REDIRECT_URL' => '/img/logos/logo-quinituc2.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/img/logos/logo-quinituc2.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1560196411.628
+    'REQUEST_TIME' => 1560196411
+]
+2019-06-10 19:54:04 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/app.php
+    in C:\wamp64\www\quinituc\_protected\views\site\index.php:14
+    in C:\wamp64\www\quinituc\_protected\controllers\SiteController.php:144
+2019-06-10 19:54:04 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/yii.php
+    in C:\wamp64\www\quinituc\_protected\views\site\index.php:42
+    in C:\wamp64\www\quinituc\_protected\controllers\SiteController.php:144
+2019-06-10 19:54:04 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.1457964660.1559925064'
+    '_identity' => '097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"bXWYol4yXIyujRvHpmjMLebQV65S90it\",2592000]\";}'
+    'PHPSESSID' => 't369167l92q723gq5et99gt8e5'
+    '_csrf' => '9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"·Žzcp00S4·ß^’†”:Ôiž©©hÈÍP%\";}'
+    '_gid' => 'GA1.1.847649596.1560183122'
+    '_gat_gtag_UA_129593460_1' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'quinituc'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://quinituc/tombola/view?id=2'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_ga=GA1.1.1457964660.1559925064; _identity=097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bXWYol4yXIyujRvHpmjMLebQV65S90it%22%2C2592000%5D%22%3B%7D; PHPSESSID=t369167l92q723gq5et99gt8e5; _csrf=9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1A%B7%8Ezc%0Dp%7F00S4%B7%DF%5E%92%15%1B%86%94%3A%D4i%9E%A9%A9h%C8%CDP%01%25%22%3B%7D; _gid=GA1.1.847649596.1560183122; _gat_gtag_UA_129593460_1=1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\wamp64\\bin\\php\\php7.1.16;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Subversion\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\WinSCP\\;C:\\gradle-4.6-bin\\gradle-4.6\\bin\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp64\\bin\\mysql\\mysql5.7.21\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\chatoxz\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win64) PHP/5.6.35 Server at quinituc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/5.6.35'
+    'SERVER_NAME' => 'quinituc'
+    'SERVER_ADDR' => '127.0.13.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/quinituc/index.php'
+    'REMOTE_PORT' => '51032'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/index'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1560196444.136
+    'REQUEST_TIME' => 1560196444
+]
+2019-06-10 19:54:04 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/yii.php
+2019-06-10 19:54:04 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "img/logos/logo-quinituc2.png".' in C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('img/logos/logo-...', Array)
+#1 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\quinituc\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\quinituc\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-06-10 19:54:04 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/app.php
+    in C:\wamp64\www\quinituc\_protected\views\site\error.php:19
+2019-06-10 19:54:04 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.1457964660.1559925064'
+    '_identity' => '097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"bXWYol4yXIyujRvHpmjMLebQV65S90it\",2592000]\";}'
+    'PHPSESSID' => 't369167l92q723gq5et99gt8e5'
+    '_csrf' => '9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"·Žzcp00S4·ß^’†”:Ôiž©©hÈÍP%\";}'
+    '_gid' => 'GA1.1.847649596.1560183122'
+    '_gat_gtag_UA_129593460_1' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'quinituc'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'image/webp,*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://quinituc/themes/light/css/style.css'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_ga=GA1.1.1457964660.1559925064; _identity=097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bXWYol4yXIyujRvHpmjMLebQV65S90it%22%2C2592000%5D%22%3B%7D; PHPSESSID=t369167l92q723gq5et99gt8e5; _csrf=9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1A%B7%8Ezc%0Dp%7F00S4%B7%DF%5E%92%15%1B%86%94%3A%D4i%9E%A9%A9h%C8%CDP%01%25%22%3B%7D; _gid=GA1.1.847649596.1560183122; _gat_gtag_UA_129593460_1=1'
+    'PATH' => 'C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\wamp64\\bin\\php\\php7.1.16;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Subversion\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\WinSCP\\;C:\\gradle-4.6-bin\\gradle-4.6\\bin\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp64\\bin\\mysql\\mysql5.7.21\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\chatoxz\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win64) PHP/5.6.35 Server at quinituc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/5.6.35'
+    'SERVER_NAME' => 'quinituc'
+    'SERVER_ADDR' => '127.0.13.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/quinituc/index.php'
+    'REMOTE_PORT' => '51036'
+    'REDIRECT_URL' => '/img/logos/logo-quinituc2.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/img/logos/logo-quinituc2.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1560196444.743
+    'REQUEST_TIME' => 1560196444
+]
+2019-06-11 13:14:13 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/app.php
+    in C:\wamp64\www\quinituc\_protected\views\site\index.php:14
+    in C:\wamp64\www\quinituc\_protected\controllers\SiteController.php:118
+2019-06-11 13:14:13 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/yii.php
+    in C:\wamp64\www\quinituc\_protected\views\site\index.php:40
+    in C:\wamp64\www\quinituc\_protected\controllers\SiteController.php:118
+2019-06-11 13:14:12 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.1457964660.1559925064'
+    '_identity' => '097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"bXWYol4yXIyujRvHpmjMLebQV65S90it\",2592000]\";}'
+    '_gid' => 'GA1.1.847649596.1560183122'
+    'PHPSESSID' => 't369167l92q723gq5et99gt8e5'
+    '_csrf' => '9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"·Žzcp00S4·ß^’†”:Ôiž©©hÈÍP%\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'quinituc'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_ga=GA1.1.1457964660.1559925064; _identity=097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bXWYol4yXIyujRvHpmjMLebQV65S90it%22%2C2592000%5D%22%3B%7D; _gid=GA1.1.847649596.1560183122; PHPSESSID=t369167l92q723gq5et99gt8e5; _csrf=9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1A%B7%8Ezc%0Dp%7F00S4%B7%DF%5E%92%15%1B%86%94%3A%D4i%9E%A9%A9h%C8%CDP%01%25%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => 'C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\wamp64\\bin\\php\\php7.1.16;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Subversion\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\WinSCP\\;C:\\gradle-4.6-bin\\gradle-4.6\\bin\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp64\\bin\\mysql\\mysql5.7.21\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\chatoxz\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win64) PHP/5.6.35 Server at quinituc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/5.6.35'
+    'SERVER_NAME' => 'quinituc'
+    'SERVER_ADDR' => '127.0.13.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/quinituc/index.php'
+    'REMOTE_PORT' => '51207'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1560258851.668
+    'REQUEST_TIME' => 1560258851
+]
+2019-06-11 13:14:14 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/yii.php
+2019-06-11 13:14:14 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "img/logos/logo-quinituc2.png".' in C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('img/logos/logo-...', Array)
+#1 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\quinituc\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\quinituc\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-06-11 13:14:14 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/app.php
+    in C:\wamp64\www\quinituc\_protected\views\site\error.php:19
+2019-06-11 13:14:13 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.1457964660.1559925064'
+    '_identity' => '097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"bXWYol4yXIyujRvHpmjMLebQV65S90it\",2592000]\";}'
+    '_gid' => 'GA1.1.847649596.1560183122'
+    'PHPSESSID' => 't369167l92q723gq5et99gt8e5'
+    '_csrf' => '9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"·Žzcp00S4·ß^’†”:Ôiž©©hÈÍP%\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'quinituc'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'image/webp,*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://quinituc/themes/light/css/style.css'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_ga=GA1.1.1457964660.1559925064; _identity=097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bXWYol4yXIyujRvHpmjMLebQV65S90it%22%2C2592000%5D%22%3B%7D; _gid=GA1.1.847649596.1560183122; PHPSESSID=t369167l92q723gq5et99gt8e5; _csrf=9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1A%B7%8Ezc%0Dp%7F00S4%B7%DF%5E%92%15%1B%86%94%3A%D4i%9E%A9%A9h%C8%CDP%01%25%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\wamp64\\bin\\php\\php7.1.16;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Subversion\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\WinSCP\\;C:\\gradle-4.6-bin\\gradle-4.6\\bin\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp64\\bin\\mysql\\mysql5.7.21\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\chatoxz\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win64) PHP/5.6.35 Server at quinituc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/5.6.35'
+    'SERVER_NAME' => 'quinituc'
+    'SERVER_ADDR' => '127.0.13.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/quinituc/index.php'
+    'REMOTE_PORT' => '51210'
+    'REDIRECT_URL' => '/img/logos/logo-quinituc2.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/img/logos/logo-quinituc2.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1560258853.763
+    'REQUEST_TIME' => 1560258853
+]
+2019-06-11 13:30:19 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/yii.php
+2019-06-11 13:30:19 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "img/logos/logo-quinituc2.png".' in C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('img/logos/logo-...', Array)
+#1 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\quinituc\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\quinituc\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-06-11 13:30:19 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/app.php
+    in C:\wamp64\www\quinituc\_protected\views\site\error.php:19
+2019-06-11 13:30:19 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.1457964660.1559925064'
+    '_identity' => '097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"bXWYol4yXIyujRvHpmjMLebQV65S90it\",2592000]\";}'
+    '_gid' => 'GA1.1.847649596.1560183122'
+    'PHPSESSID' => 't369167l92q723gq5et99gt8e5'
+    '_csrf' => '9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"·Žzcp00S4·ß^’†”:Ôiž©©hÈÍP%\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'quinituc'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'image/webp,*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://quinituc/themes/light/css/style.css'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_ga=GA1.1.1457964660.1559925064; _identity=097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bXWYol4yXIyujRvHpmjMLebQV65S90it%22%2C2592000%5D%22%3B%7D; _gid=GA1.1.847649596.1560183122; PHPSESSID=t369167l92q723gq5et99gt8e5; _csrf=9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1A%B7%8Ezc%0Dp%7F00S4%B7%DF%5E%92%15%1B%86%94%3A%D4i%9E%A9%A9h%C8%CDP%01%25%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\wamp64\\bin\\php\\php7.1.16;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Subversion\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\WinSCP\\;C:\\gradle-4.6-bin\\gradle-4.6\\bin\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp64\\bin\\mysql\\mysql5.7.21\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\chatoxz\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win64) PHP/5.6.35 Server at quinituc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/5.6.35'
+    'SERVER_NAME' => 'quinituc'
+    'SERVER_ADDR' => '127.0.13.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/quinituc/index.php'
+    'REMOTE_PORT' => '51372'
+    'REDIRECT_URL' => '/img/logos/logo-quinituc2.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/img/logos/logo-quinituc2.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1560259819.259
+    'REQUEST_TIME' => 1560259819
+]
+2019-06-11 13:30:20 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/yii.php
+2019-06-11 13:30:20 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "img/logos/logo-quinituc2.png".' in C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('img/logos/logo-...', Array)
+#1 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\quinituc\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\quinituc\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-06-11 13:30:20 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/app.php
+    in C:\wamp64\www\quinituc\_protected\views\site\error.php:19
+2019-06-11 13:30:20 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.1457964660.1559925064'
+    '_identity' => '097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"bXWYol4yXIyujRvHpmjMLebQV65S90it\",2592000]\";}'
+    '_gid' => 'GA1.1.847649596.1560183122'
+    'PHPSESSID' => 't369167l92q723gq5et99gt8e5'
+    '_csrf' => '9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"·Žzcp00S4·ß^’†”:Ôiž©©hÈÍP%\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'quinituc'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'image/webp,*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://quinituc/themes/light/css/style.css'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_ga=GA1.1.1457964660.1559925064; _identity=097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bXWYol4yXIyujRvHpmjMLebQV65S90it%22%2C2592000%5D%22%3B%7D; _gid=GA1.1.847649596.1560183122; PHPSESSID=t369167l92q723gq5et99gt8e5; _csrf=9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1A%B7%8Ezc%0Dp%7F00S4%B7%DF%5E%92%15%1B%86%94%3A%D4i%9E%A9%A9h%C8%CDP%01%25%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\wamp64\\bin\\php\\php7.1.16;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Subversion\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\WinSCP\\;C:\\gradle-4.6-bin\\gradle-4.6\\bin\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp64\\bin\\mysql\\mysql5.7.21\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\chatoxz\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win64) PHP/5.6.35 Server at quinituc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/5.6.35'
+    'SERVER_NAME' => 'quinituc'
+    'SERVER_ADDR' => '127.0.13.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/quinituc/index.php'
+    'REMOTE_PORT' => '51374'
+    'REDIRECT_URL' => '/img/logos/logo-quinituc2.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/img/logos/logo-quinituc2.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1560259820.165
+    'REQUEST_TIME' => 1560259820
+]
+2019-06-11 13:30:20 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/yii.php
+2019-06-11 13:30:20 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "img/logos/logo-quinituc2.png".' in C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('img/logos/logo-...', Array)
+#1 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\quinituc\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\quinituc\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-06-11 13:30:20 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/app.php
+    in C:\wamp64\www\quinituc\_protected\views\site\error.php:19
+2019-06-11 13:30:20 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.1457964660.1559925064'
+    '_identity' => '097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"bXWYol4yXIyujRvHpmjMLebQV65S90it\",2592000]\";}'
+    '_gid' => 'GA1.1.847649596.1560183122'
+    'PHPSESSID' => 't369167l92q723gq5et99gt8e5'
+    '_csrf' => '9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"·Žzcp00S4·ß^’†”:Ôiž©©hÈÍP%\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'quinituc'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'image/webp,*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://quinituc/themes/light/css/style.css'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_ga=GA1.1.1457964660.1559925064; _identity=097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bXWYol4yXIyujRvHpmjMLebQV65S90it%22%2C2592000%5D%22%3B%7D; _gid=GA1.1.847649596.1560183122; PHPSESSID=t369167l92q723gq5et99gt8e5; _csrf=9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1A%B7%8Ezc%0Dp%7F00S4%B7%DF%5E%92%15%1B%86%94%3A%D4i%9E%A9%A9h%C8%CDP%01%25%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\wamp64\\bin\\php\\php7.1.16;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Subversion\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\WinSCP\\;C:\\gradle-4.6-bin\\gradle-4.6\\bin\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp64\\bin\\mysql\\mysql5.7.21\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\chatoxz\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win64) PHP/5.6.35 Server at quinituc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/5.6.35'
+    'SERVER_NAME' => 'quinituc'
+    'SERVER_ADDR' => '127.0.13.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/quinituc/index.php'
+    'REMOTE_PORT' => '51376'
+    'REDIRECT_URL' => '/img/logos/logo-quinituc2.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/img/logos/logo-quinituc2.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1560259820.699
+    'REQUEST_TIME' => 1560259820
+]
+2019-06-11 13:30:21 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/yii.php
+2019-06-11 13:30:21 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "img/logos/logo-quinituc2.png".' in C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('img/logos/logo-...', Array)
+#1 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\quinituc\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\quinituc\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-06-11 13:30:21 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/app.php
+    in C:\wamp64\www\quinituc\_protected\views\site\error.php:19
+2019-06-11 13:30:21 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.1457964660.1559925064'
+    '_identity' => '097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"bXWYol4yXIyujRvHpmjMLebQV65S90it\",2592000]\";}'
+    '_gid' => 'GA1.1.847649596.1560183122'
+    'PHPSESSID' => 't369167l92q723gq5et99gt8e5'
+    '_csrf' => '9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"·Žzcp00S4·ß^’†”:Ôiž©©hÈÍP%\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'quinituc'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'image/webp,*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://quinituc/themes/light/css/style.css'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_ga=GA1.1.1457964660.1559925064; _identity=097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bXWYol4yXIyujRvHpmjMLebQV65S90it%22%2C2592000%5D%22%3B%7D; _gid=GA1.1.847649596.1560183122; PHPSESSID=t369167l92q723gq5et99gt8e5; _csrf=9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1A%B7%8Ezc%0Dp%7F00S4%B7%DF%5E%92%15%1B%86%94%3A%D4i%9E%A9%A9h%C8%CDP%01%25%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\wamp64\\bin\\php\\php7.1.16;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Subversion\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\WinSCP\\;C:\\gradle-4.6-bin\\gradle-4.6\\bin\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp64\\bin\\mysql\\mysql5.7.21\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\chatoxz\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win64) PHP/5.6.35 Server at quinituc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/5.6.35'
+    'SERVER_NAME' => 'quinituc'
+    'SERVER_ADDR' => '127.0.13.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/quinituc/index.php'
+    'REMOTE_PORT' => '51378'
+    'REDIRECT_URL' => '/img/logos/logo-quinituc2.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/img/logos/logo-quinituc2.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1560259821.343
+    'REQUEST_TIME' => 1560259821
+]
+2019-06-11 13:32:10 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/app.php
+    in C:\wamp64\www\quinituc\_protected\views\site\index.php:14
+    in C:\wamp64\www\quinituc\_protected\controllers\SiteController.php:118
+2019-06-11 13:32:10 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/yii.php
+    in C:\wamp64\www\quinituc\_protected\views\site\index.php:40
+    in C:\wamp64\www\quinituc\_protected\controllers\SiteController.php:118
+2019-06-11 13:32:10 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.1457964660.1559925064'
+    '_identity' => '097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"bXWYol4yXIyujRvHpmjMLebQV65S90it\",2592000]\";}'
+    '_gid' => 'GA1.1.847649596.1560183122'
+    'PHPSESSID' => 't369167l92q723gq5et99gt8e5'
+    '_csrf' => '9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"·Žzcp00S4·ß^’†”:Ôiž©©hÈÍP%\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'quinituc'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_ga=GA1.1.1457964660.1559925064; _identity=097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bXWYol4yXIyujRvHpmjMLebQV65S90it%22%2C2592000%5D%22%3B%7D; _gid=GA1.1.847649596.1560183122; PHPSESSID=t369167l92q723gq5et99gt8e5; _csrf=9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1A%B7%8Ezc%0Dp%7F00S4%B7%DF%5E%92%15%1B%86%94%3A%D4i%9E%A9%A9h%C8%CDP%01%25%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\wamp64\\bin\\php\\php7.1.16;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Subversion\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\WinSCP\\;C:\\gradle-4.6-bin\\gradle-4.6\\bin\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp64\\bin\\mysql\\mysql5.7.21\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\chatoxz\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win64) PHP/5.6.35 Server at quinituc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/5.6.35'
+    'SERVER_NAME' => 'quinituc'
+    'SERVER_ADDR' => '127.0.13.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/quinituc/index.php'
+    'REMOTE_PORT' => '51386'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1560259930.575
+    'REQUEST_TIME' => 1560259930
+]
+2019-06-11 13:32:11 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/yii.php
+2019-06-11 13:32:11 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "img/logos/logo-quinituc2.png".' in C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('img/logos/logo-...', Array)
+#1 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\quinituc\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\quinituc\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-06-11 13:32:11 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/app.php
+    in C:\wamp64\www\quinituc\_protected\views\site\error.php:19
+2019-06-11 13:32:11 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.1457964660.1559925064'
+    '_identity' => '097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"bXWYol4yXIyujRvHpmjMLebQV65S90it\",2592000]\";}'
+    '_gid' => 'GA1.1.847649596.1560183122'
+    'PHPSESSID' => 't369167l92q723gq5et99gt8e5'
+    '_csrf' => '9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"·Žzcp00S4·ß^’†”:Ôiž©©hÈÍP%\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'quinituc'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'image/webp,*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://quinituc/themes/light/css/style.css'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_ga=GA1.1.1457964660.1559925064; _identity=097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bXWYol4yXIyujRvHpmjMLebQV65S90it%22%2C2592000%5D%22%3B%7D; _gid=GA1.1.847649596.1560183122; PHPSESSID=t369167l92q723gq5et99gt8e5; _csrf=9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1A%B7%8Ezc%0Dp%7F00S4%B7%DF%5E%92%15%1B%86%94%3A%D4i%9E%A9%A9h%C8%CDP%01%25%22%3B%7D'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\wamp64\\bin\\php\\php7.1.16;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Subversion\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\WinSCP\\;C:\\gradle-4.6-bin\\gradle-4.6\\bin\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp64\\bin\\mysql\\mysql5.7.21\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\chatoxz\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win64) PHP/5.6.35 Server at quinituc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/5.6.35'
+    'SERVER_NAME' => 'quinituc'
+    'SERVER_ADDR' => '127.0.13.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/quinituc/index.php'
+    'REMOTE_PORT' => '51396'
+    'REDIRECT_URL' => '/img/logos/logo-quinituc2.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/img/logos/logo-quinituc2.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1560259931.463
+    'REQUEST_TIME' => 1560259931
+]
+2019-06-11 13:32:39 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/app.php
+    in C:\wamp64\www\quinituc\_protected\views\site\index.php:14
+    in C:\wamp64\www\quinituc\_protected\controllers\SiteController.php:118
+2019-06-11 13:32:39 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/yii.php
+    in C:\wamp64\www\quinituc\_protected\views\site\index.php:40
+    in C:\wamp64\www\quinituc\_protected\controllers\SiteController.php:118
+2019-06-11 13:32:39 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.1457964660.1559925064'
+    '_identity' => '097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"bXWYol4yXIyujRvHpmjMLebQV65S90it\",2592000]\";}'
+    '_gid' => 'GA1.1.847649596.1560183122'
+    'PHPSESSID' => 't369167l92q723gq5et99gt8e5'
+    '_csrf' => '9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"·Žzcp00S4·ß^’†”:Ôiž©©hÈÍP%\";}'
+    '_gat_gtag_UA_129593460_1' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'quinituc'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_ga=GA1.1.1457964660.1559925064; _identity=097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bXWYol4yXIyujRvHpmjMLebQV65S90it%22%2C2592000%5D%22%3B%7D; _gid=GA1.1.847649596.1560183122; PHPSESSID=t369167l92q723gq5et99gt8e5; _csrf=9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1A%B7%8Ezc%0Dp%7F00S4%B7%DF%5E%92%15%1B%86%94%3A%D4i%9E%A9%A9h%C8%CDP%01%25%22%3B%7D; _gat_gtag_UA_129593460_1=1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\wamp64\\bin\\php\\php7.1.16;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Subversion\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\WinSCP\\;C:\\gradle-4.6-bin\\gradle-4.6\\bin\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp64\\bin\\mysql\\mysql5.7.21\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\chatoxz\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win64) PHP/5.6.35 Server at quinituc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/5.6.35'
+    'SERVER_NAME' => 'quinituc'
+    'SERVER_ADDR' => '127.0.13.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/quinituc/index.php'
+    'REMOTE_PORT' => '51404'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1560259959.36
+    'REQUEST_TIME' => 1560259959
+]
+2019-06-11 13:32:40 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/yii.php
+2019-06-11 13:32:40 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "img/logos/logo-quinituc2.png".' in C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('img/logos/logo-...', Array)
+#1 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\quinituc\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\quinituc\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-06-11 13:32:40 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/app.php
+    in C:\wamp64\www\quinituc\_protected\views\site\error.php:19
+2019-06-11 13:32:40 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.1457964660.1559925064'
+    '_identity' => '097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"bXWYol4yXIyujRvHpmjMLebQV65S90it\",2592000]\";}'
+    '_gid' => 'GA1.1.847649596.1560183122'
+    'PHPSESSID' => 't369167l92q723gq5et99gt8e5'
+    '_csrf' => '9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"·Žzcp00S4·ß^’†”:Ôiž©©hÈÍP%\";}'
+    '_gat_gtag_UA_129593460_1' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'quinituc'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'image/webp,*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://quinituc/themes/light/css/style.css'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_ga=GA1.1.1457964660.1559925064; _identity=097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bXWYol4yXIyujRvHpmjMLebQV65S90it%22%2C2592000%5D%22%3B%7D; _gid=GA1.1.847649596.1560183122; PHPSESSID=t369167l92q723gq5et99gt8e5; _csrf=9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1A%B7%8Ezc%0Dp%7F00S4%B7%DF%5E%92%15%1B%86%94%3A%D4i%9E%A9%A9h%C8%CDP%01%25%22%3B%7D; _gat_gtag_UA_129593460_1=1'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\wamp64\\bin\\php\\php7.1.16;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Subversion\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\WinSCP\\;C:\\gradle-4.6-bin\\gradle-4.6\\bin\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp64\\bin\\mysql\\mysql5.7.21\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\chatoxz\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win64) PHP/5.6.35 Server at quinituc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/5.6.35'
+    'SERVER_NAME' => 'quinituc'
+    'SERVER_ADDR' => '127.0.13.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/quinituc/index.php'
+    'REMOTE_PORT' => '51410'
+    'REDIRECT_URL' => '/img/logos/logo-quinituc2.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/img/logos/logo-quinituc2.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1560259960.216
+    'REQUEST_TIME' => 1560259960
+]
+2019-06-11 13:32:47 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/app.php
+    in C:\wamp64\www\quinituc\_protected\views\site\index.php:14
+    in C:\wamp64\www\quinituc\_protected\controllers\SiteController.php:118
+2019-06-11 13:32:47 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/yii.php
+    in C:\wamp64\www\quinituc\_protected\views\site\index.php:40
+    in C:\wamp64\www\quinituc\_protected\controllers\SiteController.php:118
+2019-06-11 13:32:47 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.1457964660.1559925064'
+    '_identity' => '097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"bXWYol4yXIyujRvHpmjMLebQV65S90it\",2592000]\";}'
+    '_gid' => 'GA1.1.847649596.1560183122'
+    'PHPSESSID' => 't369167l92q723gq5et99gt8e5'
+    '_csrf' => '9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"·Žzcp00S4·ß^’†”:Ôiž©©hÈÍP%\";}'
+    '_gat_gtag_UA_129593460_1' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'quinituc'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_ga=GA1.1.1457964660.1559925064; _identity=097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bXWYol4yXIyujRvHpmjMLebQV65S90it%22%2C2592000%5D%22%3B%7D; _gid=GA1.1.847649596.1560183122; PHPSESSID=t369167l92q723gq5et99gt8e5; _csrf=9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1A%B7%8Ezc%0Dp%7F00S4%B7%DF%5E%92%15%1B%86%94%3A%D4i%9E%A9%A9h%C8%CDP%01%25%22%3B%7D; _gat_gtag_UA_129593460_1=1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\wamp64\\bin\\php\\php7.1.16;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Subversion\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\WinSCP\\;C:\\gradle-4.6-bin\\gradle-4.6\\bin\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp64\\bin\\mysql\\mysql5.7.21\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\chatoxz\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win64) PHP/5.6.35 Server at quinituc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/5.6.35'
+    'SERVER_NAME' => 'quinituc'
+    'SERVER_ADDR' => '127.0.13.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/quinituc/index.php'
+    'REMOTE_PORT' => '51414'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1560259967.504
+    'REQUEST_TIME' => 1560259967
+]
+2019-06-11 13:32:48 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/yii.php
+2019-06-11 13:32:48 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "img/logos/logo-quinituc2.png".' in C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('img/logos/logo-...', Array)
+#1 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\quinituc\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\quinituc\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-06-11 13:32:48 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/app.php
+    in C:\wamp64\www\quinituc\_protected\views\site\error.php:19
+2019-06-11 13:32:48 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.1457964660.1559925064'
+    '_identity' => '097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"bXWYol4yXIyujRvHpmjMLebQV65S90it\",2592000]\";}'
+    '_gid' => 'GA1.1.847649596.1560183122'
+    'PHPSESSID' => 't369167l92q723gq5et99gt8e5'
+    '_csrf' => '9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"·Žzcp00S4·ß^’†”:Ôiž©©hÈÍP%\";}'
+    '_gat_gtag_UA_129593460_1' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'quinituc'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'image/webp,*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://quinituc/themes/light/css/style.css'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_ga=GA1.1.1457964660.1559925064; _identity=097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bXWYol4yXIyujRvHpmjMLebQV65S90it%22%2C2592000%5D%22%3B%7D; _gid=GA1.1.847649596.1560183122; PHPSESSID=t369167l92q723gq5et99gt8e5; _csrf=9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1A%B7%8Ezc%0Dp%7F00S4%B7%DF%5E%92%15%1B%86%94%3A%D4i%9E%A9%A9h%C8%CDP%01%25%22%3B%7D; _gat_gtag_UA_129593460_1=1'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\wamp64\\bin\\php\\php7.1.16;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Subversion\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\WinSCP\\;C:\\gradle-4.6-bin\\gradle-4.6\\bin\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp64\\bin\\mysql\\mysql5.7.21\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\chatoxz\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win64) PHP/5.6.35 Server at quinituc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/5.6.35'
+    'SERVER_NAME' => 'quinituc'
+    'SERVER_ADDR' => '127.0.13.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/quinituc/index.php'
+    'REMOTE_PORT' => '51417'
+    'REDIRECT_URL' => '/img/logos/logo-quinituc2.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/img/logos/logo-quinituc2.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1560259968.186
+    'REQUEST_TIME' => 1560259968
+]
+2019-06-11 13:32:51 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/app.php
+    in C:\wamp64\www\quinituc\_protected\views\site\index.php:14
+    in C:\wamp64\www\quinituc\_protected\controllers\SiteController.php:118
+2019-06-11 13:32:51 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/yii.php
+    in C:\wamp64\www\quinituc\_protected\views\site\index.php:40
+    in C:\wamp64\www\quinituc\_protected\controllers\SiteController.php:118
+2019-06-11 13:32:51 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.1457964660.1559925064'
+    '_identity' => '097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"bXWYol4yXIyujRvHpmjMLebQV65S90it\",2592000]\";}'
+    '_gid' => 'GA1.1.847649596.1560183122'
+    'PHPSESSID' => 't369167l92q723gq5et99gt8e5'
+    '_csrf' => '9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"·Žzcp00S4·ß^’†”:Ôiž©©hÈÍP%\";}'
+    '_gat_gtag_UA_129593460_1' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'quinituc'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_ga=GA1.1.1457964660.1559925064; _identity=097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bXWYol4yXIyujRvHpmjMLebQV65S90it%22%2C2592000%5D%22%3B%7D; _gid=GA1.1.847649596.1560183122; PHPSESSID=t369167l92q723gq5et99gt8e5; _csrf=9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1A%B7%8Ezc%0Dp%7F00S4%B7%DF%5E%92%15%1B%86%94%3A%D4i%9E%A9%A9h%C8%CDP%01%25%22%3B%7D; _gat_gtag_UA_129593460_1=1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\wamp64\\bin\\php\\php7.1.16;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Subversion\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\WinSCP\\;C:\\gradle-4.6-bin\\gradle-4.6\\bin\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp64\\bin\\mysql\\mysql5.7.21\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\chatoxz\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win64) PHP/5.6.35 Server at quinituc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/5.6.35'
+    'SERVER_NAME' => 'quinituc'
+    'SERVER_ADDR' => '127.0.13.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/quinituc/index.php'
+    'REMOTE_PORT' => '51420'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1560259971.518
+    'REQUEST_TIME' => 1560259971
+]
+2019-06-11 13:32:52 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/yii.php
+2019-06-11 13:32:52 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "img/logos/logo-quinituc2.png".' in C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('img/logos/logo-...', Array)
+#1 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\quinituc\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\quinituc\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-06-11 13:32:52 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/app.php
+    in C:\wamp64\www\quinituc\_protected\views\site\error.php:19
+2019-06-11 13:32:52 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.1457964660.1559925064'
+    '_identity' => '097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"bXWYol4yXIyujRvHpmjMLebQV65S90it\",2592000]\";}'
+    '_gid' => 'GA1.1.847649596.1560183122'
+    'PHPSESSID' => 't369167l92q723gq5et99gt8e5'
+    '_csrf' => '9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"·Žzcp00S4·ß^’†”:Ôiž©©hÈÍP%\";}'
+    '_gat_gtag_UA_129593460_1' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'quinituc'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'image/webp,*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://quinituc/themes/light/css/style.css'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_ga=GA1.1.1457964660.1559925064; _identity=097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bXWYol4yXIyujRvHpmjMLebQV65S90it%22%2C2592000%5D%22%3B%7D; _gid=GA1.1.847649596.1560183122; PHPSESSID=t369167l92q723gq5et99gt8e5; _csrf=9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1A%B7%8Ezc%0Dp%7F00S4%B7%DF%5E%92%15%1B%86%94%3A%D4i%9E%A9%A9h%C8%CDP%01%25%22%3B%7D; _gat_gtag_UA_129593460_1=1'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\wamp64\\bin\\php\\php7.1.16;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Subversion\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\WinSCP\\;C:\\gradle-4.6-bin\\gradle-4.6\\bin\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp64\\bin\\mysql\\mysql5.7.21\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\chatoxz\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win64) PHP/5.6.35 Server at quinituc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/5.6.35'
+    'SERVER_NAME' => 'quinituc'
+    'SERVER_ADDR' => '127.0.13.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/quinituc/index.php'
+    'REMOTE_PORT' => '51414'
+    'REDIRECT_URL' => '/img/logos/logo-quinituc2.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/img/logos/logo-quinituc2.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1560259972.135
+    'REQUEST_TIME' => 1560259972
+]
+2019-06-11 13:33:15 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/app.php
+    in C:\wamp64\www\quinituc\_protected\views\site\index.php:14
+    in C:\wamp64\www\quinituc\_protected\controllers\SiteController.php:118
+2019-06-11 13:33:15 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/yii.php
+    in C:\wamp64\www\quinituc\_protected\views\site\index.php:40
+    in C:\wamp64\www\quinituc\_protected\controllers\SiteController.php:118
+2019-06-11 13:33:15 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.1457964660.1559925064'
+    '_identity' => '097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"bXWYol4yXIyujRvHpmjMLebQV65S90it\",2592000]\";}'
+    '_gid' => 'GA1.1.847649596.1560183122'
+    'PHPSESSID' => 't369167l92q723gq5et99gt8e5'
+    '_csrf' => '9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"·Žzcp00S4·ß^’†”:Ôiž©©hÈÍP%\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'quinituc'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_ga=GA1.1.1457964660.1559925064; _identity=097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bXWYol4yXIyujRvHpmjMLebQV65S90it%22%2C2592000%5D%22%3B%7D; _gid=GA1.1.847649596.1560183122; PHPSESSID=t369167l92q723gq5et99gt8e5; _csrf=9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1A%B7%8Ezc%0Dp%7F00S4%B7%DF%5E%92%15%1B%86%94%3A%D4i%9E%A9%A9h%C8%CDP%01%25%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\wamp64\\bin\\php\\php7.1.16;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Subversion\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\WinSCP\\;C:\\gradle-4.6-bin\\gradle-4.6\\bin\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp64\\bin\\mysql\\mysql5.7.21\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\chatoxz\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win64) PHP/5.6.35 Server at quinituc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/5.6.35'
+    'SERVER_NAME' => 'quinituc'
+    'SERVER_ADDR' => '127.0.13.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/quinituc/index.php'
+    'REMOTE_PORT' => '51429'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1560259995.413
+    'REQUEST_TIME' => 1560259995
+]
+2019-06-11 13:33:16 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/yii.php
+2019-06-11 13:33:16 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "img/logos/logo-quinituc2.png".' in C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('img/logos/logo-...', Array)
+#1 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\quinituc\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\quinituc\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-06-11 13:33:16 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/app.php
+    in C:\wamp64\www\quinituc\_protected\views\site\error.php:19
+2019-06-11 13:33:16 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.1457964660.1559925064'
+    '_identity' => '097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"bXWYol4yXIyujRvHpmjMLebQV65S90it\",2592000]\";}'
+    '_gid' => 'GA1.1.847649596.1560183122'
+    'PHPSESSID' => 't369167l92q723gq5et99gt8e5'
+    '_csrf' => '9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"·Žzcp00S4·ß^’†”:Ôiž©©hÈÍP%\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'quinituc'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'image/webp,*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://quinituc/themes/light/css/style.css'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_ga=GA1.1.1457964660.1559925064; _identity=097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bXWYol4yXIyujRvHpmjMLebQV65S90it%22%2C2592000%5D%22%3B%7D; _gid=GA1.1.847649596.1560183122; PHPSESSID=t369167l92q723gq5et99gt8e5; _csrf=9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1A%B7%8Ezc%0Dp%7F00S4%B7%DF%5E%92%15%1B%86%94%3A%D4i%9E%A9%A9h%C8%CDP%01%25%22%3B%7D'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\wamp64\\bin\\php\\php7.1.16;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Subversion\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\WinSCP\\;C:\\gradle-4.6-bin\\gradle-4.6\\bin\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp64\\bin\\mysql\\mysql5.7.21\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\chatoxz\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win64) PHP/5.6.35 Server at quinituc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/5.6.35'
+    'SERVER_NAME' => 'quinituc'
+    'SERVER_ADDR' => '127.0.13.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/quinituc/index.php'
+    'REMOTE_PORT' => '51431'
+    'REDIRECT_URL' => '/img/logos/logo-quinituc2.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/img/logos/logo-quinituc2.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1560259996.037
+    'REQUEST_TIME' => 1560259996
+]
+2019-06-11 13:38:03 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/app.php
+    in C:\wamp64\www\quinituc\_protected\views\site\index.php:14
+    in C:\wamp64\www\quinituc\_protected\controllers\SiteController.php:118
+2019-06-11 13:38:03 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/yii.php
+    in C:\wamp64\www\quinituc\_protected\views\site\index.php:40
+    in C:\wamp64\www\quinituc\_protected\controllers\SiteController.php:118
+2019-06-11 13:38:03 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.1457964660.1559925064'
+    '_identity' => '097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"bXWYol4yXIyujRvHpmjMLebQV65S90it\",2592000]\";}'
+    '_gid' => 'GA1.1.847649596.1560183122'
+    'PHPSESSID' => 't369167l92q723gq5et99gt8e5'
+    '_csrf' => '9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"·Žzcp00S4·ß^’†”:Ôiž©©hÈÍP%\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'quinituc'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_ga=GA1.1.1457964660.1559925064; _identity=097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bXWYol4yXIyujRvHpmjMLebQV65S90it%22%2C2592000%5D%22%3B%7D; _gid=GA1.1.847649596.1560183122; PHPSESSID=t369167l92q723gq5et99gt8e5; _csrf=9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1A%B7%8Ezc%0Dp%7F00S4%B7%DF%5E%92%15%1B%86%94%3A%D4i%9E%A9%A9h%C8%CDP%01%25%22%3B%7D'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\wamp64\\bin\\php\\php7.1.16;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Subversion\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\WinSCP\\;C:\\gradle-4.6-bin\\gradle-4.6\\bin\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp64\\bin\\mysql\\mysql5.7.21\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\chatoxz\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win64) PHP/5.6.35 Server at quinituc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/5.6.35'
+    'SERVER_NAME' => 'quinituc'
+    'SERVER_ADDR' => '127.0.13.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/quinituc/index.php'
+    'REMOTE_PORT' => '51453'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1560260283.71
+    'REQUEST_TIME' => 1560260283
+]
+2019-06-11 13:38:04 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/yii.php
+2019-06-11 13:38:04 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "img/logos/logo-quinituc2.png".' in C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('img/logos/logo-...', Array)
+#1 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\quinituc\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\quinituc\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-06-11 13:38:04 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/app.php
+    in C:\wamp64\www\quinituc\_protected\views\site\error.php:19
+2019-06-11 13:38:04 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.1457964660.1559925064'
+    '_identity' => '097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"bXWYol4yXIyujRvHpmjMLebQV65S90it\",2592000]\";}'
+    '_gid' => 'GA1.1.847649596.1560183122'
+    'PHPSESSID' => 't369167l92q723gq5et99gt8e5'
+    '_csrf' => '9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"·Žzcp00S4·ß^’†”:Ôiž©©hÈÍP%\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'quinituc'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'image/webp,*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://quinituc/themes/light/css/style.css'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_ga=GA1.1.1457964660.1559925064; _identity=097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bXWYol4yXIyujRvHpmjMLebQV65S90it%22%2C2592000%5D%22%3B%7D; _gid=GA1.1.847649596.1560183122; PHPSESSID=t369167l92q723gq5et99gt8e5; _csrf=9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1A%B7%8Ezc%0Dp%7F00S4%B7%DF%5E%92%15%1B%86%94%3A%D4i%9E%A9%A9h%C8%CDP%01%25%22%3B%7D'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\wamp64\\bin\\php\\php7.1.16;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Subversion\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\WinSCP\\;C:\\gradle-4.6-bin\\gradle-4.6\\bin\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp64\\bin\\mysql\\mysql5.7.21\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\chatoxz\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win64) PHP/5.6.35 Server at quinituc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/5.6.35'
+    'SERVER_NAME' => 'quinituc'
+    'SERVER_ADDR' => '127.0.13.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/quinituc/index.php'
+    'REMOTE_PORT' => '51457'
+    'REDIRECT_URL' => '/img/logos/logo-quinituc2.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/img/logos/logo-quinituc2.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1560260284.313
+    'REQUEST_TIME' => 1560260284
+]
+2019-06-11 13:38:34 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/app.php
+    in C:\wamp64\www\quinituc\_protected\views\site\index.php:14
+    in C:\wamp64\www\quinituc\_protected\controllers\SiteController.php:118
+2019-06-11 13:38:34 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/yii.php
+    in C:\wamp64\www\quinituc\_protected\views\site\index.php:40
+    in C:\wamp64\www\quinituc\_protected\controllers\SiteController.php:118
+2019-06-11 13:38:33 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.1457964660.1559925064'
+    '_identity' => '097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"bXWYol4yXIyujRvHpmjMLebQV65S90it\",2592000]\";}'
+    '_gid' => 'GA1.1.847649596.1560183122'
+    'PHPSESSID' => 't369167l92q723gq5et99gt8e5'
+    '_csrf' => '9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"·Žzcp00S4·ß^’†”:Ôiž©©hÈÍP%\";}'
+    '_gat_gtag_UA_129593460_1' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'quinituc'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_ga=GA1.1.1457964660.1559925064; _identity=097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bXWYol4yXIyujRvHpmjMLebQV65S90it%22%2C2592000%5D%22%3B%7D; _gid=GA1.1.847649596.1560183122; PHPSESSID=t369167l92q723gq5et99gt8e5; _csrf=9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1A%B7%8Ezc%0Dp%7F00S4%B7%DF%5E%92%15%1B%86%94%3A%D4i%9E%A9%A9h%C8%CDP%01%25%22%3B%7D; _gat_gtag_UA_129593460_1=1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\wamp64\\bin\\php\\php7.1.16;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Subversion\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\WinSCP\\;C:\\gradle-4.6-bin\\gradle-4.6\\bin\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp64\\bin\\mysql\\mysql5.7.21\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\chatoxz\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win64) PHP/5.6.35 Server at quinituc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/5.6.35'
+    'SERVER_NAME' => 'quinituc'
+    'SERVER_ADDR' => '127.0.13.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/quinituc/index.php'
+    'REMOTE_PORT' => '51467'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1560260313.963
+    'REQUEST_TIME' => 1560260313
+]
+2019-06-11 13:38:34 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/yii.php
+2019-06-11 13:38:34 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "img/logos/logo-quinituc2.png".' in C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('img/logos/logo-...', Array)
+#1 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\quinituc\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\quinituc\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-06-11 13:38:34 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/app.php
+    in C:\wamp64\www\quinituc\_protected\views\site\error.php:19
+2019-06-11 13:38:34 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.1457964660.1559925064'
+    '_identity' => '097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"bXWYol4yXIyujRvHpmjMLebQV65S90it\",2592000]\";}'
+    '_gid' => 'GA1.1.847649596.1560183122'
+    'PHPSESSID' => 't369167l92q723gq5et99gt8e5'
+    '_csrf' => '9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"·Žzcp00S4·ß^’†”:Ôiž©©hÈÍP%\";}'
+    '_gat_gtag_UA_129593460_1' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'quinituc'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'image/webp,*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://quinituc/themes/light/css/style.css'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_ga=GA1.1.1457964660.1559925064; _identity=097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bXWYol4yXIyujRvHpmjMLebQV65S90it%22%2C2592000%5D%22%3B%7D; _gid=GA1.1.847649596.1560183122; PHPSESSID=t369167l92q723gq5et99gt8e5; _csrf=9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1A%B7%8Ezc%0Dp%7F00S4%B7%DF%5E%92%15%1B%86%94%3A%D4i%9E%A9%A9h%C8%CDP%01%25%22%3B%7D; _gat_gtag_UA_129593460_1=1'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\wamp64\\bin\\php\\php7.1.16;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Subversion\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\WinSCP\\;C:\\gradle-4.6-bin\\gradle-4.6\\bin\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp64\\bin\\mysql\\mysql5.7.21\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\chatoxz\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win64) PHP/5.6.35 Server at quinituc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/5.6.35'
+    'SERVER_NAME' => 'quinituc'
+    'SERVER_ADDR' => '127.0.13.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/quinituc/index.php'
+    'REMOTE_PORT' => '51472'
+    'REDIRECT_URL' => '/img/logos/logo-quinituc2.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/img/logos/logo-quinituc2.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1560260314.597
+    'REQUEST_TIME' => 1560260314
+]
+2019-06-11 13:38:53 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/app.php
+    in C:\wamp64\www\quinituc\_protected\views\site\index.php:14
+    in C:\wamp64\www\quinituc\_protected\controllers\SiteController.php:118
+2019-06-11 13:38:53 [127.0.0.1][1][-][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/yii.php
+    in C:\wamp64\www\quinituc\_protected\views\site\index.php:40
+    in C:\wamp64\www\quinituc\_protected\controllers\SiteController.php:118
+2019-06-11 13:38:53 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.1457964660.1559925064'
+    '_identity' => '097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"bXWYol4yXIyujRvHpmjMLebQV65S90it\",2592000]\";}'
+    '_gid' => 'GA1.1.847649596.1560183122'
+    'PHPSESSID' => 't369167l92q723gq5et99gt8e5'
+    '_csrf' => '9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"·Žzcp00S4·ß^’†”:Ôiž©©hÈÍP%\";}'
+    '_gat_gtag_UA_129593460_1' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'quinituc'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_ga=GA1.1.1457964660.1559925064; _identity=097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bXWYol4yXIyujRvHpmjMLebQV65S90it%22%2C2592000%5D%22%3B%7D; _gid=GA1.1.847649596.1560183122; PHPSESSID=t369167l92q723gq5et99gt8e5; _csrf=9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1A%B7%8Ezc%0Dp%7F00S4%B7%DF%5E%92%15%1B%86%94%3A%D4i%9E%A9%A9h%C8%CDP%01%25%22%3B%7D; _gat_gtag_UA_129593460_1=1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\wamp64\\bin\\php\\php7.1.16;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Subversion\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\WinSCP\\;C:\\gradle-4.6-bin\\gradle-4.6\\bin\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp64\\bin\\mysql\\mysql5.7.21\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\chatoxz\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win64) PHP/5.6.35 Server at quinituc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/5.6.35'
+    'SERVER_NAME' => 'quinituc'
+    'SERVER_ADDR' => '127.0.13.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/quinituc/index.php'
+    'REMOTE_PORT' => '51479'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1560260333.608
+    'REQUEST_TIME' => 1560260333
+]
+2019-06-11 13:38:54 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'yii' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/yii.php
+2019-06-11 13:38:54 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "img/logos/logo-quinituc2.png".' in C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('img/logos/logo-...', Array)
+#1 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\wamp64\www\quinituc\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 C:\wamp64\www\quinituc\_protected\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\wamp64\www\quinituc\index.php(12): yii\base\Application->run()
+#2 {main}
+2019-06-11 13:38:54 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][error][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\wamp64\www\quinituc\_protected/translations/es/app.php
+    in C:\wamp64\www\quinituc\_protected\views\site\error.php:19
+2019-06-11 13:38:54 [127.0.0.1][1][t369167l92q723gq5et99gt8e5][info][application] $_COOKIE = [
+    '_ga' => 'GA1.1.1457964660.1559925064'
+    '_identity' => '097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a:2:{i:0;s:9:\"_identity\";i:1;s:46:\"[1,\"bXWYol4yXIyujRvHpmjMLebQV65S90it\",2592000]\";}'
+    '_gid' => 'GA1.1.847649596.1560183122'
+    'PHPSESSID' => 't369167l92q723gq5et99gt8e5'
+    '_csrf' => '9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"·Žzcp00S4·ß^’†”:Ôiž©©hÈÍP%\";}'
+    '_gat_gtag_UA_129593460_1' => '1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'quinituc'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:67.0) Gecko/20100101 Firefox/67.0'
+    'HTTP_ACCEPT' => 'image/webp,*/*'
+    'HTTP_ACCEPT_LANGUAGE' => 'es-AR,es;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://quinituc/themes/light/css/style.css'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_COOKIE' => '_ga=GA1.1.1457964660.1559925064; _identity=097c3fe914deb5eeccb45659f7d03660ff73ae24cf1530e276ffe9670063d4f6a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%22bXWYol4yXIyujRvHpmjMLebQV65S90it%22%2C2592000%5D%22%3B%7D; _gid=GA1.1.847649596.1560183122; PHPSESSID=t369167l92q723gq5et99gt8e5; _csrf=9d85220d7614d8e330e35fb61a8134c56f471f57006bc919c278ac406a1c7846a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22%1A%B7%8Ezc%0Dp%7F00S4%B7%DF%5E%92%15%1B%86%94%3A%D4i%9E%A9%A9h%C8%CDP%01%25%22%3B%7D; _gat_gtag_UA_129593460_1=1'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'PATH' => 'C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\Docker\\Docker\\Resources\\bin;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\nodejs\\;C:\\wamp64\\bin\\php\\php7.1.16;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Subversion\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\WinSCP\\;C:\\gradle-4.6-bin\\gradle-4.6\\bin\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp64\\bin\\mysql\\mysql5.7.21\\bin;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Program Files\\Microsoft VS Code\\bin;C:\\Users\\chatoxz\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.33 (Win64) PHP/5.6.35 Server at quinituc Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.33 (Win64) PHP/5.6.35'
+    'SERVER_NAME' => 'quinituc'
+    'SERVER_ADDR' => '127.0.13.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/wamp64/www/quinituc'
+    'SERVER_ADMIN' => 'wampserver@wampserver.invalid'
+    'SCRIPT_FILENAME' => 'C:/wamp64/www/quinituc/index.php'
+    'REMOTE_PORT' => '51481'
+    'REDIRECT_URL' => '/img/logos/logo-quinituc2.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/img/logos/logo-quinituc2.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1560260334.262
+    'REQUEST_TIME' => 1560260334
+]

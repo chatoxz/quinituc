@@ -3,16 +3,16 @@
 
 use kartik\helpers\Html;
 use yii\helpers\Url;
+use app\models\TombolaMomento;
+
 //use app\models\Tombola;
 
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: PUT, GET, POST, DELETE, OPTIONS");
 header("Access-Control-Allow-Headers: *");
 
-$this->title = Yii::t('app', Yii::$app->name);
-?>
-<?php
-?>
+$this->title = Yii::t('app', Yii::$app->name); ?>
+
 <?php $url = Url::to(["sorteo_individual", 'id_tombola' => $ult_tombola->id]); ?>
 
 <head>
@@ -81,33 +81,31 @@ $this->title = Yii::t('app', Yii::$app->name);
         <!-- SORTEOS -->
         <h3 class="titulo_tabla_sorteos_mat_vesp_tarde_noc">SORTEOS</h3>
         <div class="contenedor_tabla_sorteos_mat_vesp_tarde_noc">
-            <div class="item_tabla_sorteos_mat_vesp_tarde_noc" style="background-color: rgba(87, 255, 53, 0.47)">
-                <div>Matutina</div>
-                <div><?= substr("000" . $primer_premio_mat, -4) ?></div>
-            </div>
-            <div class="item_tabla_sorteos_mat_vesp_tarde_noc" style="background-color: #ffffff">
-                <div>Vespertina</div>
-                <div><?= substr("000" . $primer_premio_vesp, -4) ?></div>
-            </div>
-            <?php if ($primer_premio_vesp_2) { ?>
-                <div class="item_tabla_sorteos_mat_vesp_tarde_noc" style="background-color: #5576bab3">
-                    <div>Vespertina chance 2</div>
-                    <div><?= substr("000" . $primer_premio_vesp_2, -4); ?></div>
-                </div>
-            <?php } ?>
-            <div class="item_tabla_sorteos_mat_vesp_tarde_noc" style="background-color: #f3beff">
-                <div>Tarde</div>
-                <div><?= substr("000" . $primer_premio_tarde, -4) ?></div>
-            </div>
-            <div class="item_tabla_sorteos_mat_vesp_tarde_noc" style="background-color: #fffd96">
-                <div>Nocturna</div>
-                <div><?= substr("000" . $primer_premio_noc, -4) ?></div>
-            </div>
-            <?php if ($primer_premio_noc_2) { ?>
-                <div class="item_tabla_sorteos_mat_vesp_tarde_noc" style="background-color: #1a1900b3;color: white;">
-                    <div>Nocturna chance 2</div>
-                    <div><?= substr("000" . $primer_premio_noc_2, -4) ?></div>
-                </div>
+            <?php
+
+            $colores = [
+                'background-color: rgba(87, 255, 53, 0.47)',
+                'background-color: #ffffff',
+                'background-color: #5576bab3',
+                'background-color: #f3beff;',
+                'background-color: #fffd96;margin-left: 12.8%',
+                'background-color: #1a1900b3;color: white;margin-right: -12%',
+                'background-color: rgba(87, 255, 53, 0.47)',
+                'background-color: #ffffff',
+                'background-color: #5576bab3',
+                'background-color: #f3beff',
+                'background-color: #fffd96',
+                'background-color: #1a1900b3;color: white;'
+            ];
+            $i = 0;
+            foreach ($ultimas_tombolas as $tombola) {
+                if (count($tombola) > 0) { ?>
+                    <div class="item_tabla_sorteos_mat_vesp_tarde_noc" style="<?= $colores[$i]; ?>">
+                        <div><?= TombolaMomento::findOne(['id' => $tombola->id_momento])->nombre; ?></div>
+                        <div><?= substr("000" . $tombola->tombolaNumero->numero_1, -4) ?></div>
+                    </div>
+                <?php } ?>
+                <?php ++$i; ?>
             <?php } ?>
         </div>
 
