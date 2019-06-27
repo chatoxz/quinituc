@@ -96,7 +96,7 @@ class SiteController extends Controller
         $banners = Banner::find()->orderBy('orden')->all();
 
         // ULTIMA TOMBOLA
-        $ult_tombola = Tombola::find()->orderBy(['fecha' => SORT_DESC, 'id_momento' => SORT_DESC])->one();
+        $ult_tombola = Tombola::find()->orderBy(['id' => SORT_DESC])->one();
         $numerosUltimaTomb = TombolaNumero::find()->where(['id_tombola' => $ult_tombola->id])->one();
 
         //ULTIMAS TOMBOLAS DE CADA TIPO(CADA MOMENTO).
@@ -117,7 +117,6 @@ class SiteController extends Controller
             'momento_ult_tombola' => TombolaMomento::findOne(['id' => $ult_tombola->id_momento])->nombre,
         ]);
     }
-
     public function actionSorteo_individual($id_tombola)
     {
         $tombola = Tombola::find()->where(["id" => $id_tombola])->one();
@@ -195,14 +194,19 @@ class SiteController extends Controller
      */
     public function actionSorteos_anteriores($fecha)
     {
-        $ulti_tombolas  = Tombola::find()->where(["fecha" => $fecha])->all();
-        $todas_tombolas = Tombola::find()->groupBy(['fecha'])->limit(120)->all();
+        $model = new Tombola();
+        if ($model->load(Yii::$app->request->post())) {
+            $fecha = $model->fecha;
+        }
+        $ulti_tombolas  = Tombola::find()->where(["fecha" => $fecha])->orderBy(['id' => SORT_DESC])->all();
+        $todas_tombolas = Tombola::find()->groupBy(['fecha'])->limit(120)->orderBy(['id' => SORT_DESC])->all();
         //$tombola = Tombola::find()->where(["fecha" => $fecha ])->one();
         //VarDumper::dump($tombola);
         //echo TombolaMomento::find()->where(["id" => $tombola->getMomento()->one()])->one();
         return $this->render('sorteos_anteriores', [
             'ulti_tombolas' => $ulti_tombolas,
             'todas_tombolas' => $todas_tombolas,
+            'model' => $model,
         ]);
     }
 
