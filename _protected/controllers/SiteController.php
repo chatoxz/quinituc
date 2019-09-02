@@ -1,4 +1,5 @@
 <?php
+
 namespace app\controllers;
 
 use app\models\Banner;
@@ -110,11 +111,11 @@ class SiteController extends Controller
 
         return $this->render('index', [
             'banners' => $banners,
-            'ult_tombola' => $ult_tombola,
-            'numerosUltimaTomb' => $numerosUltimaTomb,
+            //'ult_tombola' => $ult_tombola,
+            //'numerosUltimaTomb' => $numerosUltimaTomb,
             'ultimas_tombolas' => $ultimas_tombolas,
             'numeros_varios' => $numeros_varios,
-            'momento_ult_tombola' => TombolaMomento::findOne(['id' => $ult_tombola->id_momento])->nombre,
+            //'momento_ult_tombola' => TombolaMomento::findOne(['id' => $ult_tombola->id_momento])->nombre,
         ]);
     }
     public function actionSorteo_individual($id_tombola)
@@ -184,7 +185,6 @@ class SiteController extends Controller
         $mpdf->Output();
         exit;
     }
-
 
 
     /**
